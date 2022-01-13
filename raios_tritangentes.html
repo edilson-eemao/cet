@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <title>Raios Tritangentes</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>RAIOS TRITANGENTES</h1></div>
+			</div>
+			
+			
+			<nav id="menu">
+					
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+					<!-- inicio esquerda  -->
+<h2 id="sec:raios_tritangentes">3.5 Raios Tritangentes</h2>
+<p><span class="negrito">Notação:</span> Salvo indicação em contrário, o <span class="italico">raio da circunferência inscrita</span> (ou, simplesmente, o <span class="italico">inraio</span> de um triângulo) será denotado por <span class="ltx">r</span>, e o <span class="italico">raio da circunferência ex-inscrita</span> (ou, mais brevemente, o <span class="italico">exraio</span> dos vértices <span class="ltx">A</span>, <span class="ltx">B</span>, <span class="ltx">C</span>) do triângulo <span class="ltx">&Delta;ABC</span> por <span class="ltx">r<sub>a</sub></span>, <span class="ltx">r<sub>b</sub></span>, <span class="ltx">r<sub>c</sub></span> , respectivamente.
+</p>
+<p>Os quatro raios serão referidos como <span class="italico">raios tritangentes</span> do triângulo <span class="ltx">&Delta;ABC</span>.
+</p>
+<p>O teorema a seguir relaciona o inraio <span class="ltx">r</span> de um triângulo <span class="ltx">&Delta;ABC</span>, sua área <span class="ltx">(ABC)</span> e o semiperímetro <span class="ltx">p</span>. 
+</p>
+<div class="teorema" id="Teorema3.28"><span class="negrito">Teorema 3.28</span></br>
+	<p>Seja <span class="ltx">(ABC)</span> a área do triângulo <span class="ltx">&Delta;ABC</span> em que <span class="ltx">a = BC</span>, <span class="ltx">b = AC</span> e <span class="ltx">c = AB</span>. Seja <span class="ltx">2p = a + b + c</span> seu perímetro. O inraio <span class="ltx">r</span> de um triângulo é igual à área <span class="ltx">(ABC)</span> dividida pelo semiperímetro <span class="ltx">p</span>.
+</p>
+</div>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Se <span class="ltx">(ABC)</span> é a área do triângulo <span class="ltx">&Delta;ABC</span>, verificaremos que <span class="ltx">(ABC) = pr</span>. Temos:
+	</p>
+<figure>
+<img src="images/teorema132.png" style="widht: 187px; height: 118px;" id="teorema132">
+<figcaption>Figura 3.35:O inraio <span class="ltx">r</span> é altura dos três triângulos de bases <span class="ltx">a</span>, <span class="ltx">b</span> e <span class="ltx">c</span></figcaption>
+</figure>
+	<p>$$(ABC) = \text{área} (ABI) + \text{área} (BCI) + \text{área} (CAI)$$
+	Note que os três triângulos tem altura igual ao inraio <span class="ltx">r</span>. Daí:
+	$$(ABC) = \frac{1}{2} rc + \frac{1}{2} ra + \frac{1}{2} rb.$$
+	</p>
+	<p>Deixando <span class="ltx">r</span> em evidência, chegamos a igualdade:
+	$$(ABC) = \frac{1}{2} r (a + b + c) = pr.$$
+	</p>
+</div>
+<div class="teorema" id="teo133"><span class="negrito">Teorema 3.29</span></br>
+	<p>Seja <span class="ltx">(ABC)</span> a área do triângulo <span class="ltx">&Delta;ABC</span> em que <span class="ltx">a = BC</span>, <span class="ltx">b = AC</span> e <span class="ltx">c = AB</span>. Seja <span class="ltx">2p = a + b + c</span> seu perímetro. Um exraio <span class="ltx">r<sub>a</sub></span> de um triângulo <span class="ltx">&Delta;ABC</span> é igual à área <span class="ltx">(ABC)</span> dividida pela diferença entre <span class="ltx">p</span> e o lado <span class="ltx">a</span>.
+</p>
+</div>
+<figure>
+<img src="images/teorema133b.png" style="widht: 374px; height: 236px;" id="teorema133b">
+<figcaption>Figura 3.36: <span class="ltx">r<sub>a</sub></span> é altura dos três triângulos de base <span class="ltx">a</span>, <span class="ltx">b</span> e <span class="ltx">c</span>.</figcaption>
+</figure>	
+<p>Deseja-se mostrar que $$r_a = \frac{(ABC)}{(p-a)}.$$ Para os exraios <span class="ltx">r<sub>b</sub></span> e <span class="ltx">r<sub>c</sub></span> é análogo.
+</p>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Se <span class="ltx">(ABC)</span> é a área do triângulo <span class="ltx">&Delta;ABC</span>, então:
+	$$(ABC) = \text{área ~} (ABI_{a}) + \text{área ~} (ACI_{a}) - \text{área ~} (BCI_{a}).$$
+	</p>
+	<p>Como <span class="ltx">r<sub>a</sub></span> é altura dos três triângulos de base <span class="ltx">a</span>, <span class="ltx">b</span> e <span class="ltx">c</span>, tem-se:
+	$$(ABC) = \frac{1}{2} cr_{a} + \frac{1}{2} br_{a} - \frac{1}{2} ar_{a}$$
+	e deixando <img src="images/fracao12ra.png" style="widht: 50px; height: 20px; display: inline-block;"> em evidência, e substituindo <span class="ltx">b + c</span> por <span class="ltx">2p - a</span>, temos:
+	</p>
+<p>
+\begin{align*} 
+	(ABC) &=  \frac{1}{2} r_{a}(b + c - a) \\ 
+	&=  \frac{1}{2} r_{a}(2p - a - a)\\
+	&=  r_{a}(p - a). \\
+	\end{align*}
+	</p>
+</div>	
+<div class="teorema" id="teo134"><span class="negrito">Corolário 3.30</span></br>
+	<p>O produto dos quatro raios tritangentes de um triângulo é igual ao quadrado de sua área, ou seja, $$r \cdot r_a \cdot r_b \cdot r_c = (ABC)^2.$$
+</p>
+</div>	
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Temos que a área <span class="ltx">(ABC)</span> de um triângulo pode ser calculada por:
+	$$(ABC) = \sqrt{p(p - a)(p - b)(p - c)}$$
+	em que <span class="ltx">a</span>, <span class="ltx">b</span> e <span class="ltx">c</span> são as medidas dos lados e <span class="ltx">p</span> é o semiperímetro do triângulo <span class="ltx">&Delta;ABC</span>. Tal fórmula é conhecida como <span class="italico">Fórmula de Heron</span> e sua demonstração pode ser encontrada no artigo: <a href="http://repositorio.ufsc.br/xmlui/handle/123456789/96578" target="_blank">Pitágoras, Heron, Brahmagupta... Marlise Vogt.pdf</a>. 
+	</p>
+	<p>Tomando o produto entre os raios tritangentes, e aplicando o <a href="#teo133" target="_blank">Teorema 3.29</a> e a <span class="italico">Fórmula de Heron</span>, temos:
+	</p>
+	<p>
+	\begin{align*} 
+	r.r_{a}.r_{b}.r_{c} &=  \frac{(ABC)}{p}. \frac{(ABC)}{(p - a)}. \frac{(ABC)}{(p - b)}. \frac{(ABC)}{(p - c)} \\ 
+	&=  \frac{(ABC)^{4}}{p(p - a)(p - b)(p - c)} \\
+	&=  \frac{(ABC)^{4}}{(ABC)^{2}} = (ABC)^{2}.
+	\end{align*}
+	</p>
+</div>
+<div class="teorema" id="135"><span class="negrito">Corolário 3.31</span></br>
+	<p>O inverso do inraio é igual à soma dos inversos dos três exraios do triângulo, ou seja, $$\frac{1}{r_{a}} + \frac{1}{r_{b}} + \frac{1}{r_{c}} = \frac{1}{r}.$$
+</p>
+</div>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Aplicando os resultados	obtidos no Teorema <a href="" target="_blank"></a>{teo133}, tem-se:
+	\begin{align*} 
+	\frac{1}{r_{a}} + \frac{1}{r_{b}} + \frac{1}{r_{c}} &= \frac{(p - a)}{(ABC)} + \frac{(p - b)}{(ABC)} + \frac{(p - a)}{(ABC)} \\ 
+	&=  \frac{(p - a) + (p - b) + (p - c)}{(ABC)} \\
+	&=  \frac{3p - (a + b + c)}{(ABC)} \\
+	&=  \frac{3p - (2p)}{(ABC)} = \frac{p}{(ABC)}\\
+	&= \frac{1}{r}.
+	\end{align*}
+</p>	
+</div>
+<div class="teorema" id="136"><span class="negrito">Teorema 3.32</span></br>
+	<p>O inverso do inraio de um triângulo <span class="ltx">&Delta;ABC</span> é igual a soma dos inversos das alturas do triângulo dado, ou seja, $$\frac{1}{r} = \frac{1}{h_{a}} + \frac{1}{h_{b}} + \frac{1}{h_{c}},$$
+	em que <span class="ltx">h<sub>a</sub></span>, <span class="ltx">h<sub>b</sub></span> e <span class="ltx">h<sub>c</sub></span> são suas alturas.
+</p>
+</div>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Seja um triângulo <span class="ltx">&Delta;ABC</span>  e suas alturas <span class="ltx">h<sub>a</sub></span>, <span class="ltx">h<sub>b</sub></span> e <span class="ltx">h<sub>c</sub></span>.Tem-se:
+	\begin{align*}
+	2S &= 2 pr = ah_{a} = bh_{b} = ch_{c}\\
+	&= \frac{2p}{\frac{1}{r}} = \frac{a}{\frac{1}{h_{a}}} = \frac{b}{\frac{1}{h_{b}}} = \frac{c}{\frac{1}{h_{c}}}\\
+	\text{e, por propriedade das proporções,}\\
+	&= \frac{2p}{\frac{1}{r}} = \frac{(a + b + c)}{\frac{1}{h_{a}} + \frac{1}{h_{b}} + \frac{1}{h_{c}}}.
+	\end{align*}
+	</p>
+	<p>Uma vez que <span class="ltx">2p = (a + b + c)</span>, temos:
+	$$\frac{1}{r} = \frac{1}{h_{a}} + \frac{1}{h_{b}} + \frac{1}{h_{c}}$$ 
+	</p>
+</div>
+<div class="teorema" id="corolario3.33"><span class="negrito">Corolário 3.33</span></br>
+<p>A soma dos inversos dos exraios de um triângulo é igual à soma dos inversos das alturas.
+</p>
+</div>
+<div class="teorema"><span class="negrito">Demonstração</span></br> 
+	<p>Como já foi mostrado no <a href="#135" target="_blank">Corolário 3.31</a>,
+	$$\frac{1}{r_{a}} + \frac{1}{r_{b}} + \frac{1}{r_{c}} = \frac{1}{r}$$
+	mas pelo Teorema <a href="#136" target="_blank">Teorema 3.32</a> $$\frac{1}{r} = \frac{1}{h_{a}} + \frac{1}{h_{b}} + \frac{1}{h_{c}} $$
+	Portanto, $$\frac{1}{r_{a}} + \frac{1}{r_{b}} + \frac{1}{r_{c}} = \frac{1}{h_{a}} + \frac{1}{h_{b}} + \frac{1}{h_{c}} $$
+</p>
+</div> 
+
+<div class="teorema" id="teo138"><span class="negrito">Teorema 3.34</span></br>
+	<p>Dados um triângulo <span class="ltx">&Delta;ABC</span>, seu inraio <span class="ltx">r</span> e seu exraio <span class="ltx">r<sub>a</sub></span> (ou <span class="ltx">r<sub>b</sub></span> ou <span class="ltx">r<sub>c</sub></span>), relativo ao lado <span class="ltx">a</span> (ou <span class="ltx">b</span> ou <span class="ltx">c</span>). Se em uma reta arbitrária os segmentos <span class="ltx">PD = r</span>, <span class="ltx">DQ = r<sub>a</sub></span> (ou <span class="ltx">DQ = r<sub>b</sub></span> ou <span class="ltx">DQ = r<sub>c</sub></span>) são transportados em sentidos opostos, e é construído <span class="ltx">N</span> o conjugado harmônico de <span class="ltx">D</span> em relação a <span class="ltx">P</span> e a <span class="ltx">Q</span>, então o segmento <span class="seg">ND</span> é congruente à altura <span class="ltx">h<sub>a</sub></span> (ou <span class="ltx">h<sub>b</sub></span> ou <span class="ltx">h<sub>c</sub></span>) do triângulo.
+</p>
+</div>
+<figure>
+<img src="images/teorema138a0.png" style="widht: 307px; height: 224px;" id="fig_138a0">
+<figcaption>Figura 3.37: <span class="ltx">r</span> e <span class="ltx">r<sub>a</sub></span> foram transportados em sentidos opostos.</figcaption>
+</figure>
+<p>O <a href="#teo138" target="_blank">Teorema 3.34</a> sugere que, em um triângulo <span class="ltx">&Delta;ABC</span>, uma altura <span class="seg">AD</span>, relativa ao vértice <span class="ltx">A</span>, é dividida harmonicamente pelos pontos <span class="ltx">P</span> (interno do segmento <span class="seg">AD</span>) e o ponto <span class="ltx">Q</span> (externo do segmento <span class="seg">AD</span>) desde que <span class="ltx">PD = r</span> e <span class="ltx">DQ = r<sub>a</sub></span>, veja Figura <a href="#138a">Figura 3.38</a>: 
+</p>
+<p>
+<figure>
+<img src="images/teorema138a.png" style="widht: 169px; height: 255px;" id="138a">
+<figcaption>Figura 3.38: <span class="ltx">A</span>, <span class="ltx">P</span>, <span class="ltx">D</span> e <span class="ltx">Q</span> são pontos harmônicos.</figcaption>
+</figure>
+<div class="teorema"><span class="negrito">Demonstração</span></br> 
+<p>Como mostrado no <a href="centros-tritangentes.html#div_harm1" target="_blank">Teorema 3.20</a>, dois centros tritangentes dividem harmonicamente a bissetriz interna de um ângulo.
+Pelo Teorema <a href="divisao_de_segmento.html#61" target="_blank">Teorema 3.3</a> os pontos <span class="ltx">A</span>, <span class="ltx">P</span>, <span class="ltx">D</span> e <span class="ltx">Q</span> são harmônicos, tais que $$\frac{QD}{DP} = \frac{QA}{PA} = \frac{p}{q}.$$
+</p>
+</div> 
+<div class="teorema" id="corolario3.35"><span class="negrito">Corolário 3.35</span></br>
+	<p>Em um triângulo <span class="ltx">&Delta;ABC</span> em que <span class="ltx">a = BC</span>, <span class="ltx">b = AC</span> e <span class="ltx">c = AB</span>, a altura <span class="ltx">h<sub>a</sub></span> se relaciona com o inraio <span class="ltx">r</span> e o exraio <span class="ltx">r<sub>a</sub></span> relativo ao lado <span class="ltx">a</span>, pela fórmula: 
+	$$h_a = \frac{2 rr_{a}}{(r_{a} - r)}.$$ 
+</p>
+</div>
+<p>Com este corolário é possível determinar a altura de um triângulo <span class="ltx">&Delta;ABC</span> relativa a um lado <span class="ltx">a</span> se forem conhecidos o inraio e o exraio relativo ao mesmo lado.
+</p>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>O ponto <span class="ltx">D</span>, ilustrado na <a href="#138a" target="_blank">Figura 3.38</a>, obviamente divide o segmento <span class="seg">QP</span> interidnte na razão 
+	$$\frac{QD}{DP} = \frac{r_{a}}{r}$$ daí, usando o <a href="divisao_de_segmento.html#58" target="_blank">Corolário 3.2</a>, observando que neste corolário, <span class="ltx">a</span> representa o segmento dividido e <span class="ltx">b</span> representa o segmento dos pontos divisores; e tomando <span class="ltx">AD = b = h<sub>a</sub></span> e temos, $$\frac{r_a}{r} = \frac{p}{q} \text{ e } PQ = a = (r_a + r),$$ assim:
+	$$h_{a} = \frac{2 (r_{a} + r) r_{a}r}{(r_{a}^2 - r^2)}	
+	= \frac{2 rr_{a}}{(r_{a} - r)}.$$
+	</p>
+	<p>As relações para as alturas <span class="ltx">h<sub>b</sub></span> e <span class="ltx">h<sub>c</sub></span> são análogas. 
+</p>
+</div>
+	<p>O mesmo resultado também é obtido se forem utilizados os Teoremas <a href="#teo133" target="_blank">3.29</a> e <a href="#teo134" target="_blank">3.30</a>:
+	$$2S = ah_{a} = 2pr \qquad \text{e} \qquad 2S = ah_{a} = 2 (p - a) r_{a};$$
+	nos dois casos, tomando a segunda igualdade e substituindo <span class="ltx">p</span>:
+	$$a (h_{a} - r) = (b + c)r, \qquad \text{e} \qquad a(h_{a} + r_{a}) = (b + c)r_{a},$$
+	e dividindo, destas, a primeira pela segunda equação, membro a membro obtemos:
+	$$\frac{(h_{a} - r)}{(h_{a} + r_{a})} = \frac{r}{r_{a}}.$$
+</p>
+<p>Finalmente, isolando <span class="ltx">h<sub>a</sub></span>, obtemos $$h_a = \frac{2 rr_{a}}{(r_{a} - r)}$$.
+</p>
+
+<p><span class="negrito">Nota:</span> Os pontos <span class="ltx">P</span> e <span class="ltx">Q</span> dividem a altura <span class="seg">AD</span> interna e exteriormente na razão (<a href="divisao_de_segmento.html#57" target="_blank">Teorema 3.1</a>):
+$$\frac{(r_{a} - r)}{(r_{a} + r)}.$$
+</p>
+
+<div class="teorema" id="teorema3.36"><span class="negrito">Teorema 3.36</span></br>
+	<p>Se em uma reta arbitrária os segmentos <span class="ltx">DR = r<sub>b</sub></span>, <span class="ltx">DS = r<sub>c</sub></span> são dispostos, no mesmo sentido, e é construído o conjugado harmônico <span class="ltx">A</span> de <span class="ltx">D</span> em relação a <span class="ltx">R</span> e <span class="ltx">S</span>, o segmento <span class="seg">AD</span> é igual à altura <span class="ltx">h<sub>a</sub></span> de um triângulo <span class="ltx">&Delta;ABC</span>.
+</p>
+</div>
+<figure>
+<img src="images/teorema138b.png" style="widht: 256px; height: 172px;" id="138b">
+<figcaption>Figura 3.39: <span class="ltx">R</span>, <span class="ltx">A</span>, <span class="ltx">S</span> e <span class="ltx">D</span> são pontos harmônicos.</figcaption>
+</figure>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Suponha um ponto <span class="ltx">N</span> construído conforme anunciado, ou seja, <span class="ltx">N</span> é conjugado harmônico de <span class="ltx">D</span> em relação a <span class="ltx">R</span> e <span class="ltx">S</span> (<a href="#fig_138b0" target="_blank">Figura 3.40</a>). É necessário verificar que $$\overline{A'D} = h_a.$$
+</p>
+<figure>
+<img src="images/teorema138b0.png" style="widht: 269px; height: 166px;" id="fig_138b0">
+<figcaption>Figura 3.40: <span class="ltx">N</span> é conjugado harmônico de <span class="ltx">D</span> em relação à <span class="ltx">R</span> e <span class="ltx">S</span>.</figcaption>
+</figure>
+<p>Pelo <a href="centros-tritangentes.html#div_harm1" target="_blank">Teorema 3.20</a> os pontos <span class="ltx">I<sub>b</sub></span> e <span class="ltx">I<sub>c</sub></span> dividem harmonicamente a bissetriz externa que contém <span class="seg">AI<sub>c</sub></span>, sendo <span class="ltx">A</span> o vértice de um triângulo (<a href="#fig_138b0" target="_blank">Figura 3.40</a>).
+</p>	
+<p>Os pés <span class="ltx">R</span> e <span class="ltx">S</span> das perpendiculares dos pontos <span class="ltx">I<sub>b</sub></span> e <span class="ltx">I<sub>c</sub></span> sobre a reta 
+<img src="images/retaAD.png" style="widht: 25px; height: 15px; display: inline-block;"> dividem o segmento <span class="seg">AD</span> harmonicamente (<a href="divisao_de_segmento.html#61" target="_blank">Teorema 3.3</a> de modo que <span class="ltx">A</span> é o conjugado harmônico de <span class="ltx">D</span>, portanto, <span class="ltx"><span class="seg">ND</span> &equiv; <span class="seg">AD</span></span> = <span class="ltx">h<sub>a</sub></span>.
+</p>
+</div>
+<div class="teorema" id="corolario3.37"><span class="negrito">Corolário 3.37</span></br>
+	<p>A altura <span class="ltx">h<sub>a</sub></span> de um triângulo <span class="ltx">&Delta;ABC</span> se relaciona com os exraios <span class="ltx">r<sub>b</sub></span> e <span class="ltx">r<sub>c</sub></span> pela fórmula: 
+	$$h_{a} = \frac{2 r_{b}r_{c}}{(r_{b} + r_{c})}.$$
+	As fórmulas para <span class="ltx">h<sub>b</sub></span> e <span class="ltx">h<sub>c</sub></span> são  análogas. 
+	</p>
+</div>
+<p>Com este corolário, desde que sejam conhecidos dois exraios relativos a dois lados do triângulo, é possível calcular a altura do triângulo relativa ao terceiro lado (<a href="#138b" target="_blank">Figura 3.39</a>).
+</p>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>O ponto <span class="ltx">D</span> obviamente divide o segmento <span class="ltx">RS = r_{b} - r_{c}</span> exteriormente na razão $$\frac{RD}{SD} = \frac{r_{b}}{r_{c}};$$ daí, usando o <a href="divisao_de_segmento.html#58" target="_blank">Corolário 3.2</a> e tomando 
+	$$ND = b = h_a \text{, } RS = a = (r_b - r_c)\text{, } \frac{r_{b}}{r_{c}} = \frac{p}{q}$$ (<span class="ltx">p</span> está para <span class="ltx">r<sub>b</sub></span> assim como <span class="ltx">q</span> está para <span class="ltx">r<sub>c</sub></span>) tem-se:
+	$$h_{a} = \frac{2 (r_{b} - r_{c}) r_{b}r_{c}}{(r_{b}^2 - r_{c}^2)}	
+	= \frac{2 r_{b}r_{c}}{(r_{b} + r_{c})}.$$
+</p>
+<p>Outro modo de obter este resultado é pelo Teorema <a href="#teo133" target="_blank">Teorema 3.29</a>:
+$$2S = ah_{a} = (a + c - b)r_{b} \qquad \text{e} \qquad 2S = ah_{a} = (a + b - c)r_{c};$$
+consequentemente:
+$$a (h_{a} - r_{b}) = (c - b)r_{b}, \qquad \text{e} \qquad a(r_{c} - h_{a}) = (c - b)r_{c},$$
+e dividindo as equações membro a membro:
+$\frac{(h_{a} - r_{b})}{(r_{c} - h_{a})} = \frac{r_{b}}{r_{c}}$.
+</p>
+<p>Isolando <span class="ltx">h<sub>a</sub></span>, obtemos: $$h_{a} = \frac{2 r_{b}r_{c}}{(r_{b} + r_{c})}.$$
+</p>
+</div>
+<p><span class="italico">Nota:</span> Pelo <a href="divisao_de_segmento.html#57" target="_blank">Teorema 3.1</a> os pontos <span class="ltx">S</span>, <span class="ltx">R</span> dividem a altura <span class="seg">AD</span> interna e exteriormente na razão $$\frac{(r_{b} - r_{c})}{(r_{b} + r_{c})}.$$
+</p>
+<p>Considere agora um triângulo <span class="ltx">&Delta;ABC</span> e sua circunferência circunscrita de centro <span class="ltx">O</span> e raio <span class="ltx">R</span>. 
+</p>
+<p>Seja <span class="ltx">A'</span> o ponto médio do lado <span class="seg">BC</span> e sejam <span class="ltx">X</span>, <span class="ltx">X<sub>a</sub></span>, <span class="ltx">X<sub>b</sub></span> e <span class="ltx">X<sub>c</sub></span> os pés das perpendiculares dos centros tritangentes, respectivamente, <span class="ltx">I</span>, <span class="ltx">I<sub>a</sub></span>, <span class="ltx">I<sub>b</sub></span>, <span class="ltx">I<sub>c</sub></span>, sobre o lado <span class="seg">BC</span>. Seja <span class="seg">IJ</span> um segmento paralelo ao lado <span class="seg">BC</span>, a partir do centro <span class="ltx">I</span> e que intersecta tanto o diâmetro <span class="seg">KK'</span> no ponto <span class="ltx">K''</span>, quanto o prolongamento de <span class="seg">I<sub>a</sub>X<sub>a</sub></span>, produzindo <span class="ltx">J</span>.
+ </p>
+<figure>
+<img src="images/coment144.png" style="widht: 256px; height: 286px;" id="f144">
+<figcaption>Figura 3.41: Triângulo <span class="ltx">&Delta;ABC</span> e sua circunferência circunscrita.</figcaption>
+</figure>
+<div class="teorema" id="teo_144a"><span class="negrito">Teorema 3.38</span></br>
+	<p>Em um triângulo <span class="ltx">&Delta;ABC</span>, conhecidos o raio <span class="ltx">R</span> da circunferência circunscrita e o lado <span class="ltx">a</span> (ou respectivamente: <span class="ltx">b</span>, <span class="ltx">c</span>), obtemos <span class="ltx">(r<sub>a</sub> - r)</span> (ou respectivamente <span class="ltx">(r<sub>b</sub> - r)</span>, <span class="ltx">(r<sub>c</sub> - r)</span>), ou seja,
+	$$(r_a - r) = 2\left[ R - \sqrt{R^2 - \frac{a^2}{4}} \right]$$
+</p>
+</div>
+<p>O <a href="#te0_144a">Teorema 3.38</a> relaciona um lado <span class="ltx">a</span> do triângulo, o raio da circunferência circunscrita, e a diferença entre o exraio relativo ao lado <span class="ltx">a</span> e o inraio, e para os demais lados é análogo.
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Considere o lado <span class="seg">BC</span> e <span class="ltx">BC = a</span>, além disso, suponha que sejam conhecidas as medidas <span class="ltx">R</span> e <span class="ltx">a</span>. Deseja-se verificar que a diferença <span class="ltx">(r<sub>a</sub> - r)</span> pode ser obtida. 
+	</p>
+	<p>Sendo o ponto <span class="ltx">K</span> o ponto médio do lado <span class="seg">II<sub>a</sub></span> (<a href="centros-tritangentes.html#t_diams" target="_blank">Teorema 3.22</a>) do triângulo <span class="ltx">&Delta;IJI<sub>a</sub></span>, temos:
+	$$A'K + A'K" = KK" = \frac{1}{2} I_{a}J = \frac{1}{2}(I_{a}X_{a} + X_{a}J) \text{,}$$
+	mas 
+	$$A'K" = X_{a}J = r ~~~\text{e}~~~ I_{a}X_{a} = r_{a}\text{;}$$
+	então: $$A'K = \frac{1}{2}(r_{a} - r).$$
+	</p>
+	<p>Por outro lado, observando na <a href="$f144" target="_blank">Figura 3.41</a>, <span class="ltx">A'K</span> pode ser determinado ao aplicar o Teorema de Pitágoras no triângulo retângulo <span class="ltx">&Delta;A'OC</span>, dando-nos:
+	<span class="ltx">(OC)<sup>2</sup> = (A'O)<sup>2</sup> + (A'C)<sup>2</sup></span>, em que <span class="ltx">A'O = R - A'K</span>, daí, <span class="ltx">A'K = R - A'O</span>. Além disto, <span class="ltx">A'C = a &sdot; <sup>1</sup>&frasl;<sub>2</sub></span>
+	$A'C = \frac{a}{2}$ e <span class="ltx">OC = R</span>.
+	</p>
+	<p>Fazendo as devidas substituições, obtemos a relação: 
+	$$A'K = R - \sqrt{R^2 - \frac{a^2}{4}}.$$
+	Além disso, $$(r_{a} - r) = 2A'K.$$
+</p>	
+	<p>Portanto, quando <span class="ltx">R</span> e <span class="ltx">a</span> são dados, o segmento <span class="ltx">A'K</span> é determinado, então tem-se os parâmetros: <span class="ltx">R</span>, <span class="ltx">a</span>, <span class="ltx">r<sub>a</sub> - r</span>. 
+	</p>
+</div>
+<p>O <a href="#teo_144b">Teorema 3.39</a> é semelhante ao <a href="#teo_144a">Teorema 3.38</a>, no entanto a relação está para a soma de dois exraios em vez de a diferença entre o inraio e um  exraio.
+</p>
+<div class="teorema" id="teo_144b"><span class="negrito">Teorema 3.39</span></br>
+	<p>Em um triângulo <span class="ltx">&Delta;ABC</span>, conhecidos o raio <span class="ltx">R</span> da circunferência circunscrita e a medida do lado <span class="ltx">a</span> (ou respectivamente: <span class="ltx">b</span>, <span class="ltx">c</span>), obtemos <span class="ltx">(r<sub>b</sub> + r<sub>c</sub>)</span> <span class="big">&#40;</span>ou respectivamente: <span class="ltx">(r<sub>a</sub> + r<sub>c</sub>)</span>, <span class="ltx">(r<sub>a</sub> + r<sub>b</sub>)</span><span class="big">&#41;</span></span>.
+</p>
+</div>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+<p>Considere em um triângulo o lado <span class="seg">BC</span> cuja medida é <span class="ltx">a</span>. Conhecido o raio <span class="ltx">R</span> da circunferência circunscrita, deseja-se mostrar que é possível determinar a soma dos exraios relativos aos lados <span class="seg">AC</span> e <span class="seg">AB</span>.
+</p>
+<p>Observe na <a href="#f144">Figura 3.41</a> que o ponto <span class="ltx">K'</span> é o ponto médio do lado <span class="seg">I<sub>b</sub>I<sub>c</sub></span> do trapézio <span class="ltx">I<sub>b</sub>I<sub>c</sub>X<sub>c</sub>X<sub>b</sub></span>, conforme mostrado no <a href="centros-tritangentes.html#t_diams" target="_blank">Teorema 3.22</a>, daí tem-se:
+$$A'K' = \frac{1}{2}(I_{b}X_{b} + I_{c}X_{c}) = \frac{1}{2}(r_{b} + r_{c}).$$
+</p>
+<p>Além disso, 
+\begin{align*}
+	A'K' 	&= K'K - A'K \\
+			&= 2R - \left[ R - \sqrt{R^2 - \frac{a^2}{4}} \right] \\
+			&= R + \sqrt{R^2 - \frac{a^2}{4}}.
+\end{align*}
+</p>
+	<p>Além disso,  <span class="ltx">(r<sub>b</sub> + r<sub>c</sub>) = 2A'K'</span>.
+	Assim tem-se os parâmetros: <span class="ltx">R</span>, <span class="ltx">a</span>, <span class="ltx">(r<sub>b</sub> + r<sub>c</sub>)</span>.
+</p>
+</div>
+
+<p>Resultados análogos são obtidos considerando os lados <span class="ltx">b = <span class="seg">AC</span></span>, <span class="ltx">c = <span class="seg">AB</span></span> do triângulo e o circundiâmetro perpendicular a esses lados.
+</p>
+<div class="teorema" id="c145"><span class="negrito">Corolário 3.40</span></br>
+	<p>A soma dos exraios de um triângulo é igual ao inraio aumentado quatro vezes o raio da circunferência circunscrita, ou seja, $$r_{a} + r_{b} + r_{c} = 4R + r.$$
+</p>
+</div>
+<p>Este corolário é uma consequência direta dos Teoremas  <a href="#teo_144a">3.38</a> e <a href="#teo_144b">3.39</a>. 
+</p>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Note na <a href="#f144">Figura 3.41</a> que <span class="ltx">KK' = 2R = A'K + A'K'</span>. Substituindo nesta equação as relações mostradas nos teoremas citados, temos:
+	$$2R = \frac{(r_{a} - r)}{2} + \frac{(r_{b} + r_{c})}{2} = \frac{(r_{a} - r + r_{b} + r_{c})}{2},$$
+	daí,
+	$$4R + r = r_{a} + r_{b} + r_{c}.$$
+</p>
+</div>
+<p>A seguir é apresentado o <span class="italico"><strong>Teorema de Carnot</strong></span>, que relaciona as distâncias do circuncentro aos lados do triângulo, o inraio e o raio da circunferência circunscrita.
+</p>
+<div class="teorema" id="carnot"><span class="negrito">Teorema 3.41 (Carnot)</span></br>
+<p>A soma das distâncias do circuncentro aos lados de um triângulo é igual ao raio da circunferência circunscrita somado ao inraio.
+</p>
+</div>
+<p>O <a href="#carnot">Teorema de Carnot</a> diz que <span class="ltx">OA' + OB' + OC' = R + r</span> em que <span class="ltx">OA'</span>, <span class="ltx">OB'</span> e <span class="ltx">OC'</span> são as distâncias do circuncentro <span class="ltx">O</span> aos lados, respectivamente, <span class="seg">BC</span>, <span class="seg">AC</span> e <span class="seg">AB</span>; <span class="ltx">R</span> é o raio da circunferência circunscrita, e <span class="ltx">r</span> é o inraio.
+Observe na figura abaixo:
+</p>
+<figure>
+<img src="images/carnot.png" style="widht: 207px; height: 194px;" id="f_carnot">
+<figcaption>Figura 3.42: Teorema de Carnot.</figcaption>
+</figure>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Verifique na <a href="#f144">Figura 3.41</a> que:
+	$$OA' = OK - A'K.$$
+	</p>
+	<p>Usando um resultado do <a href="#teo_144a" target="_blank">Teorema 3.38</a>, tem-se:
+	$$OA' = R - \frac{1}{2}(r_{a} - r).$$
+	Analogamente, $$OB' = R - \frac{1}{2}(r_{b} - r) \text{ e } OC' = R - \frac{1}{2}(r_{c} - r).$$
+	</p>
+	<p>Somando estas equações membro a membro, temos:
+	$$OA' + OB' + OC' = 3R - \frac{1}{2}(r_{a} - r) - \frac{1}{2}(r_{b} - r) - \frac{1}{2}(r_{c} - r).$$
+	Consequentemente, 
+	$$OA' + OB' + OC' = 3R - \frac{1}{2}\Big[ r_{a} + r_{b} + r_{c} - 3r \Big].$$ 
+	</p>
+	<p>Usando o <a href="#c145">Corolário 3.40</a>:
+	\begin{align*}
+		OA' + OB' + OC' &= 3R - \frac{1}{2}\Big[4R + r - 3r \Big]\\
+		&= 3R - \frac{1}{2}\Big[4R - 2r \Big]\\
+		&= 3R - (2R - r)\\
+		&= R + r.
+	\end{align*}
+	</p>
+</div> 
+ 
+<p><span class="negrito">Observação:</span> No caso de um triângulo obtusângulo, a distância do circuncentro ao lado oposto do ângulo obtuso deve ser tomada negativamente, pois o centro da circunferência circunscrita está na região externa ao triângulo. A explicação para este fato é dada a seguir:
+ </p>
+<figure>
+<img src="images/carnot2.png" style="widht: 332px; height: 334px;" id="f_carnot2">
+<figcaption>Figura 3.43: Teorema de Carnot para triângulos obtusângulos.</figcaption>
+</figure>
+<p>De fato, suponha um triângulo obtusângulo no vértice <span class="ltx">A</span>. Observe pela <a href="#f_carnot2">Figura 3.43</a> que o circuncentro encontra-se fora do triângulo. Assim, temos: 
+	\begin{align*}
+	OA' &= A'K - OK\\
+	\Rightarrow OA' &= -(OK - A'k)\\
+	\Rightarrow -OA' &= R - A'k\\
+	\Rightarrow -OA' &= R - \frac{1}{2}(r_{a} - r)
+	\end{align*} 
+	Portanto, a distância entre o circuncentro e o lado oposto ao ângulo obtusângulo deve ser tomada negativamente.
+ </p>
+ 
+ <div class="teorema" id="t152"><span class="negrito">Teorema 3.42 (Euler)</span></br>
+<p>A distância <span class="ltx">d</span> entre o circuncentro e o incentro de um triângulo é dada pela relação: <span class="ltx">d<sup>2</sup> = R(R - 2r)</span>, onde <span class="ltx">R</span> e <span class="ltx">r</span> são o raio da circunferência circunscrita e o raio da inscrita, respectivamente.
+ </p>
+ </div>
+<figure>
+<img src="images/eulers152.png" style="widht: 237px; height: 234px;" id="f_euler152">
+<figcaption>Figura 3.44: Teorema de Euler.</figcaption>
+</figure>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Sendo <span class="ltx">O</span> o circuncentro do triângulo <span class="ltx">&Delta;ABC</span>, e <span class="ltx">I</span> seu incentro, a extensão de <span class="seg">AI</span> intersecta a circunferência em <span class="ltx">K</span>. Como a reta 
+	<img src="images/retaAI.png" style="widht: 25px; height: 15px; display: inline-block;">
+	é bissetriz interna do vértice <span class="ltx">A</span>, <span class="ltx">K</span> é o ponto médio do arco 
+	<img src="images/arcoBC.png" style="widht: 25px; height: 15px; display: inline-block;">. Tomando o segmento <span class="seg">KO</span> e estendendo-o para atravessar a circunferência circunscrita, determina-se o ponto <span class="ltx">K'</span>. Assim, <span class="ltx">2R = KK'</span> é diâmetro da circunferência circunscrita do triângulo <span class="ltx">&Delta;ABC</span>. 
+	</p>
+	<p>Seja <span class="ltx">Z</span> o pé da perpendicular do incentro <span class="ltx">I</span> sobre o lado <span class="seg">AB</span>, então <span class="ltx">IZ = r</span>. 
+	Vamos verificar que o triângulo <span class="ltx">&Delta;AZI</span> é semelhante ao triângulo <span class="ltx">&Delta;KCK'</span>. Note que 
+	<img src="images/angZAIequivIAC.png" style="widht: 15px; height: 15px; display: inline-block;">
+	pois a reta <img src="images/retaAK.png" style="widht: 25px; height: 15px; display: inline-block;">
+	é bissetriz interna. Note que <img src="images/AZIigualKCK.png" style="widht: 15px; height: 15px; display: inline-block;">, a primeira igualdade se dá por construção e a segunda pelo fato de <span class="ltx">KK'</span> ser diâmetro. Daí, a semelhança.
+	Portanto, $$\frac{IZ}{KC} = \frac{AI}{KK'};$$ e consequentemente, $$IZ.KK' = AI.KC.$$ 
+	</p>
+	<p>Substituindo <span class="ltx">IZ</span> por <span class="ltx">r</span> e <span class="ltx">KK'</span> por <span class="ltx">2R</span>, tem-se  $$2Rr = AI.KC.$$ Como <span class="ltx">K</span> é o centro (<a href="divisao_de_segmento.html#t_diams" target="_blank">Teorema 3.22</a> e <a href="#teorema122a3">Figura 3.28</a>) de uma circunferência que passa pelo incentro <span class="ltx">I</span> e pelos vértices <span class="ltx">B</span> e <span class="ltx">C</span>, <span class="ltx">KC = BK = IK</span>
+ e <span class="ltx">2Rr = AI.IK</span>.
+	</p>
+	<p>Sejam <span class="ltx">V</span> e <span class="ltx">U</span> as interseções da circunferência circunscrita com a extensão de <span class="seg">IO</span>. Pelo <a href="arcos_de_circ.html#teo_cordas" target="_blank">Teorema das Cordas</a>,
+	$$AI.IK = VI.IU,$$ e tomando $$VI.IU = (VO - IO).(UO + IO) = (R - d).(R + d),$$ temos:
+	$$2Rr = (R - d).(R + d)$$
+	$$\Leftrightarrow	2Rr = (R^2 - d^2)$$
+	$$\Leftrightarrow	d^2 = (R^2 - 2Rr)$$
+	$$\Leftrightarrow d^2 = R(R - 2r).$$
+</p>
+</div> 
+<p>O Teorema a seguir relaciona a distância entre o circuncentro e os demais centros tritangentes.
+</p>
+<div class="teorema" id="t153"><span class="negrito">Teorema 3.43</span></br>
+	<p>As distâncias entre o circuncentro <span class="ltx">O</span> e os centros ex-inscritos <span class="ltx">I<sub>a</sub></span>, <span class="ltx">I<sub>b</sub></span>, <span class="ltx">I<sub>c</sub></span> do triângulo <span class="ltx">&Delta;ABC</span> são dadas pelas relações:
+	$$(OI_a)^2 = R(R + 2r_a), \qquad (OI_b)^2 = R(R + 2r_b)		\qquad (OI_c)^2 = R(R + 2r_c)$$
+</p>
+</div>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+<figure>
+<img src="images/teo_Euler01.png" style="widht: 251px; height: 279px;" id="teo_Euler01">
+<figcaption>Figura 3.45: Os triângulos <span class="ltx">&Delta;ATI<sub>a</sub></span> e <span class="ltx">&Delta;K'CK</span> são semelhantes.</figcaption>
+</figure>
+	<p>Consideremos o vértice <span class="ltx">A</span> e o centro <span class="ltx">I<sub>a</sub></span> da circunferência ex-inscrita (<a href="#teo_Euler01">Figura 3.45</a>). Deseja-se mostrar inicialmente que a distância entre <span class="ltx">I<sub>a</sub></span> e o circuncentro <span class="ltx">O</span> é dado por: $$(OI_{a})^2 = R(R + 2r_a).$$ Para as demais relações, a demonstração é análoga.
+	</p>
+	<p>Seja <span class="ltx">T</span> o pé da perpendicular do centro <span class="ltx">I<sub>a</sub></span> sobre o lado <span class="seg">AB</span>, os demais pontos recebem as mesmas atribuições que na <a href="#f_euler152">Figura 3.44</a>.
+	</p>
+	<p>Como <span class="seg">AK</span> é bissetriz interna, 
+	<img src="images/TAKequivKAC.png" style="widht: 25px; height: 15px; display: inline-block;">, e 
+	<img src="images/KACequivKKC.png" style="widht: 25px; height: 15px; display: inline-block;"> 
+	pois estão inscritos no arco 
+	<img src="images/arcoKC.png" style="widht: 25px; height: 15px; display: inline-block;">. 
+	Logo 
+	<img src="images/TAKequivKKC.png" style="widht: 25px; height: 15px; display: inline-block;">. 
+	Além disso, os triângulos <span class="ltx">&Delta;ATI<sub>a</sub></span> e <span class="ltx">&Delta;K'CK</span> são retângulos, respectivamente em 
+	<img src="images/angATIa.png" style="widht: 25px; height: 15px; display: inline-block;"> e em 
+	<img src="images/angKCK.png" style="widht: 25px; height: 15px; display: inline-block;">. Portanto eles são semelhantes.
+	</p>
+	<p>Desta semelhança temos: 
+	\begin{align*}
+		\frac{TI_a}{KC} = \frac{AI_a}{KK'} &\Leftrightarrow TI_a \cdot KK' = KC.AI_a \\
+		&\Leftrightarrow r_a \cdot 2R = KC.AI_a.
+	\end{align*}
+	</p>
+	<p id="eq3">Pelo Teorema <a href="t_diams" target="_blank">Teorema 3.22</a>, o segmento <span class="seg">II<sub>a</sub></span> é diâmetro de uma circunferência de centro <span class="ltx">K</span> e que contém o vértice <span class="ltx">C</span>. Logo <span class="ltx">KC = KI<sub>a</sub></span> e assim temos
+	\begin{equation}
+	r_a \cdot 2R  = KI_{a} \cdot AI_{a}. \hspace{5 cm} (3.5)
+	\end{equation}
+	 </p>
+	<p>Agora, sejam <span class="ltx">R</span> e <span class="ltx">P</span> os extremos do diâmetro da circunferência circunscrita cuja extensão passa pelo centro ex-inscrito <span class="ltx">I<sub>a</sub></span>. Seja <span class="seg">SQ</sub></span> uma corda perpendicular ao lado <span class="seg">BC</span> cuja extensão passa pelo centro ex-inscrito <span class="ltx">I<sub>a</sub></span>. Observe na <a href="#teo_Euler02">Figura 3.46</a>:
+	</p>
+<figure>
+<img src="images/teo_Euler02.png" style="widht: 205px; height: 213px;" id="teo_Euler02">
+<figcaption>Figura 3.46: Aplicação da potência do ponto.</figcaption>
+</figure>
+	<p>Aplicando o <a href="arcos_de_circ.html#teo620" target="_blank">Teorema 2.15</a> (Potência do Ponto) sobre os segmentos <span class="seg">AI<sub>a</sub></span> e <span class="seg">RI<sub>a</sub></span>, e pela <a href="#eq3">equação 3.5</a> temos:
+	$$KI_{a}.AI_{a} = PI_{a}.RI_{a} = 2Rr_a.$$
+	</p>
+	<p>Note que $$OI_a = RI_a - R \Rightarrow RI_a = OI_a + R$$ e $$OI_a = PI_a + R \Rightarrow PI_a = OI_a - R.$$
+Assim,
+	$$2Rr_a = PI_{a}.RI_{a} = (OI_a - R)(OI_a + R) = (OI_a)^2 - R^2,$$
+ou equivalente,
+	$$(OI_a)^2 = 2Rr_a+ R^2 = R(R + 2r_a).$$
+</p>
+</div>
+
+<p>Estabelecidas as relações de distância entre o circuncentro e os centros ex-inscritos, o corolário seguinte relaciona as distâncias entre os centros tritangentes.
+</p>
+<div class="teorema" id="cor_dist_cen_trit"><span class="negrito">Corolário 3.44</span></br>
+	<p>(a) Distância entre o incentro um centro ex-inscrito: o quadrado desta distância é igual a quatro vezes o raio da circunferência circunscrita, multiplicado pela diferença entre o raio ex-inscrito considerado e o raio da circunferência inscrita, ou seja: 
+				$$(II_a)^2 = 4R(r_a - r), \qquad (II_b)^2 = 4R(r_b - r), \qquad (II_c)^2 = 4R(r_c - r).$$
+	</p>			
+	<p>(b) Distância entre dois centros ex-inscritos: o quadrado desta distância é igual a quatro vezes o raio circunscrito, multiplicado pela soma entre os raios ex-inscritos considerados, ou seja:
+				$$(I_bI_c)^2 = 4R(r_b + r_c), \qquad (I_aI_b)^2 = 4R(r_a + r_b), \qquad (I_aI_c)^2 = 4R(r_a + r_c).$$ 
+	</p>
+</div>
+	<p>Na demonstração do <a href="#cor_dist_cen_trit">Corolário 3.44</a>, usaremos a representação na <a href="#f154">Figura 3.47</a> e o Teorema das Medianas (<a href="pontos_notaveis.html#teo_medianas" target="_blank">Teorema 2.19</a>):
+</p>
+<figure>
+<img src="images/teo154.png" style="widht: 190px; height: 247px;" id="f154">
+<figcaption>Figura 3.47: Relações entre o incentro e um centro ex-inscrito.</figcaption>
+</figure>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Inicialmente vamos verificar a relação entre o incentro <span class="ltx">I</span> e o centro ex-inscrito <span class="ltx">I<sub>a</sub></span>, ou seja, $$(II_a)^2 = 4R(r_a - r).$$
+	</p>
+	<p>Considere, o triângulo <span class="ltx">&Delta;OII<sub>a</sub></span> e sua mediana <span class="seg">OK</span>.  Pelo Teorema das Medianas, temos:
+	$$2(OK)^2 = (OI)^2 + (OI_a)^2 - \frac{(II_a)^2}{2}.$$
+	</p>
+	<p>Tomando as relações: <span class="ltx">OI<sup>2</sup> = R(R - 2r)</span> (veja o <a href="#t152" target="_blank">Teorema 3.42</a>), <span class="ltx">OI<sub>a</sub><sup>2</sup> = R(R - 2r<sub>a</sub>)</span> (veja o <a href="#t153" target="_blank">Teorema 3.43</a>) e <span class="ltx">OK = R</span>; e substituindo adequadamente, vem:
+	$$2R^2 = R(R - 2r) + R(R + 2r_a) - \frac{II_a^2}{2}$$
+	daí, multiplicando tudo por 2, vem:
+	$$4R^2 = 2R(R - 2r) + 2R(R + 2r_a) - II_a^2 \quad \Leftrightarrow \quad 
+	II_a^2 = 2R^2 - 4Rr + 2R^2 + 4Rr_a - 4R^2,$$
+	e finalmente: $$II_a^2 = - 4Rr + 4Rr_a = 4R(r_a - r).$$
+	</p>
+	<p>De modo semelhante obtem-se resultado análogo para <span class="ltx">II<sub>b</sub></span> e <span class="ltx">II<sub>c</sub></span>.
+	</p>
+	<p>Agora considere o triângulo <span class="ltx">&Delta;OI<sub>b</sub>I<sub>c</sub></span>, na <a href="#f154b">Figura 3.48</a>. Vamos verificar a relação entre os centros ex-inscritos <span class="ltx">I<sub>b</sub></span> e <span class="ltx">I<sub>c</sub></span>, ou seja, $$(I_bI_c)^2 = 4R(r_b - r_c).$$ 
+	</p>
+<figure>
+<img src="images/teo154b.png" style="widht: 289px; height: 203px;" id="f154b">
+<figcaption>Figura 3.48: Relações entre dois centros ex-inscritos.</figcaption>
+</figure>
+<p>Aplicando o Teorema das Medianas, tem-se:
+	$$2(OK')^2 = (OI_b)^2  + (OI_c)^2 - \frac{(I_bI_c)^2}{2}.$$
+</p>
+<p>Tomando as relações <span class="ltx">OI<sub>b</sub><sup>2</sup> = R(R - 2r<sub>b</sub>)</span>,
+<span class="ltx">OI<sub>c</sub><sup>2</sup> = R(R - 2r<sub>c</sub>)</span> e <span class="ltx">OK' = R</span>, temos:
+\begin{align*}
+	2R^2 	&= R(R + 2r_b)  + R(R + 2r_c) - \frac{(I_bI_c)^2}{2}\\
+			&= R^2 + 2Rr_b + R^2 + 2Rr_c - \frac{(I_bI_c)^2}{2}\\
+	\text{que nos dá:}\\
+	\frac{(I_bI_c)^2}{2}&= 2Rr_b + 2Rr_c\\
+	\Rightarrow (I_bI_c)^2&= 4Rr_b + 4Rr_c\\
+	 &= 4R(r_b + r_c).	
+\end{align*}
+</p>
+<p>De modo semelhante obtem-se resultado análogo para <span class="ltx">I<sub>a</sub>I<sub>b</sub></span> e <span class="ltx">I<sub>a</sub>I<sub>c</sub></span>.
+</p>
+</div>
+<div class="teorema" id="t155"><span class="negrito">Teorema 3.45</span></br>
+	<p>Se a distância <span class="ltx">d</span> entre  os centros de duas circunferências dadas: uma de centro <span class="ltx">O</span> e raio <span class="ltx">R</span>, <span class="ltx">(O, R)</span>; e outra de centro <span class="ltx">I</span> e raio <span class="ltx">r</span>, <span class="ltx">(I, r)</span> satisfaz a relação:
+	$$OI^2 = d^2 = R(R - 2r),$$
+	então um número infinito de triângulos pode ser circunscrito ao redor da circunferência <span class="ltx">(I, r)</span>, que também devem ser inscritos na circunferência <span class="ltx">(O, R)</span>.
+</p>
+</div>
+<p>O <a href="#t155" target="_blank">Teorema 3.45</a> é conhecido como Teorema de <abbr title="Jean Victor Poncelet, matemático francês do século XIX (MUNIZNETO)">Poncelet</abbr>. Ele supõe a existência de duas circunferências distintas tais que se aplica o <a href="#t152" target="_blank">Teorema de Euler </a>. Ele não associa duas circunferências a um triângulo, mas revela a existência de infinitos triângulos associados a tais circunferências.
+</p>
+<figure>
+<img src="images/teo155.png" style="widht: 218px; height: 195px;" id="f_155">
+<figcaption>Figura 3.49: Na condição enunciada no <a href="#t152">Teorema 3.45</a> (Euler), existem infinitos triângulos inscritos/circunscritos.</figcaption>
+</figure>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+<p>Sejam as circunferências <span class="ltx">(I, r)</span> e <span class="ltx">(O, R)</span> tais que a distância <span class="ltx">d</span> entre os centros <span class="ltx">I</span> e <span class="ltx">O</span> satisfaz a equação: <span class="ltx">d<sup>2</sup> = R(R - 2r)</span>. O Teorema de Euler garante a existência de um triângulo <span class="ltx">&Delta;ABC</span> tal que tais circunferências são, respectivamente, a inscrita e a circunscrita.
+</p>
+<figure>
+<img src="images/poncelet.png" style="widht: 228px; height: 239px;" id="poncelet">
+<figcaption>Figura 3.50: Teorema de Poncelet.</figcaption>
+</figure>
+	</p>
+	<p>Tomemos aleatoriamente um ponto <span class="ltx">A'</span> na circunferência de centro <span class="ltx">O</span>. A partir de <span class="ltx">A'</span> é possível traçar dois segmentos tangentes à circunferência de centro <span class="ltx">I</span>, tais que interceptam a circunferência de centro <span class="ltx">O</span> nos pontos <span class="ltx">B'</span> e <span class="ltx">C'</span>. Sejam <span class="ltx">T</span> e <span class="ltx">P</span> os respectivos pontos de tangência. Pelo <a href="arcos_de_circ.html#teo_619" target="_blank">Teorema 2.14</a> os triângulos <span class="ltx">&Delta;A'TI</span> e <span class="ltx">&Delta;A'PI</span> são congruentes, logo a reta 
+	<img src="images/retaA'I.png" style="widht: 25px; height: 15px; display: inline-block;">
+	é bissetriz do ângulo <img src="images/angB'A'C'.png" style="widht: 25px; height: 15px; display: inline-block;">.
+	 </p>
+	<p>Temos que a circunferência <span class="ltx">(O, R)</span> ainda é circunscrita ao triângulo <span class="ltx">&Delta;A'B'C'</span> pois contém seus vértices. Resta mostrar que a circunferência <span class="ltx">(I, r)</span> está inscrita no mesmo triângulo, ou seja, <span class="seg">B'C'</span> tangencia esta circunferência.
+	</p>
+	<p>Suponha que a circunferência <span class="ltx">(I, r)</span> não está inscrita no triângulo <span class="ltx">&Delta;A'B'C'</span>. Assim existe uma circunferência <span class="ltx">(I', r')</span> inscrita no mesmo, tal que <span class="ltx">d<sup>2</sup> = R(R - 2r')</span>, garantido pelo Teorema de Euler. Temos por hipótese que <span class="ltx">d<sup>2</sup> = R(R - 2r)</span>, logo, <span class="ltx">r' = r</span>.
+</p>	
+	<p>Por outro lado temos que <span class="ltx">I</span> está na bissetriz do vértice <span class="ltx">A'</span> de modo que <span class="ltx">IT = IP = r</span>, assim <span class="ltx">I = I'</span>, ou seja, <span class="ltx">(I', r') = (I, r)</span>, o que é uma contradição.
+</p>
+</div>
+
+
+        </div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>

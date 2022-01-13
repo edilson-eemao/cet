@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <title>Circunferência de Apolônio</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>CIRCUNFERÊNCIA DE APOLÔNIO</h1></div>
+			</div>
+			
+			
+			<nav id="menu">
+					
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+					<!-- inicio esquerda  -->
+<h2 id="a_circunferencia_de_apolonio">3.3 A Circunferência de Apolônio</h2>
+<p>A Circunferência de Apolônio é o <span class="negrito"><abbr title="Lugar Geométrico é um conjunto de pontos que satisfazem uma propriedade geométrica.">lugar geométrico</abbr></span> dos pontos cuja razão das distâncias entre ele e dois pontos fixos é constante. Ela está diretamente ligada à divisão harmônica de um segmento (veja <a href="divisao_de_segmento.html#divisao_harmonica" target="_blank">Seção 3.1.2</a>).
+</p>
+<div class="teorema" id="circ_apol_0">
+	<span class="negrito">Teorema 3.15</span></br>
+	<p>Sejam <span class="ltx">A</span> e <span class="ltx">B</span> dois pontos distintos e seja <span class="ltx">K &gt;0</span> (<span class="ltx">K &ne; 1</span>). O lugar geométrico dos pontos <span class="ltx">P</span> tais que $$\frac{AP}{BP} = K$$ é a circunferência de diâmetro <span class="seg">CD</span> em que <span class="ltx">C</span> e <span class="ltx">D</span> dividem, respectivamente, o segmento <span class="seg">AB</span>, interna e exteriormente, na razão <span class="ltx">K</span>.
+	</p>
+</div>
+
+<p>A circunferência citada no <a href="#circ_apol_0">Teorema 3.15</a> é conhecida como <span class="italico">Circunferência de Apolônio</span> e é denotada por 
+<img src="images/CaABK.png" style="widht: 25px; height: 15px; display: inline-block;">.
+</p>
+<p>Note que, se <span class="ltx">K = 1</span>, teríamos que <span class="ltx">AP = BP</span> e pelo Teorema <a href="teo_int_reta_circ.html#teo210" target="_blank">Teorema 2.4</a>, <span class="ltx">P</span> seria ponto da mediatriz de <span class="seg">AB</span> e não de uma circunferência. 
+</p>
+<figure>
+<img src="images/circ_apol_1.png" style="widht: 257px; height: 164px;" id="circ_apol_1">
+<figcaption>Figura 3.16: <span class="ltx">C</span> e <span class="ltx">D</span> são conjugados harmônicos de <span class="seg">AB</span></figcaption>
+</figure>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+<p>Observemos que os pontos <span class=""ltx>C</span>, <span class=""ltx>D</span> &in; <img src="images/CaABK.png" style="widht: 25px; height: 15px; display: inline-block;">.
+Sejam <span class="ltx">A</span> e <span class="ltx">B</span> tais pontos fixos e consideremos o segmento <span class="seg">AB</span> e os pontos <span class="ltx">C</span> e <span class="ltx">D</span>, colineares, tais que <span class="ltx">C</span> divide o segmento <span class="seg">AB</span> interidnte, e <span class="ltx">D</span> o divide exteriormente, em uma razão real <span class="ltx">K</span> (<span class="ltx">K &gt; 0</span> e <span class="ltx">K &ne; 1</span>). Portanto, <span class="ltx">C</span> não é ponto médio do segmento <span class="seg">AB</span>, e <span class="ltx">C</span> e <span class="ltx">D</span> são conjugados harmônicos em relação ao mesmo. Deste modo, temos que $$\frac{AC}{BC} = \frac{AD}{BD} = K,$$ e <span class="ltx">C</span> e <span class="ltx">D</span> são pontos desse lugar geométrico.
+</p>	 
+<p>Primeiramente, seja <span class="ltx">P</span> um ponto no mesmo lugar geométrico, mas diferente de <span class="ltx">C</span> e de <span class="ltx">D</span>, tal que 
+<img src="images/fracaoAPPB2.png" style="widht: 38px; height: 28px; display: inline-block;">. Necessariamente <span class="ltx">P</span> não pertence à reta <img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;">, pois <span class="ltx">C</span> e <span class="ltx">D</span> são conjugados, logo são únicos. Queremos verificar que o ponto <span class="ltx">P</span> pertence à circunferência de diâmetro <span class="seg">CD</span>.
+</p>
+<p>De fato, temos que 
+<img src="images/fracaoAPBPigualKigualACBC.png" style="widht: 50px; height: 25px; display: inline-block;">. 
+Pelo Teorema da Bissetriz Interna <a href="bissetriz.html#teo_biss_int" target="_blank">(Teorema 3.8)</a>, <span class="seg">PC</span> é bissetriz interna do ângulo 
+<img src="images/angAPB.png" style="widht: 25px; height: 15px; display: inline-block;">.
+ </p>
+<p>Sabemos também que <img src="images/fracaoAPBPigualKigualADBD.png" style="widht: 50px; height: 25px; display: inline-block;">. 
+Pelo Teorema da Bissetriz Externa <a href="bissetriz.html#teo_biss_ext" target="_blank">(Teorema 3.9)</a> <span class="seg">PD</span> é bissetriz externa do ângulo 
+<img src="images/angAPB.png" style="widht: 25px; height: 15px; display: inline-block;">. Sendo assim o ângulo 
+<img src="images/angCPD.png" style="widht: 25px; height: 15px; display: inline-block;">
+é reto e <span class="ltx">P</span> pertence a uma circunferência de diâmetro <span class="seg">CD</span> (veja <a href="arcos_de_circ.html#coro614" target="_blank">Corolário 2.9</a>).
+</p>
+<p>Agora, por outro lado, suponha que <span class="ltx">P</span> seja um ponto na circunferência de diâmetro <span class="seg">CD</span>. Queremos verificar que o ponto <span class="ltx">P</span> &in; 
+<img src="images/CaABK.png" style="widht: 25px; height: 15px; display: inline-block;">, ou seja, $$K = \frac{AP}{BP}.$$
+</p>
+<figure>
+<img src="images/circ_apol_2.png" style="widht: 270px; height: 165px;" id="circ_apol_2">
+<figcaption>Figura 3.17: <span class="ltx">P</span> é ponto na circunferência de diâmetro <span class="seg">CD</span>.</figcaption>
+</figure>
+<p>Considere os pontos <span class="ltx">M</span> e <span class="ltx">N</span> tais que <span class="ltx">M</span> está entre <span class="ltx">A</span> e <span class="ltx">P</span>, e <span class="seg">BM</span> é paralelo a <span class="seg">DP</span>; e <span class="ltx">N</span> está no prolongamento do segmento <span class="seg">AP</span>, no sentido de <span class="ltx">P</span>, de modo que <span class="seg">BN</span> seja paralelo a <span class="seg">CP</span>, como ilustrado abaixo:
+</p>
+<figure>
+<img src="images/circ_apol_3.png" style="widht: 270px; height: 210px;" id="circ_apol_3">
+<figcaption>Figura 3.18: <span class="seg">BN</span> é paralelo a <span class="seg">CP</span> e <span class="seg">BM</span> é é paralelo a <span class="seg">DP</span></figcaption>
+</figure>
+<p>Aplicando o Teorema Fundamental de Proporcionalidade <a href="pontos_notaveis.html#teofundprop" target="_blank">(Teorema 2.17)</a>, e olhando para o triângulo <span class="ltx">&Delta;ABN</span> e o segmento <span class="seg">CP</span>, temos $$\frac{AC}{BC}=\frac{AP}{PN},$$ logo $$\frac{AP}{PN} = K.$$
+</p>
+<p>Além disso, pelo mesmo Teorema e desta vez olhando o triângulo <span class="ltx">&Delta;APD</span> e para o segmento <span class="seg">MB</span>, temos $$\frac{AD}{BD}=\frac{AP}{MP},$$ logo $$\frac{AP}{MP} = K.$$
+</p>
+<p id="eq:apol">Daí, 
+\begin{equation}
+	K = \frac{AP}{MP} = \frac{AP}{NP} \Rightarrow MP = NP.	\hspace{10 cm} (3.2)
+\end{equation}
+</p>
+<p>Devido ao paralelismo entre <span class="seg">BM</span> e <span class="seg">DP</span>, e entre <span class="seg">NB</span> e <span class="seg">CP</span>, notamos que 
+$$M\widehat{B}N \equiv C\widehat{P}D = 90^{\circ};$$ e pelo <a href="arcos_de_circ.html#coro614" target="_blank">Corolário 2.9</a> temos que <span class="seg">MN</span> é diâmetro de uma semicircunferência que contém <span class="ltx">B</span>. Além disso, como <span class="ltx">MP = NP</span>, temos que <span class="ltx">P</span> é ponto médio de <span class="seg">MN</span>, logo <span class="ltx">P</span> é centro da semicircunferência e <span class="ltx">MP = NP= BP</span>. Pela <a href="#eq:apol">Equação 3.2</a> temos: $$K = \frac{AP}{BP}.$$
+</p>
+</div> 
+<p>Portanto, a Circunferência de Apolônio são pontos que possuem a propriedade citada no início desta seção e é definida a partir da fixação dos conjugados harmônicos de um dado segmento, desde que a razão seja diferente de 1. Agora pode ser enunciado o seguinte Teorema <a href="#Teo_apol" target="_blank">(3.16)</a>:
+</p>
+<div class="teorema" id="Teo_apol">
+	<span class="negrito">Teorema 3.16</span></br>
+	<p>Em um triângulo escaleno, se <span class="ltx">M</span> e <span class="ltx">N</span> são conjugados harmônicos de um dos seus lados e <span class="ltx">M</span> é o pé da bissetriz interna relativa a este lado, então o vértice desta bissetriz está em uma, e somente uma, Circunferência de Apolônio.
+	</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Considere o triângulo <span class="ltx">&Delta;ABC</span>, seu lado <span class="seg">BC</span>, sua bissetriz <span class="seg">AM</span> e o ponto <span class="ltx">N</span> na reta 
+	<img src="images/retaBC.png" style="widht: 25px; height: 15px; display: inline-block;">, 
+	tal que <span class="ltx">M</span> e <span class="ltx">N</span> são conjugados harmônicos do lado <span class="seg">BC</span>. 
+	Deseja-se mostrar que existe uma única circunferência de Apolônio associada ao lado <span class="seg">BC</span> do triângulo. 
+	</p>
+<figure>
+<img src="images/circ_apol_4.png" style="widht: 320px; height: 114px;" id="circ_apol_4">
+<figcaption>Figura 3.19: <span class="ltx">M</span> e <span class="ltx">N</span> são conjugados harmônicos do lado <span class="seg">BC</span>.</figcaption>
+</figure>
+	<p>Pelo Teorema da bissetriz interna, temos $$\frac{AB}{BM} = \frac{AC}{CM} \Rightarrow \frac{AB}{AC} = \frac{BM}{CM}.$$
+	</p>
+	<p>Pela <a href="divisao_de_segmento.html#def:conj_harm" target="_blank">Definição 3.1</a> (conjugados harmônicos) temos $$\frac{BM}{CM} = \frac{BN}{CN}.$$
+	</p>
+	<p>Logo temos que $$\frac{AB}{AC} = \frac{BN}{CN}$$ e, pelo Teorema da Bissetriz Externa <a href="bissetriz.html#teo_biss_ext" target="_blank">(3.9)</a>, <span class="seg">AN</span> é bissetriz externa. 
+	</p>
+	<p>Assim <span class="seg">AN</span> e <span class="seg">AM</span> são perpendiculares  e <span class="seg">MN</span> é diâmetro de uma semicircunferência que contém o vértice <span class="ltx">A</span>. Finalmente,
+	$$\frac{BM}{CM} = \frac{BN}{CN} = \frac{AB}{AC}$$
+	mostra que a circunferência de diâmetro <span class="seg">MN</span> é circunferência de Apolônio.
+	</p>
+	<p>Agora, suponha que exista outra circunferência de Apolônio que contenha o vértice <span class="ltx">A</span> e possua diâmetro <span class="seg">MN'</span>. Como <span class="seg">MN'</span> está na reta 
+	<img src="images/retaBC.png" style="widht: 25px; height: 15px; display: inline-block;"> e <span class="ltx">M</span> pode possuir apenas um conjugado em relação aos pontos <span class="ltx">B</span> e <span class="ltx">C</span>, temos que <span class="ltx">N' = N</span>. 
+	</p>
+</div>
+
+<p>Deste modo, um triângulo escaleno está associado a três circunferências de Apolônio, tais que passam por um vértice e pelo pé da bissetriz relativa a este vértice. 
+</p>
+<div class="teorema" id="Cor_apol">
+	<span class="negrito">Corolário 3.17</span></br>
+	<p>Em um triângulo:</p>
+	<p></p> (a) Isósceles a base não possui círculo de Apolônio associado.
+	<p></p> (b) Equilátero, não há círculo de Apolônio associado.
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Observe que na base de um triângulo isósceles e nos lados de um triângulo equilátero o ponto médio coincide com o pé da bissetriz. Neste caso a divisão ocorre na razão 1, portanto não há formação de círculo, isto é, as bissetrizes externas ficam paralelas aos lados opostos e o ponto conjugado de cada pé de bissetriz não é determinado.
+	</p>
+</div>
+
+
+        </div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>

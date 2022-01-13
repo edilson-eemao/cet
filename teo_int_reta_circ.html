@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <title>Teorema da Interseção Reta-circunferência</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>TEO. INTERSEÇÃO RETA-CIRCUNFERÊNCIA</h1></div>
+			</div>
+			
+			
+			<nav id="menu">
+					
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+	<!-- inicio esquerda  -->
+<h2 id="circunferencias">2 CIRCUNFERÊNCIAS</h2>
+<p>Neste capítulo, faremos um estudo das propriedades e conceitos básicos das circunferências no plano: teoremas, ângulos centrais, 
+ângulos inscritos, comprimento, área, diâmetro, arcos, posições relativas com uma reta, com outra circunferência e tangências. 
+Caso o leitor não esteja habituado às propriedades básicas da geometria plana, especificamente dos triângulos, recomenda-se 
+consultar <a href="conclusao_e_referencias.html#referencias" target="_blank">[4]</a> sobre o assunto. 
+</p>
+<div class="teorema" id="definicao2.1">
+<span class="negrito">Definição 2.1</span></br>
+<p>Dados um ponto <span class="ltx">O</span> e um número real positivo <span class="ltx">r</span>, a circunferência de centro em <span class="ltx">O</span>
+e raio <span class="ltx">r</span>, denotada por <span class="ltx">&Gamma;</span><span class="ltx">(O, r)</span>, é o conjunto de todos os pontos <span class="ltx">X</span>
+tais que a distância entre os pontos <span class="ltx">X</span> e <span class="ltx">O</span> é igual ao raio <span class="ltx">r</span>.</p>
+</div>
+<div class="teorema">
+<span class="negrito">Definição 2.2</span></br>
+<p>Dizemos que uma reta <span class="ltx">t</span> é <span class="italico">tangente</span> à circunferência <span class="ltx">&Gamma;</span>, ou ainda, 
+que a reta <span class="ltx">t</span> e a circunferência <span class="ltx">&Gamma;</span> são <span class="italico">tangentes</span> se 
+<span class="ltx">t</span> e <span class="ltx">&Gamma;</span> possuem exatamente um ponto em comum. Se <span class="ltx">P</span> é tal ponto, 
+então <span class="ltx">P</span> é o  <span class="italico">ponto de tangência</span> <a href="conclusao_e_referencias.html#referencias" target="_blank">[4]</a>.</p>
+</div>
+<div class="teorema">
+<span class="negrito">Definição 2.3</span></br>
+<p>Sejam <span class="ltx">A</span> e <span class="ltx">B</span> pontos distintos. O conjunto dos pontos <span class="ltx">A</span>,
+<span class="ltx">X</span>, <span class="ltx">B</span> tais que <span class="ltx">X</span> são os pontos entre <span class="ltx">A</span> 
+e <span class="ltx">B</span> contidos na reta 
+<img src="images/retaAB.png" style="widht: 25px; height: 15px; display: inline-block;">
+, define um segmento de reta denotado por <span class="seg">AB</span> e os 
+pontos <span class="ltx">A</span> e <span class="ltx">B</span> são as <span class="italico">extremidades do segmento</span> <span class="seg">AB</span>. 
+A distância entre os pontos <span class="ltx">A</span> e <span class="ltx">B</span> é definida como a <span class="italico">medida</span> ou 
+o <span class="italico">comprimento</span> do segmento <span class="seg">AB</span> denotado por <span class="ltx">AB</span>.</p>
+</div>
+<div class="teorema" id="prop_tan">
+<span class="negrito">Proposição 2.1</span>
+<p>Seja <span class="ltx">&Gamma;</span> uma circunferência de centro <span class="ltx">O</span>, e <span class="ltx">P</span> um ponto 
+em <span class="ltx">&Gamma;</span>. Se <span class="ltx">t</span> é uma reta que contém <span class="ltx">P</span> e <span class="ltx">t</span> 
+é perpendicular à reta <span class="ltx">OP</span> , então <span class="ltx">t</span> e <span class="ltx">&Gamma;</span> são tangentes.
+</p>
+</div>
+<p>Para mostrar que a reta <span class="ltx">t</span> tem único ponto em comum com a circunferência <span class="ltx">&Gamma;</span>, considere um 
+ponto <span class="ltx">Q</span> na reta <span class="ltx">t</span>, diferente do ponto <span class="ltx">P</span>. 
+O triângulo <span class="ltx">&Delta;OPQ</span> é retângulo em <span class="ltx">P</span>, portanto <span class="ltx">OQ &gt OP = r</span> 
+(<span class="ltx">r</span> é raio da circunferência), <span class="ltx">Q</span> não pertence à circunferência 
+e <span class="ltx">P</span> é o único ponto comum.
+</p>
+<figure>
+<img src="images/tan.png" style="widht: 216px; height: 275px;" id="ftan">
+<figcaption>Figura 2.1: <span class="ltx">P</span> é ponto de tangência entre <span class="ltx">t</span> e <span class="ltx">&Gamma;</span>.</figcaption>
+</figure>
+<div class="teorema" id="teo210">
+<span class="negrito">Definição 2.4</span></br>
+<p>Dizemos que uma reta <span class="ltx">m</span> é <span class="italico">secante</span> à circunferência <span class="ltx">&Gamma;</span>, 
+ou ainda, que a reta <span class="ltx">m</span> e a circunferência <span class="ltx">&Gamma;</span> são <span class="italico">secantes</span> se 
+<span class="ltx">t</span> e <span class="ltx">&Gamma;</span> possuem exatamente dois pontos em comum. Se <span class="ltx">Q</span> e 
+<span class="ltx">Q'</span> são tais pontos, então o segmento <span class="seg">QQ'</span> é uma <span class="italico">corda</span> 
+de <span class="ltx">&Gamma;</span>.</p>
+</div>
+<div class="teorema" id="definicao2.5">
+<span class="negrito">Definição 2.5</span></br>
+<p>Dizemos que uma corda <span class="seg">QQ'</span> é <span class="italico">diâmetro</span> da circunferência <span class="ltx">&Gamma;</span> se o centro 
+<span class="ltx">O</span> está no interior do segmento <span class="seg">QQ'</span>. 
+Neste caso, <span class="ltx">QO = OQ'= r</span> e o diâmetro tem medida igual a <span class="ltx">2r</span>.</p>
+</div>
+<h2>2.1 Teorema da Interseção Reta-circunferência</h2>
+<p>Considere em um plano uma circunferência e uma reta. O teorema a seguir determina a posição relativa e se existem pontos 
+comuns entre elas.
+</p>
+<div class="teorema" id="teo62">
+<span class="negrito">Teorema 2.2 (Teorema Fundamental das Circunferências)</span>
+<p>Sejam <span class="ltx">&Gamma;</span> uma circunferência de centro <span class="ltx">O</span>, e <span class="ltx">t</span> uma reta dadas. 
+Sejam <span class="ltx">O'</span> o pé da perpendicular de <span class="ltx">O</span> sobre a reta <span class="ltx">t</span>. 
+Pode ocorrer apenas uma das três:
+</p>
+<ol>
+<li>(1) Todo ponto da reta <span class="ltx">t</span> é exterior da circunferência <span class="ltx">&Gamma;</span>.</li>
+<li>(2) O ponto <span class="ltx">O'</span> é ponto de tangência entre <span class="ltx">t</span> e <span class="ltx">&Gamma;</span> e é único.</li>
+<li>(3) O ponto <span class="ltx">O'</span> é interior à circunferência e existem exatamente dois pontos de interseção entre <span class="ltx">t</span> e <span class="ltx">&Gamma;</span>, 
+que equidistam de <span class="ltx">O'</span>.</li>
+</ol>
+</div>	
+<div class="demonstracao">
+<span class="negrito">Demonstração:</span>
+</br>
+<p>Na comparação entre <span class="ltx">OO'</span> com o raio <span class="ltx">r</span> da circunferência <span class="ltx">&Gamma;</span> pode ocorrer: 
+<span class="ltx">OO' &gt r</span>, <span class="ltx">OO' = r</span> ou <span class="ltx">OO' &lt r</span>.
+</p>
+<p>Suponha que <span class="ltx">OO' &gt r</span>. Neste caso, <span class="ltx">OO'</span> é exterior de <span class="ltx">&Gamma;</span>. Seja <span class="ltx">Q</span> 
+um ponto na reta <span class="ltx">t</span>, diferente de <span class="ltx">O'</span>. Como o triângulo &Delta; <span class="ltx">OO'Q</span> 
+é retângulo em <span class="ltx">O'</span>, tem-se que <span class="ltx">OQ &gt OO' &gt r</span>. Portanto ocorre (1).
+</p>
+<p>Suponha agora que <span class="ltx">OO' = r</span>. Pela Proposição <a href="#prop_tan" target="_blank">2.1</a> ocorre (2).
+</p>
+<p>Por outro lado, se <span class="ltx">OO' &lt r</span> e <span class="ltx">OO' &gt 0</span>, <span class="ltx">O'</span> é ponto interior 
+da circunferência <span class="ltx">&Gamma;</span>. Existe um segmento <span class="seg">QQ'</span> na reta <span class="ltx">t</span> que é corda na circunferência 
+<span class="ltx">&Gamma;</span>, isto é, os pontos <span class="ltx">Q</span> e <span class="ltx">Q'</span> são pontos da circunferência. Portanto, 
+<span class="ltx">OQ = OQ' = r</span> e o triângulo <span class="ltx">&Delta;QOQ'</span> é isósceles de base <span class="seg">QQ'</span>. </p>
+<p>Já que o ponto <span class="ltx">O'</span> é pé da perpendicular do vértice <span class="ltx">O</span> na base <span class="ltx">QQ'</span>, 
+<span class="ltx">O'</span> é ponto médio, logo, <span class="ltx">Q</span> e <span class="ltx">Q'</span> são equidistantes do ponto 
+<span class="ltx">O'</span>.</p> 
+<p>Suponha, por absurdo, que exista um terceiro ponto de interseção <span class="ltx">K</span>, 
+entre a reta <span class="ltx">t</span> e a circunferência <span class="ltx">&Gamma;</span>, diferente de <span class="ltx">Q</span> e de <span class="ltx">Q'</span>. 
+Se <span class="ltx">K</span> está no interior de <span class="ltx">QQ'</span>, tem-se <span class="ltx">OK &lt OQ = r</span>, 
+então <span class="ltx">K</span> é ponto interior de <span class="ltx">&Gamma;</span>, que seria absurdo. 
+Se <span class="ltx">K</span> está no exterior de <span class="ltx">QQ'</span>, tem-se <span class="ltx">OK &gt OQ = r</span>, 
+então <span class="ltx">K</span> é ponto exterior de <span class="ltx">&Gamma;</span>, que seria igualmente absurdo.
+Por outro lado, se <span class="ltx">OO' = 0</span>, então <span class="ltx">O</span> equivale a <span class="ltx">O'</span> 
+e <span class="seg">QQ'</span> é diâmetro de <span class="ltx">&Gamma;</span>. Portanto, ocorre (3).
+</div>
+<div class="teorema" id="tan">
+<span class="negrito">Corolário 2.3</span></br>
+<p>Se uma reta <span class="ltx">t</span> é tangente à circunferência <span class="ltx">&Gamma;</span> de centro <span class="ltx">O</span> em um ponto 
+<span class="ltx">P</span>, então <span class="ltx">t</span> é perpendicular ao raio <span class="seg">OP</span>. 
+</p>
+</div>
+<p>O <a href="#tan">Corolário 2.3</a> é uma recíproca da <a href="#prop_tan" target="_blank">Proposição 2.1</a> e garantido pela condição (2) do 
+<a href="#teo62" target="_blank">Teorema 2.2</a>.</p>
+<figure>
+<img src="images/tan2.png" style="widht: 216px; height: 275px;" id="tan2">
+<figcaption>Figura 2.2: <span class="ltx">t</span> é tangente de <span class="ltx">&Gamma;</span> no ponto <span class="ltx">P</span>,
+logo <span class="ltx">t</span> é perpendicular a <span class="seg">OP</span>.</figcaption>
+</figure> 
+<div class="teorema">
+<span class="negrito">Definição 2.6</span></br>
+<p>Duas circunferências distintas são <span class="italico">tangentes</span> se possuem um, e apenas um, ponto em comum. 
+Tal ponto é o ponto de tangência entre elas.
+</p>
+</div>
+<p>Sejam <span class="ltx">C</span> e <span class="ltx">C'</span> tais circunferências e seja <span class="ltx">P</span> o único ponto de tangência. 
+Se <span class="ltx">t</span> é a reta tangente à circunferência <span class="ltx">C</span> passando por <span class="ltx">P</span>, então 
+<span class="ltx">t</span> também tangencia <span class="ltx">C'</span>. A tangência entre duas circunferências pode acontecer de forma 
+<span class="italico">externa</span> ou <span class="italico">interna</span>, respectivamente, caso seus centros estejam em lados opostos 
+ou do mesmo lado em relação à reta <span class="ltx">t</span>.</p>
+<figure>
+<img src="images/circ_tan.png" style="width: 401px; height: 179px"; id="fig:circ_tan">
+<figcaption>Figura 2.3: Pela ilustração, à esqueda ocorre tangência externa e, pela diretita, interna.
+</figure>
+<p>A reta que contém os centros <span class="ltx">O</span> e <span class="ltx">O'</span> também contém <span class="ltx">P</span>, 
+pois pelo <a href="#tan" target="_blank">Corolário 2.3</a>, <span class="seg">OP</span> e <span class="seg">PO'</span> 
+são perpendiculares à reta <span class="ltx">t</span>.</p>
+<div class="teorema" id="teo210">
+<span class="negrito">Teorema 2.4</span></br>
+<p>A mediatriz de um segmento <span class="seg">AB</span> é o conjunto de todos os pontos equidistantes dos extremos 
+<span class="ltx">A</span> e <span class="ltx">B</span>.
+</p>
+</div>
+<p>Em outras palavras, <span class="ltx">P</span> é um ponto da mediatriz do segmento <span class="seg">AB</span> se, e somente se, 
+<span class="ltx">P</span> é  equidistante dos extremos <span class="ltx">A</span> e <span class="ltx">B</span>.</p>
+<div class="teorema">
+<span class="negrito">Demonstração:</span></br>
+<p>Sejam <span class="ltx">m</span> a mediatriz de <span class="seg">AB</span> e <span class="ltx">P</span> um ponto em 
+<span class="ltx">m</span>. Seja <span class="ltx">M</span> o ponto médio de <span class="seg">AB</span> e, por definição 
+de ponto médio, <span class="ltx">AM = MB</span>. Se <span class="ltx">P</span> coincide com <span class="ltx">M</span>, 
+então os pontos <span class="ltx">A</span>, <span class="ltx">P</span> e <span class="ltx">B</span> são colineares e <span class="ltx">PA = PB</span>. 
+Se <span class="ltx">P</span> não coincide com <span class="ltx">M</span>, temos os triângulos <span class="ltx">&Delta;PMA</span> 
+e <span class="ltx">&Delta;PMB</span>, tais que <span class="ltx">AM = MB</span>, <span class="seg">PM</span> é lado comum e 
+<span class="ltx">&ang;PMA &equiv; &ang;PMB = 90º</span>. 
+Pelo caso Lado Ângulo Lado - L. A. L., tais triângulos são congruentes e, portanto, <span class="ltx">PA = PB</span>.</p> 
+<figure>
+<img src="images/teo210.png" style="width: 455px; height: 196px"; id="fig:teo210">
+<figcaption>Figura 2.4: <span class="ltx">m</span> é mediatriz do segmento <span class="seg">AB</span> 
+e <span class="ltx">P</span> pertence a reta <span class="ltx">m</span>.
+</figure>
+<p>	Por outro lado, seja <span class="ltx">P</span> um ponto equidistante dos extremos <span class="ltx">A</span> e 
+<span class="ltx">B</span>. Se <span class="ltx">P</span> pertence ao segmento <span class="seg">AB</span>, então <span class="ltx">P</span> 
+é ponto médio, portanto pertence à mediatriz. Se não, os pontos <span class="ltx">P</span>, <span class="ltx">A</span> e 
+<span class="ltx">B</span> definem um triângulo tal que <span class="ltx">PA = PB</span>, logo  <span class="ltx">&Delta;APB</span> 
+é triângulo isósceles de base <span class="seg">AB</span>. Seja <span class="ltx">M</span> o ponto médio de <span class="seg">AB</span>, 
+logo <span class="ltx">AM = MB</span>. Comparando os triângulos <span class="ltx">&delta;PMA</span> e <span class="ltx">&Delta;PMB</span>, 
+tem-se que <span class="seg">PM</span> é lado comum e pelo caso Lado Lado Lado - L. L. L., tais triângulos são congruentes. 
+Assim, <span class="ltx">&ang;PMA &equiv; &ang;PMB = 90º</span>. Portanto, a reta definida pelos pontos <span class="reta">M</span> 
+e <span class="reta">P</span> é a mediatriz do segmento <span class="seg">AB</span>.
+</p>
+</div>
+<div class="teorema" id="teo65">
+<span class="negrito">Teorema 2.5</span></br>
+<p>Seja <span class="seg">QQ'</span> uma corda da circunferência <span class="ltx">&Gamma;</span> e <span class="ltx">M</span> seu ponto médio. 
+Se uma reta <span class="ltx">t</span> passa pelo centro <span class="ltx">O</span> e por <span class="ltx">M</span>, então <span class="ltx">t</span> 
+é perpendicular a corda <span class="seg">QQ'</span>. Equivalentemente, a mediatriz de qualquer corda passa pelo centro da circunferência.
+</p>
+</div>
+<figure>
+<img src="images/teo65.png" style="width: 183px; height: 186px"; id="fig:teo65">
+<figcaption>Figura 2.5: <span class="seg">MO</span>  é mediatriz da corda <span class="seg">QQ'</span>.
+</figure>
+<div class="teorema">
+<span class="negrito">Demonstração:</span></br>
+<p>	Conforme é provado no Teorema <a href="#teo210" target="_blank">2.4</a>, mediatriz de um segmento é o conjunto dos pontos que equidistam das extremidades. 
+Como o triângulo <span class="ltx">&Delta;QOQ'</span> é isósceles de base <span class="seg">QQ'</span>, o vértice <span class="ltx">O</span> 
+pertence à mediatriz da base <span class="seg">QQ'</span>, passando por <span class="ltx">M</span>, logo o segmento 
+<span class="seg">OM</span> é perpendicular à corda <span class="seg">QQ'</span>.
+Por outro lado, a mediatriz de <span class="seg">QQ'</span>, passa pelo ponto médio <span class="ltx">M</span>. 
+Sendo <span class="ltx">QO = OQ' = r</span>, logo <span class="ltx">O</span> pertence à mediatriz.
+</p>
+</div>
+<div class="teorema" id="teo66">
+<span class="negrito">Teorema 2.6 (Teorema da Intersecção Reta-Circunferência)</span></br>
+<p>Se uma reta intersecciona o interior de uma circunferência, então intersecciona a circunferência em dois pontos.
+</p>
+</div>
+<p>O Teorema <a href="#teo66">2.6</a> é garantido pela condição (3) do Teorema Fundamental das Circunferências 
+<a href="#teo62" target="_blank">2.2</a>.</p>
+<div class="teorema" id="cordascongruentes">
+<span class="negrito">Teorema 2.7</span></br>
+<p>Sejam <span class="seg">QQ'</span> e <span class="seg">PP'</span> duas cordas em uma mesma circunferência <span class="ltx">&Gamma;</span> ou em duas 
+circunferências de raios congruentes. Tais cordas são congruentes se, e somente se, equidistam dos centros das respectivas circunferências.
+</p>
+</div>
+
+<figure>
+<img src="images/teo67.png" style="width: 183px; height: 186px"; id="fig:teo67">
+<figcaption>Figura 2.6: Congruência entre duas cordas.
+</figure>
+
+
+<div class="teorema">
+<span class="negrito">Demonstração</span></br>
+<p>Suponha que sejam congruentes as cordas <span class="seg">PP'</span> e <span class="seg">QQ'</span>. Como <span class="ltx">OP = OP' = OQ = OQ' = r</span>,
+tem-se que os triângulos <span class="ltx">&Delta;OQQ'</span> e <span class="ltx">&Delta;OPP'</span> são congruentes (caso Lado-Lado-Lado), 
+portanto <span class="ltx">OM = ON</span>.
+</p>
+<p>Reciprocamente, se <span class="ltx">OM = ON</span>, como os triângulos <span class="ltx">&Delta;OQQ'</span> e 
+<span class="ltx">&Delta;OPP'</span> são isósceles de mesma altura, tendo seus lados <span class="ltx">OP = OP' = OQ = OQ' = r</span>, 
+as bases <span class="seg">PP'</span> e <span class="seg">QQ'</span> são congruentes. 
+</p>
+</div>
+
+
+        </div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | &copy; Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>

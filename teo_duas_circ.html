@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <title>Teorema das duas circunferências</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>TEOREMA DAS DUAS CIRCUNFERÊNCIAS</h1></div>
+			</div>
+			
+			
+			<nav id="menu">
+					
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+					<!-- inicio esquerda  -->
+<h2>O Teorema das Duas Circunferências</h2>
+<p>O Teorema das Duas Circunferências estabelece que a ocorrência de pontos comuns entre elas depende unicamente do comprimento de seus raios. 
+Podemos, porém, associar a tal teorema a condição de existência de um triângulo, como segue no Lema 2.28: 
+</p>
+<div class="teorema" id="lema636">
+	<span class="negrito">Lema 2.28 (Condição de existência de um triângulo)</span></br>
+	<p>Dados segmentos <span class="seg">BC</span>, <span class="seg">AC</span> e <span class="seg">AB</span> de comprimento, respectivamente, 
+	<span class="ltx">a</span>, <span class="ltx">b</span> e <span class="ltx">c</span>, existe um triângulo de lados <span class="seg">BC</span>, 
+	<span class="seg">AC</span> e <span class="seg">AB</span> se, e somente se, a soma da medida de dois lados for maior que a medida do terceiro lado.</p>
+</div>
+<p>Para demonstrar este Lema, consideremos, separadamente, um triângulo <span class="ltx">&Delta;ABC</span> nas formas: retângulo, acutângulo e obtusângulo.
+</p>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Suponha um triângulo <span class="ltx">&Delta;ABC</span> retângulo em <span class="ltx">A</span> e seja <span class="ltx">P</span> 
+	o pé da altura relativa ao lado <span class="seg">BC</span>. Assim <span class="ltx">BC &gt; AB</span> e <span class="ltx">BC &gt; AC</span>, 
+	consequentemente, <span class="ltx">BC + AB &gt; AC</span> e <span class="ltx">BC + AC &gt; AB</span>. 
+	Por outro lado, <span class="ltx">AB &gt; BP</span> e <span class="ltx">AC &gt; PC</span>. Somando as desigualdades membro a membro, 
+	tem-se <span class="ltx">AB + AC &gt; BP + PC = BC</span>.
+	</p>
+	<p>Suponha agora um triângulo <span class="ltx">&Delta;ABC</span> acutângulo e sejam <span class="ltx">P</span> o pé da altura relativa ao lado 
+	<span class="seg">BC</span>, <span class="ltx">K</span> o pé da altura relativa ao lado <span class="seg">AB</span>, e <span class="ltx">M</span> 
+	o pé da altura relativa ao lado <span class="seg">AC</span>.
+	</p>
+<figure>
+<img src="images/lema636.png" style="widht: 284px; height: 172px;" id="fig:lema636">
+<figcaption>Figura 2.38: No triângulo <span class="ltx">&Delta;ABC</span> cada altura determina dois triângulos retângulos.</figcaption>
+</figure>
+	<p>Assim os lados <span class="seg">AB</span>, <span class="seg">AC</span> e <span class="seg">BC</span> tornam-se hipotenusa de algum triângulo retângulo, tal que: 
+	</p>
+	<p>(1) <span class="negrito"><span class="ltx">AB &gt; AM</span></span> e <span class="negrito"><span class="ltx">BC &gt; MC</span></span>. 
+	Somando estas desigualdades membro a membro, tem-se $$AB + BC > AM + MC ~ \Leftrightarrow ~ AB + BC > AC ~ \Leftrightarrow ~ c + a > b.$$
+	</p>
+	<p>(2) <span class="negrito"><span class="ltx">AB &gt; BP</span></span> e <span class="negrito"><span class="ltx">AC &gt; PC</span></span>. 
+	Somando estas desigualdades membro a membro, tem-se $$AB + AC > BP + PC ~ \Leftrightarrow ~ AB + AC > BC ~ \Leftrightarrow ~ c + b > a.$$
+	</p>
+	<p>(3) <span class="negrito"><span class="ltx">BC &gt; BK</span></span> e <span class="negrito"><span class="ltx">AC &gt; KA</span></span>. 
+	Somando estas desigualdades membro a membro, tem-se $$BC + AC > BK + KA ~ \Leftrightarrow ~ BC + AC > AB ~ \Leftrightarrow ~ a + b > c.$$
+	</p>
+	<p>Finalmente, para o caso de triângulo <span class="ltx">&Delta;ABC</span> ser obtusângulo em <span class="ltx">A</span>, sem perda de generalidade, a demonstração é idêntica ao do triângulo retângulo.
+	</p>
+	<p>Por outro lado, dados 3 segmentos de comprimentos <span class="ltx">a = AB</span>, <span class="ltx">b = CD</span> e <span class="ltx">c = EF</span>, 
+	tais que a soma de comprimentos de 2 deles é maior do que o comprimento do terceiro. Temos: $$c + b > a\text{, }a + b > c ~\text{e}~ c + a > b.$$
+	</p>
+	<p>Sem perda de generalidade, seja <span class="ltx">a &gt; b</span> e <span class="ltx">a &gt; c</span> e suponha, por absurdo, que não seja possível compor um triângulo com estes segmentos.
+	</p>
+	<p>Se dispusermos os segmentos <span class="seg">CD</span> e <span class="seg">EF</span> sobre <span class="seg">AB</span> de modo que <span class="ltx">C</span> coincida com <span class="ltx">A</span> e <span class="ltx">F</span> coincida com <span class="ltx">B</span>, teremos:
+	$$CD + DE + EF = AB \Rightarrow CD + EF < AB \Rightarrow b + c < a,$$
+	que é uma contradição.
+	</p> 
+</div>
+<p>Sendo assim, pode ser enunciado o teorema que segue:
+</p>
+<div class="teorema" id="teo637">
+	<span class="negrito">Teorema 2.29 (Teorema das Duas Circunferências)</span>
+	<p>Sejam dadas duas circunferências de raios <span class="ltx">b</span> e <span class="ltx">c</span>, respectivamente, onde <span class="ltx">a</span> é a distância entre seus centros, respectivamente, <span class="ltx">B</span> e <span class="ltx">C</span>. 
+	Se <span class="ltx">|a - b| &lt; c &lt; a + b</span>, então as duas circunferências interseccionam-se em dois pontos, um em cada lado da reta que contém os centros.
+</p>
+</div>
+
+<div class="teorema">
+	<span class="negrito">Demonstração</span>
+	<p>Observe que a condição <span class="ltx">|a - b| &lt; c &lt; a + b</span> equivale às desigualdades <span class="ltx">a + b &gt; c</span>, <span class="ltx">c + a &gt; b</span> e <span class="ltx">c + b &gt; a</span>, logo, pelo Lema 2.28, existe um triângulo <span class="ltx">&Delta;ABC</span> cujos lados <span class="seg">BC</span>, <span class="seg">AC</span> e <span class="seg">AB</span> medem, respectivamente, <span class="ltx">a</span>, <span class="ltx">b</span> e <span class="ltx">c</span>.
+	</p>
+<figure>
+<img src="images/teo637.png" style="widht: 284px; height: 172px;" id="fig:teo637">
+<figcaption>Figura 2.39: Teorema das Duas Circunferências.</figcaption>
+</figure>
+	<p>Entretanto, se o vértice <span class="ltx">A</span> é um ponto de interseção entre as circunferências, seja <span class="ltx">A'</span> seu simétrico em relação ao lado <span class="seg">BC</span>, e seja <span class="ltx">P</span> o ponto médio de <span class="seg">AA'</span> (Figura 2.40).
+	</p>
+<figure>
+<img src="images/teo637b.png" style="widht: 284px; height: 172px;" id="fig:teo637b">
+<figcaption>Figura 2.40: Teorema das Duas Circunferências.</figcaption>
+</figure>
+	<p>Como <span class="ltx">A</span> e <span class="ltx">A'</span> são simétricos os triângulos <span class="ltx">&Delta;APB</span> e <span class="ltx">&Delta;A'PB</span>
+	são retângulos em <span class="ltx">P</span>. Além disso, <span class="ltx">AP = A'P</span> e <span class="seg">BP</span> é lado comum. Logo, pelo caso lado, ângulo, lado (L. A. L.), esses triângulos são congruentes, portanto, <span class="ltx">AB = A'B</span> e <span class="ltx">A'</span> está na circunferência de centro <span class="ltx">B</span>. 
+	Analogamente, <span class="ltx">A'</span> está também na circunferência de centro <span class="ltx">C</span>, e <span class="ltx">A'</span> também é ponto de interseção entre elas.
+	</p>
+	<p>	Pelo <a href="teo_int_reta_circ.html#teo62" target="_blank">Teorema 2.2(3)</a>, os pontos <span class="ltx">A</span> e <span class="ltx">A'</span> são únicos.
+	</p>
+</div>
+
+        </div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>

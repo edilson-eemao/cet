@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <title>Pontos de Tangência</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>PONTOS DE TANGÊNCIA</h1></div>
+			</div>
+			
+			
+			<nav id="menu">
+					
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+					<!-- inicio esquerda  -->
+				<h2 id="sec:pontos_de_contato">3.6 Pontos de Tangência</h2>
+
+<p>Nesta seção estudaremos as relações existentes entre os pontos de tangência entre um lado do triângulo, ou seu prolongamento, com as circunferências tritangentes, e os vértices do triângulo.
+</p>
+<p><span class="negrito">Notação:</span> Salvo indicação em contrário, os pontos de tangência das quatro circunferências tritangentes <span class="ltx">(I)</span>, <span class="ltx">(I<sub>a</sub>)</span>, <span class="ltx">(I<sub>b</sub>)</span>, <span class="ltx">(I<sub>c</sub>)</span> do triângulo <span class="ltx">&Delta;ABC</span> com o lado <span class="seg">BC</span> serão indicados, respectivamente, por <span class="ltx">X</span>, <span class="ltx">X<sub>a</sub></span>, <span class="ltx">X<sub>b</sub></span>, <span class="ltx">X<sub>c</sub></span>. As letras <span class="ltx">Y</span> e <span class="ltx">Z</span> serão usadas para os lados <span class="seg">AC</span> e <span class="seg">AB</span>, respectivamente.
+</p>
+<figure><img src="images/pontosdetangencia.png" style="widht: 408px; height: 245px;" id="pontosdetangencia"><figcaption>Figura 3.51: Os pontos de tangência dos círculos tritangentes ao lado <span class="seg">BC</span> do triângulo.</figcaption>
+</figure>
+<div class="teorema" id="t157"><span class="negrito">Teorema 3.46</span></br>
+	<p>Em um triângulo, a distância entre um vértice e o ponto de tangência da circunferência inscrita <span class="ltx">(I, r)</span> com um lado adjacente ao mesmo vértice é igual à diferença entre o semiperímetro <span class="ltx">p</span> e a medida do lado oposto.
+</p>
+</div>
+<p>Considere o triângulo <span class="ltx">&Delta;ABC</span>, o vértice <span class="ltx">A</span> e seu lado oposto <span class="seg">BC</span>, sendo <span class="ltx">BC = a</span> e $$p = \frac{a + b + c}{2}.$$ 
+Mostraremos que: $$AZ = AY = p - a.$$
+ </p>
+ <p>A figura seguinte ilustra o teorema anterior (Teorema <a href="#t157">3.46</a>):
+</p>
+<figure><img src="images/teo157.png" style="widht: 396px; height: 285px;" id="teo157"><figcaption>Figura 3.52: <span class="ltx">X</span>, <span class="ltx">Y</span> e <span class="ltx">Z</span> são pontos de tangência com a circunferência inscrita.</figcaption>	
+</figure>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Para verificar estas igualdades, considere o vértice <span class="ltx">A</span> e seu lado oposto <span class="ltx">BC = a</span>.
+	Este Teorema nos diz que <span class="ltx">AZ = AY = p - a</span>.  Além disso, <span class="ltx">2p = a + b + c = AB + BC + AC</span>. A verificação para os demais lados é análoga.
+	</p>
+	<p>Note que os triângulos <span class="ltx">&Delta;AZI</span> e <span class="ltx">&Delta;AYI</span> são congruentes, pois <span class="ltx">ZI = IY</span> e <span class="seg">AI</span> é lado comum. Portanto, <span class="ltx">AZ = AY</span>. Do mesmo modo, <span class="ltx">BZ = BX</span> e <span class="ltx">CX = CY</span>. Por outro lado,
+	</p>
+	<p>$$AZ + AY = AB + AC - BZ - CY.$$
+	Substituindo <span class="ltx">BZ</span> por <span class="ltx">BX</span> e <span class="ltx">CY</span> por <span class="ltx">CX</span>, tem-se:
+	$$AZ + AY = AB + AC - BX - CX = AB + AC - (BX + CX).$$
+	Mas <span class="ltx">BX + CX = a</span> , daí,
+	$$AZ + AY = AB + AC - a = AB + AC + BC - BC - a$$
+	$$AZ + AY = 2p - a - a = 2p - 2a.$$
+	Então, $$AZ = AY = p - a.$$
+	</p>
+	<p>Do mesmo modo, <span class="ltx">BZ = BX = p - b</span> e <span class="ltx">CX = CY = p - c</span>.
+	</p>
+</div>
+<div class="teorema" id="t158"><span class="negrito">Teorema 3.47</span></br>
+	<p>A distância de um vértice de um triângulo ao ponto de tangência entre um lado adjacente com a circunferência ex-inscrita, relativa ao mesmo vértice, é igual ao semiperímetro do triângulo dado.
+	</p>
+</div>
+<p>Com este teorema estabelecemos uma relação entre a distância de um vértice até o ponto de tangência de um lado adjacente com a circunferência ex-inscrita, relativa ao mesmo vértice, e o semiperímetro <span class="ltx">p</span>.
+</p>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Consideremos inicialmente o vértice <span class="ltx">A</span> na <a href="#fig157">Figura 3.52</a>. É necessário mostrar que a distância <span class="ltx">AZ<sub>a</sub></span> é igual à distância <span class="ltx">AY<sub>a</sub></span> e ao semiperímetro <span class="ltx">p</span>.
+	</p>
+	<p>A igualdade entre as distâncias <span class="ltx">AZ<sub>a</sub></span> e <span class="ltx">AY<sub>a</sub></span> são imediatamente percebidas pois são segmentos tangentes à circunferência ex-inscrita <span class="ltx">(I<sub>a</sub>)</span>.
+	</p>
+	<p>Por outro lado, <span class="ltx">BZ<sub>a</sub> = BX<sub>a</sub></span>, assim como <span class="ltx">CX<sub>a</sub> = CY<sub>a</sub></span>, pois são tangentes à mesma circunferência. Assim, 
+	</p>
+	<p>
+	\begin{align*}
+	AZ_{a} + AY_{a} &= AB + BZ_{a} + AC + CY_{a}\\
+	&= AB + AC + BZ_{a} + CY_{a}\\
+	&= AB + AC + BX_{a} + CX_{a}\\
+	&= AB + AC + BC\\
+	&= 2p.
+	\end{align*}
+	</p>
+	<p>Portanto, <span class="ltx">AZ<sub>a</sub> = AY<sub>a</sub></span>.
+	</p>
+	<p>Analogamente, temos: <span class="ltx">BX<sub>b</sub> = BZ<sub>b</sub> = CX<sub>c</sub> = CY<sub>c</sub></span>.
+	</p>
+</div>
+<p>Lembrando que <span class="ltx">AB = c</span> e <span class="ltx">AC = b</span>, segue o Corolário:
+</p>
+<div class="teorema" id="corol159"><span class="negrito">Corolário 3.48</span></br>
+	<p>Tomado um lado de um triângulo e a respectiva circunferência ex-inscrita, a distância entre um vértice e ponto de tangência referentes a este lado é igual a diferença entre o semiperímetro e o lado oposto a este vértice.
+	</p>
+</div>
+<p>Este corolário resulta da aplicação do <a href="#t158" target="_blank">Teorema 3.47</a>.
+</p>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Considerando o lado <span class="seg">BC</span> e aplicando o <a href="#t158" target="_blank">Teorema 3.47</a>, tem-se:
+	$$BX_{a} = BZ_{a} = AZ_{a} - AB = p - c$$ e $$CX_{a} = CY_{a} = AY_{a} - AC = p - b.$$
+	</p>
+	<p>Considerando o lado <span class="seg">AC</span> e aplicando o <a href="#t158" target="_blank">Teorema 3.47</a>, tem-se:
+	$$CX_{b} = CY_{b} = BX_{b} - BC = p - a$$ e $$AZ_{b} = AY_{b} = BZ_{b} - AB = p - c.$$
+	</p>
+	<p>Considerando o lado <span class="seg">AB</span> e aplicando o <a href="#t158" target="_blank">Teorema 3.47</a>, tem-se:
+	$$AY_{c} = AZ_{c} = CY_{c} - AC = p - b$$ e $$BX_{c} = BZ_{c} = CX_{c} - BC = p - a.$$
+	</p>
+</div>
+<div class="teorema" id="definicao3.4"><span class="negrito">Definição 3.4</span></br>
+	<p>Dizemos que dois pontos no lado de um triângulo são <span class="italico">pontos isotômicos</span>, se estiverem equidistantes do ponto médio deste lado.
+	Os segmentos que unem dois pontos isotômicos ao vértice oposto ao lado considerado são chamados <span class="italico">segmentos isotômicos</span>.
+	</p>
+</div>
+<div class="teorema" id="pontos_isotomicos"><span class="negrito">Teorema 3.49</span></br>
+	<p>Os pontos de tangência de um lado de um triângulo com as circunferências inscrita e ex-inscrita relativas ao mesmo lado são dois pontos isotômicos.
+	</p>
+</div>
+<figure><img src="images/pontos_isotomicos.png" style="widht: 325px; height: 246px;" id="fig_pontos_isotomicos"><figcaption>Figura 3.53: <span class="ltx">X</span> e <span class="ltx">X<sub>a</sub></span> são pontos isotômicos.</figcaption>
+</figure>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Pelo <a href="#t157" target="_blank">Teorema 3.46</a> e pelo <a href="#corol159" target="_blank">Corolário 3.48</a>, temos:
+	$$BX = p - b \text{\quad e \quad} CX_{a} = p - b.$$
+	Portanto, <span class="ltx">X</span> e <span class="ltx">X<sub>a</sub></span> equidistam do ponto médio de <span class="seg">BC</span>.
+	</p>
+	<p>Analogamente, vale para os lados <span class="seg">AB</span> e <span class="seg">AC</span>.
+	</p>
+</div>
+<div class="teorema" id="corol161"><span class="negrito">Corolário 3.50</span></br>
+	<p>A distância entre os dois pontos isotômicos a que se refere o <a href="#pontos_isotomicos" target="_blank">Teorema 3.49</a> é igual a diferença positiva entre os outros dois lados. 
+	</p>
+</div>
+<p>Se tomarmos, por exemplo, os pontos isotômicos <span class="ltx">X</span> e <span class="ltx">X<sub>a</sub></span>, ilustrados na <a href="#fig_pontos_isotomicos" target="_blank">Figura 3.53</a>, temos que <span class="ltx">XX<sub>a</sub> = b - c</span> se <span class="ltx">b - c &gt; 0</span> ou  <span class="ltx">XX<sub>a</sub> = c - b</span> se <span class="ltx">b - c &lt; 0</span>. É interessante ressaltar que se <span class="ltx">b = c</span> a distância <span class="ltx">XX<sub>a</sub> = 0</span> pois estes pontos coincidem com o ponto médio do lado <span class="seg">BC</span>.
+</p>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Considere o lado <span class="seg">BC</span> no triângulo e a aplicação do <a href="#pontos_isotomicos" target="_blank">Teorema 3.49</a>. Temos:
+\begin{align*}
+	XX_{a} 	&= BC - BX - CX_{a}\\
+			&= a - 2(p - b)\\
+			&= a - 2p + 2b\\
+			&= a - (a + b + c) + 2b\\
+			&= b - c.
+\end{align*}
+</p>
+<p>De modo semelhante: $$YY_{b} = a - c \text{ e } ZZ_{c} = a - b.$$
+</p>
+</div>
+<div class="teorema" id="teo162"><span class="negrito">Teorema 3.51</span></br>
+	<p>Considerando as circunferências inscrita e ex-inscrita, a distância entre os dois pontos de tangência, um deles em um lado do triângulo e outro em seu prolongamento, é igual ao lado que intersecta o segmento entre eles. 
+</p>
+</div>
+<p>Este teorema refere-se à distância entre dois pontos de tangência tais que um deles é externo ao lado considerado. Sendo assim, é importante observar que, no caso de tomar o lado <span class="seg">BC</span>, trata-se dos segmentos <span class="seg">XX<sub>c</sub></span> e <span class="seg">XX<sub>b</sub></span>.
+</p>
+<figure><img src="images/teo162.png" style="widht: 438px; height: 215px;" id="fig_teo162"><figcaption>Figura 3.54: Distâncias <span class="ltx">XX<sub>c</sub> = AB</span> e <span class="ltx">XX<sub>b</sub> = AC.</span></figcaption>
+</figure>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>A verificação pode ser feita se considerados um lado de cada vez.
+Pelos lados <span class="seg">AC</span> e <span class="seg">BC</span>: 
+$$XX_{c} = XB + BX_{c} = p - b + p - a = 2p - (b + a) = c$$
+e
+$$YY_{c} = YA + AY_{c} = p - a + p - b = 2p - (a + b) = c.$$
+</p>
+<p>Pelos lados <span class="seg">AB</span> e <span class="seg">AC</span>: 
+$$ZZ_{a} = BZ + BZ_{a} = p - b + p - c = 2p - (b + c) = a$$
+e
+$$YY_{a} = YC + CY_{a} = p - c + p - b = 2p - (c + b) = a.$$
+</p>
+<p>Pelos lados <span class="seg">AB</span> e <span class="seg">BC</span>: 
+$$ZZ_{b} = ZA + AZ_{b} = p - a + p - c = 2p - (a + c) = b$$
+e
+$$XX_{b} = XC + CX_{b} = p - c + p - a = 2p - (c + a) = b.$$
+</p>
+</div>
+<div class="teorema" id="teo163"><span class="negrito">Teorema 3.52</span></br>
+	<p>Os dois pontos de tangência de um lado do triângulo com as duas circunferências ex-inscritas, relativas aos outros dois lados são dois pontos isotômicos. A distância entre esses dois pontos de tangência é igual à soma dos outros dois lados.
+</div>
+</p>
+<p>Por este teorema, tomando a <a href="#fig_teo162" target="_blank">Figura 3.54</a>, os pontos <span class="ltx">X<sub>c</sub></span> e <span class="ltx">X<sub>b</sub></span> são isotômicos, pois equidistam do ponto médio do lado <span class="seg">BC</span>. Além disso, temos <span class="ltx">X<sub>c</sub>X<sub>b</sub> = AC + AB = b + c</span>.
+</p>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Considere o lado <span class="seg">BC</span> e os pontos <span class="ltx">X<sub>c</sub></span>  e <span class="ltx">X<sub>b</sub></span> de tangência deste lado com as duas circunferências exinscritas, relativas aos lados, respectivamente, <span class="seg">AB</span> e <span class="seg">AC</span> (<a href="#fig_teo162" target="_blank">Figura 3.54</a>). Temos pelo <a href="#corol159" target="_blank">Corolário 3.48</a>:
+	$$BX_{c} = CX_{c} - CB = p - a$$ e $$CX_{b} = BX_{b} - CB = p - a.$$
+	Logo
+	$$BX_{c} = CX_{b}$$
+	e eles são isotômicos.
+	</p>
+	<p>Agora, pelo mesmo corolário: 
+	\begin{align*}
+		X_{c}X_{b} &= BX_{c} + BC + CX_{b} \\
+		&= p - a + a + p - a\\
+		&= 2p - a\\ 
+		&= b + c
+	\end{align*}
+	</p>
+	<p>Considerando os lados <span class="seg">AB</span> e <span class="seg">AC</span>, o resultados <span class="ltx">Z<sub>b</sub>Z<sub>a</sub> = a + b</span> e <span class="ltx">Y<sub>a</sub>Y<sub>c</sub> = a + c</span> são obtidos de modo análogo.
+</div>
+<div class="teorema" id="t164"><span class="negrito">Teorema 3.53</span></br>
+	<p>Tomando dois lados do triângulo e suas respectivas circunferências ex-inscritas, a distância entre os pontos de tangência em um lado é igual a distância entre os pontos de tangência no segundo lado. Além disso, tal distância equivale ao comprimento do terceiro lado.
+</p>
+</div>
+<p>A <a href="#fig164" target="_blank">Figura 3.55</a> ilustra o <a href="#t164" target="_blank">Teorema 3.53</a> que sugere as igualdades <span class="ltx">Y<sub>b</sub>Y<sub>c</sub> =Z<sub>b</sub>Z<sub>c</sub> = BC</span>:
+</p>
+<figure><img src="images/teo164.png" style="widht: 418px; height: 214px;" id="fig164"><figcaption>Figura 3.55: <a href="#t164">Teorema 3.53.</a></figcaption>
+</figure>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+<p>Considere inicialmente os lados <span class="seg">AB</span> e <span class="seg">AC</span> e suas circunferências ex-inscritas. Deseja-se mostrar que <span class="ltx">Y<sub>b</sub>Y<sub>c</sub> =Z<sub>b</sub>Z<sub>c</sub> = a</span>.
+</p>
+	<p>Note que 
+	$$Y_{b}Y_{c} = CY_{c} - CY_{b} \qquad \text{e} \qquad Z_{b}Z_{c} = BZ_{b} - BZ_{c}.$$
+	</p>
+	<p>Mas pelo <a href="#t158" target="_blank">Teorema 3.47</a> temos: 
+	$$CY_{c} = BZ_{b} = p$$
+	e pelo <a href="#corol159" target="_blank">Corolário 3.48</a> temos:
+	$$CY_{b} = BZ_{c} = (p - a),$$ 
+	portanto:
+	$$Y_{b}Y_{c} = Z_{b}Z_{c} = p  - (p - a) = a.$$
+	</p>
+</div>
+<p>Aqui se encerra o estudo de aprofundamento das circunferências associadas a um triângulo e suas relações de medida.
+</p>
+		</div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>

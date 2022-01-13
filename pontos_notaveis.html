@@ -1,0 +1,566 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<!-- -script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script -->
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+	</script>
+	
+	
+	
+        <title>Pontos Notáveis</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>PONTOS NOTÁVEIS DO TRIÂNGULO</h1></div>
+			</div>
+			
+			
+			<nav id="menu">
+					
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+					<!-- inicio esquerda  -->
+<h2 id="sec:pontos_notaveis_de_um_triangulo">2.3 Pontos Notáveis de um Triângulo</h2>
+<div class="teorema" id="def:polig_circunscritivel">
+	<span class="negrito">Definição 2.14</span></br>
+	<p>	O baricentro, o circuncentro, o ortocentro e o incentro são chamados pontos notáveis de um triângulo.
+	</p>
+</div>
+<p>A seguir, são apresentados os quatro pontos notáveis citados na definição acima.</p>
+<h2>2.3.1 Baricentro</h2>
+<div class="teorema" id="def:mediana">
+<span class="negrito">Definição 2.15</span></br>
+<p>Dado um triângulo de lados <span class="ltx">a = BC</span>, <span class="ltx">b = AC</span> e <span class="ltx">c = AB</span> 
+e seus respectivos pontos médios: <span class="ltx">M<sub>a</sub></span>, <span class="ltx">M<sub>b</sub></span> e 
+<span class="ltx">M<sub>c</sub></span>, chamam-se <span class="italico">medianas</span> os segmentos definidos pelos pontos médios 
+de um lado do triângulo e seu vértice oposto, denotadas por <span class="ltx">m<sub>a</sub> = <span class="seg">AM<sub>a</sub></span></span>, 
+<span class="ltx">m<sub>b</sub> = <span class="seg">BM<sub>b</sub></span></span> e <span class="ltx">m<sub>c</sub> = <span class="seg">CM<sub>c</sub></span></span>.
+</p>
+</div>
+<p>O Teorema 2.16 é necessário para as demonstrações dos Teoremas 2.17 e 2.18.</p>
+<div class="teorema" id="teo:seg_cong">
+<span class="negrito">Teorema 2.16</span></br>
+<p>Se três ou mais retas paralelas determinam segmentos congruentes em uma transversal então determinam segmentos congruentes 
+em qualquer outra transversal.	
+</p>
+</div>
+<div class="teorema">
+<span class="negrito">Demonstração</span></br>
+<p>	Sejam as retas <span class="ltx">r</span>, <span class="ltx">s</span> e <span class="ltx">t</span> paralelas entre si 
+e sejam <span class="ltx">w</span> e <span class="ltx">z</span> duas transversais. Sejam <span class="ltx">A</span>, 
+<span class="ltx">B</span> e <span class="ltx">C</span> os pontos de interseção da reta <span class="ltx">w</span>, 
+respectivamente, com as retas <span class="ltx">r</span>, <span class="ltx">s</span> e <span class="ltx">t</span>, 
+tais que <span class="ltx">AB = BC</span>. Definamos <span class="ltx">A'</span>, <span class="ltx">B'</span> e 
+<span class="ltx">C'</span> como os pontos de interseção da reta <span class="ltx">z</span>, respectivamente, com as retas 
+<span class="ltx">r</span>, <span class="ltx">s</span> e <span class="ltx">t</span>, conforme a Figura 2.16: 
+<figure>
+<img src="images/seg_cong_a.png" style="widht: 333px; height: 257px" id="fig:seg_cong_a">
+	<figcaption>Figura 2.16: Teorema 2.16, temos <span class="ltx">AB = BC</span>.
+</figure>
+<p>Queremos mostrar que, se <span class="ltx">AB = BC</span>, então <span class="ltx">A'B' = B'C'</span>.</p>
+<p>A partir do ponto <span class="ltx">A'</span>, tracemos um segmento paralelo ao segmento <span class="seg">AB</span>, que toca em 
+<span class="seg">BB'</span> no ponto <span class="ltx">P</span>. A partir do ponto <span class="ltx">B'</span> tracemos um segmento 
+paralelo ao segmento <span class="seg">BC</span> que toca o segmento <span class="seg">CC'</span> no ponto <span class="ltx">Q</span>.</p>
+<figure>
+<img src="images/seg_cong_b.png" style="widht: 333px; height: 257px" id="fig:seg_cong_b">
+<figcaption>Figura 2.17: Teorema 2.16.
+</figure>
+<p>Deste modo temos que <span class="ltx">AB = A'P</span> e <span class="ltx">BC = B'Q</span>, pois <span class="ltx">AA'PB</span> e 
+<span class="ltx">BB'QC</span> são paralelogramos. Logo temos <span class="ltx">A'P = B'Q</span>, portanto a razão entre eles é igual a 1.  
+</p>
+<p>Observando os triângulos <span class="ltx">&Delta;A'PB'</span> e <span class="ltx">&Delta;B'QC'</span>, temos que seus ângulos correspondentes 
+são congruentes, logo são semelhantes pelo caso ângulo-ângulo-ângulo. Uma vez que a razão de proporcionalidade entre eles é igual a 1, 
+esses triângulos são congruentes.
+</p>
+<p>Portanto temos <span class="ltx">A'B' = B'C'</span>.</p>
+</div>
+<p>O Teorema Fundamental da Proporcionalidade (teorema 2.17) enunciado a seguir, em seu conceito geral, trata de retas paralelas com 
+transversais, no entanto neste contexto, considera-se sua aplicação em um triângulo.</p>
+<div class="teorema" id="teofundprop">
+<span class="negrito">Teorema 2.17 (Teorema Fundamental da Proporcionalidade)</span></br>
+<p>Se uma reta paralela a um dos lados de um triângulo corta os outros dois lados em pontos distintos, 
+então ela os divide na mesma razão.
+</p>
+</div>
+ <p>Medir um segmento significa comparar o comprimento deste  com o comprimento de um outro, tomado como unidade. O resultado desta comparação 
+é um número real. Neste sentido, consideremos os casos em que: $$\frac{AB}{AD} \text{ é um número racional e } \frac{AB}{AD} \text{ é um número irracional.}$$ 
+Para ambos casos, considere a Figura 2.18 abaixo:
+<figure>
+<img src="images/TFP_a.png" style="widht: 416px; height: 194px" id="fig:teofundprop">
+<figcaption>Figura 2.18: Teorema Fundamental da Proporcionalidade.
+</figure>
+<p>Nesta figura, sejam as retas <span class="ltx">r</span>, <span class="ltx">s</span> e <span class="ltx">t</span> paralelas entre si e 
+<span class="ltx">t</span> é a reta suporte do lado <span class="seg">BC</span> do triângulo. Queremos mostrar que 
+$$\frac{AD}{AE} = \frac{DB}{EC}.$$</p>
+<div class="teorema">
+		<span class="negrito">Demonstração</span></br>
+		<h4>1º caso:</h4>
+		<p>$$\frac{AB}{AD} \text{ é um número racional.}$$</p>
+		<p>Neste caso temos que estes segmentos tem medidas racionais, logo existe um segmento de comprimento <span class="ltx">k</span> que cabe 
+		exatamente um número inteiro de vezes, respectivamente <span class="ltx">m</span> e <span class="ltx">n</span>, nos segmentos 
+		<span class="seg">AD</span> e <span class="seg">DB</span>.  Assim temos que <span class="ltx">AD = mk</span> e <span class="ltx">DB = nk</span>.
+		</p>
+		<p>Agora, tracemos retas paralelas à reta <span class="ltx">t</span> que passam pelos extremos dos segmentos de comprimento 
+		<span class="ltx">k</span>, até que encontrem o lado <span class="seg">AC</span> e, aplicando o Teorema 2.16,  seja <span class="ltx">k'</span> 
+		o comprimento dos segmentos definidos por estas paralelas sobre o lado <span class="seg">AC</span>.
+		<figure>
+		<img src="images/TFP_b.png" style="widht: 543px; height: 298px" id="fig:teofundprop_b">
+		<figcaption>Figura 2.19: Teorema Fundamental da Proporcionalidade.
+		</figure>
+		<p>Portanto, temos que <span class="ltx">AE = mk'</span> e <span class="ltx">EC = nk'</span>. Podemos concluir que
+		$$\frac{AD}{DB} = \frac{AE}{EC} = \frac{m}{n} \quad \Leftrightarrow \quad \frac{AD}{AE} = \frac{DB}{EC}.$$
+		</p>
+			<h4>2º caso:</h4>
+			<p>$$\frac{AB}{AD} \text{ é um número irracional.}$$</p>
+		<p>Podemos imaginar, sem prejuízo na generalização, que o segmento <span class="seg">DB</span> tenha sido dividido em <span class="ltx">n</span> 
+		partes congruentes, tais que o comprimento seja um número <span class="ltx">k</span>. Assim temos: 
+		</p>
+		<div>
+			<div style="float: left;" id="eq1">
+			$$DB = n \cdot k$$  
+			</div>
+			<div style="float: right;">
+			(2.3)
+			</div>
+		</div>
+		<p style="clear: both"></p>
+		<p>Traçando retas paralelas ao lado <span class="seg">BC</span> a partir dos extremos destes segmentos, e aplicando o <a href="#teo:seg_cong" target="_blank">Teorema 2.16</a>, temos que <span class="seg">EC</span> se divide em <span class="ltx">n</span> segmentos congruentes, e seja <span class="ltx">k'</span> o comprimento deles. Assim temos:
+		</p>
+		<div>
+			<div style="float: left;" id="eq2">
+			$$EC = n \cdot k'$$  
+			</div>
+			<div style="float: right;">
+			(2.4)
+			</div>
+		</div>
+		<p style="clear: both"></p>
+		<p>Agora, traçando segmentos de comprimento <span class="ltx">k</span>, a partir do ponto <span class="ltx">D</span> e em direção ao ponto 
+		<span class="ltx">A</span>, temos que tais segmentos cabem um número inteiro <span class="ltx">m</span> de vezes no segmento 
+		<span class="seg">AD</span> e tal que:
+		</p>
+		<div>
+			<div style="float: left;" id="eq3">
+			$$m \cdot k < AD < (m + 1) \cdot k,$$  
+			</div>
+			<div style="float: right;">
+			(2.5)
+			</div>
+		</div>
+		<p style="clear: both">
+		e após traçarmos retas paralelas ao lado <span class="seg">BC</span> passando por seus extremos, temos, pelo Teorema 2.16, 
+		<span class="ltx">m</span> segmentos em <span class="seg">AE</span>, tais que:</p>
+		<div>
+			<div style="float: left;" id="eq4">
+			$$m \cdot k' < AE < (m + 1) \cdot k'.$$  
+			</div>
+			<div style="float: right;">
+			(2.6)
+			</div>
+		</div>
+		<p style="clear: both">
+		<figure>
+		<img src="images/TFP_c.png" style="widht: 577px; height: 297px;" id="fig:teofundprop_c">
+		<figcaption>Figura 2.20: Teorema Fundamental da Proporcionalidade.
+		</figure>
+		<p>A partir das equações (2.3) e (2.5), temos que a razão $$\frac{AD}{DB}$$ é um número tal que
+		$$\frac{m}{n} < \frac{AD}{DB} < \frac{(m + 1)}{n}.$$
+		</p>
+		<p>Analogamente, a partir das equações (2.4) e (2.6), temos que a razão $$\frac{AE}{EC}$$ é um número tal que
+		$$\frac{m}{n} < \frac{AE}{EC} < \frac{(m + 1)}{n}.$$
+		</p>
+		<p>Finalmente, temos que $$\frac{m + 1}{n} - \frac{m}{n} = \frac{1}{n}$$ e podemos tomar um valor <span class="ltx">n</span> 
+		suficientemente grande para que $$\frac{1}{n} \rightarrow 0,$$ ou seja, $$\frac{1}{n}$$ será tão pequeno quanto se deseje, 
+		o que permite concluir que 
+		</p>
+		<p>$$\frac{AD}{DB} = \frac{AE}{EC}.$$</p>
+		<p>Portanto, temos $$\frac{AD}{AE} = \frac{DB}{EC}.$$
+		</p>
+</div>
+<div class="teorema" id="teo424">
+<span class="negrito">Teorema 2.18</span></br>
+<p>	As medianas de um triângulo são concorrentes em um ponto que dista de cada vértice dois terços da distância deste vértice
+ao ponto médio do lado oposto.
+</p>
+</div>
+<figure>
+<img src="images/teo424.png" style="widht: 268px; height: 152px;" id="">
+<figcaption>Figura 2.21: As medianas <span class="seg">AM<sub>a</sub></span>, <span class="seg">BM<sub>b</sub></span> e <span class="seg">CM<sub>c</sub></span> concorrem em um ponto <span class="ltx">P</span> .
+</figure>
+<div class="teorema">
+<span class="negrito">Demonstração</span></br>
+<p>Consideremos o triângulo <span class="ltx">&Delta;ABC</span> e os respectivos pontos médios: <span class="ltx">M<sub>a</sub></span>, 
+<span class="ltx">M<sub>b</sub></span> e <span class="ltx">M<sub>c</sub></span>. Consideremos também as retas <span class="ltx">r</span>, 
+<span class="ltx">s</span>, <span class="ltx">t</span>, <span class="ltx">u</span> e <span class="ltx">v</span>, todas paralelas entre si.
+</p>
+<p>Inicialmente, seja <span class="ltx">t</span> a reta suporte da mediana <span class="seg">BM<sub>b</sub></span>. Além disso, 
+<span class="ltx">r</span>, <span class="ltx">s</span>, <span class="ltx">u</span> e <span class="ltx">v</span> passam respectivamente 
+pelos pontos: <span class="ltx">A</span>, <span class="ltx">M<sub>c</sub></span>, <span class="ltx">M<sub>a</sub></span> e 
+<span class="ltx">C</span>. 
+</p>
+<p>Temos que <span class="seg">AM<sub>b</sub></span> &equiv; <span class="seg">M<sub>b</sub>C</span> pois <span class="ltx">M<sub>b</sub></span> 
+é ponto médio do lado <span class="seg">AC</span>, e seja <span class="ltx">P</span> o ponto de interseção entre as medianas 
+<span class="seg">AM<sub>a</sub></span> e <span class="seg">CM<sub>c</sub></span>. Tal ponto existe, pois elas não podem ser paralelas.
+</p>
+<p>Observando os triângulos <span class="ltx">&Delta;ABM<sub>b</sub></span> e <span class="ltx">&Delta;ABP</span>, temos pelo 
+Teorema 2.16 que a reta <span class="ltx">s</span> divide os segmentos <span class="seg">AM<sub>b</sub></span> e 
+<span class="seg">AP</span> em duas partes congruentes cada um, pois <span class="ltx">M<sub>c</sub></span> é ponto médio do lado 
+<span class="seg">AB</span>. Analogamente, temos que a reta <span class="ltx">u</span> divide os segmentos 
+<span class="seg">M<sub>b</sub>C</span> e <span class="seg">CP</span> em duas partes congruentes cada um, pois 
+<span class="ltx">M<sub>a</sub></span> é ponto médio de <span class="seg">BC</span>. Deste modo, temos que as quatro partes obtidas 
+entre as retas paralelas sobre o lado <span class="seg">AC</span> são congruentes, consequentemente, as três partes obtidas na divisão 
+da mediana <span class="seg">AM<sub>a</sub></span> e da mediana <span class="seg">CM<sub>c</sub></span> também são. Em outras palavras, 
+sendo <span class="ltx">P</span> o ponto de interseção entre essas medianas, temos que <span class="ltx">P</span> divide cada uma das 
+medianas <span class="seg">AM<sub>a</sub></span> e <span class="seg">CM<sub>c</sub></span> na proporção <span class="ltx">2/3</span> 
+ou seja, $$AP = \frac{2}{3} \cdot AM_a \text{ e } CP = \frac{2}{3} \cdot CM_c.$$
+</p>
+<figure>
+<img src="images/teo424b.png" style="widht: 326px; height: 169px;" id="fig:teo424b">
+<figcaption>As retas <span class="ltx">r</span>, <span class="ltx">s</span>, <span class="ltx">t</span>, <span class="ltx">u</span> e 
+<span class="ltx">v</span> dividem as medianas <span class="seg">AM<sub>a</sub></span> e <span class="seg">CM<sub>c</sub></span> 
+na proporção de <span class="ltx">2:3</span>.
+</figure>	
+<p>Analogamente, tomando a reta <span class="ltx">t</span> contendo a mediana <span class="seg">AM<sub>a</sub></span>,  
+se <span class="ltx">P'</span> é o ponto de interseção entre as  medianas <span class="seg">BM<sub>b</sub></span> e 
+<span class="seg">CM<sub>c</sub></span>, obtemos que $$BP' = \frac{2}{3} BM_b \text{ e } CP' = \frac{2}{3} CM_c.$$ 
+</p>
+<figure>
+<img src="images/teo424c.png" style="widht: 322px; height: 181px;" id="fig:teo424c">
+<figcaption>As medianas <span class="seg">BM<sub>b</sub></span> e <span class="seg">CM<sub>c</sub></span> concorrem em um ponto 
+<span class="ltx">P'</span>.
+</figure>
+<p>Uma vez que $$CP = \frac{2}{3} \cdot CM_c \text{ e } CP' = \frac{2}{3} \cdot CM_c,$$ temos que <span class="ltx">P = P'</span>.
+</p>
+<p>Portanto, as medianas concorrem em um único ponto e tal ponto as divide na razão <span class="ltx">2/3</span>.
+</p>
+</div>
+<div class="teorema" id="definicao2.16">
+<span class="negrito">Definição 2.16</span></br>
+<p>O ponto em que as medianas são concorrentes chama-se <span class="italico">baricentro</span> do triângulo.	
+</p>
+</div>
+<p>O Teorema 2.19 enunciado a seguir será necessário na demonstração do <a href="raios_tritangentes.html#cor_dist_cen_trit" target="_blank">Corolário 3.44</a> e é consequência do Teorema de Stewart, 
+apresentado em <a href="conclusao_e_referencias.html#referencias" target="_blank">[1]</a> (pág. 152), particularmente quando o segmento em questão é uma mediana.</p>
+<div class="teorema" id="teo_medianas">
+	<span class="negrito">Teorema 2.19 (Teorema das medianas)</span></br>
+	<p>O dobro do quadrado da mediana <span class="ltx">m</span> de um triângulo <span class="ltx">&Delta;ABC</span> é igual à soma 
+	dos quadrados dos dois lados envolvidos menos a metade do quadrado do lado referente à mesma mediana, ou seja: 
+	$$2m_a^2 = b^2 + c^2 - \frac{a^2}{2}$$ em que <span class="ltx">a</span>, <span class="ltx">b</span> e <span class="ltx">c</span> 
+	são a medida dos lados do triângulo e <span class="ltx">m<sub>a</sub></span> é a mediana considerada <a href="conclusao_e_referencias.html#referencias" target="_blank">[1]</a>.
+	</p>
+</div>
+<p>A demonstração a seguir utiliza a <span class="italico">Lei dos Cossenos</span> (<a href="conclusao_e_referencias.html#referencias" target="_blank">[3]</a> pág. 229) e o fato de que 
+$$cos\alpha + cos\theta = 0 \Leftrightarrow \alpha + \theta = 180^{\circ}.$$
+<p>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>	Seja um triângulo <span class="ltx">&Delta;ABC</span>, de lados cujas medidas são <span class="ltx">a</span>, <span class="ltx">b</span> 
+	e <span class="ltx">c</span>, respectivamente, <span class="seg">BC</span>, <span class="seg">AC</span> e <span class="seg">AB</span>, 
+	com mediana <span class="ltx">m<sub>a</<sub> = AD</span>, conforme Figura 2.24:
+	<figure>
+	<img src="images/teo_med.png" style="widht: 216px; height: 144px;" id="fig:teo_med">
+	<figcaption>Figura 2.24: Teorema das medianas.
+	</figure>
+<p>Se <span class="ltx">&alpha; = <img src="images/angADB.png" style="widht: 25px; height: 15px; display: inline-block;"></span> e <span class="ltx">&theta; = <img src="images/angADC.png" style="widht: 25px; height: 15px; display: inline-block;"></span> temos que 
+<span class="ltx">&alpha; + &theta; = 180º</span>.
+</p>
+<p>Aplicando a <span class="italico">Lei dos Cossenos</span> nos triângulos <span class="ltx">&Delta;ADB</span> e 
+<span class="ltx">&Delta;ADC</span>, tem-se:
+</p>
+<p>
+$$c^2 = m_{a}^2 + \dfrac{a^2}{4} - m_{a}\cdot a\cdot cos\alpha$$ e
+$$b^2 = m_{a}^2 + \dfrac{a^2}{4} - m_{a}\cdot a\cdot cos\theta.$$
+Somando as equações membro a membro, temos:
+$$a^2 + b^2 = 2m_{a}^2 + \dfrac{a^2}{2} - m_{a}\cdot a(cos\alpha + cos\theta).$$
+Assim temos $$a^2 + b^2 = 2m_{a}^2 + \dfrac{a^2}{2}$$ e finalmente, $$2m_{a}^2 = a^2 + b^2 - \dfrac{a^2}{2}.$$
+</p>
+</div>
+<h2>2.3.2 Circuncentro</h2>
+<div class="teorema" id="def_mediatriz">
+	<span class="negrito">Definição 2.17</span></br>
+	<p>A <span class="italico">mediatriz</span> de um segmento <span class="seg">AB</span> é a reta perpendicular a este segmento, 
+	passando pelo ponto médio do mesmo.</p>
+</div>
+<p>Todo segmento tem exatamente um ponto médio, e pelo ponto médio passa exatamente uma reta perpendicular. Assim, a mediatriz é única 
+(princípio da unicidade).</p>
+<p>Os lados de um triângulo são também segmentos e, com isso, podemos associar a cada um deles suas mediatrizes.</p>
+<div class="teorema" id="teo623">
+	<span class="negrito">Teorema 2.20</span></br>
+	<p>As mediatrizes dos lados de um triângulo são concorrentes em um ponto equidistante dos três vértices do triângulo.
+	</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Seja um triângulo <span class="ltx">&Delta;ABC</span> e sejam <span class="ltx">r</span>, <span class="ltx">s</span> e 
+	<span class="ltx">t</span> as mediatrizes, respectivamente, dos lados <span class="seg">AB</span>, <span class="seg">AC</span> e 
+	<span class="seg">BC</span>. Tomando tais retas duas a duas, a posição relativa entre elas é de concorrência.</p>
+<figure>
+<img src="images/teo623.png" style="widht: 306px; height: 176px;" id="fig:teo623">
+<figcaption>Figura 2.25: As mediatrizes <span class="ltx">r</span> e <span class="ltx">s</span> concorrem em um ponto <span class="ltx">O</span>.
+</figure>
+<p>De fato, se as retas <span class="ltx">r</span> e <span class="ltx">s</span>, por exemplo, fossem paralelas, os pontos 
+<span class="ltx">A</span>, <span class="ltx">B</span> e <span class="ltx">C</span> do triângulo seriam colineares e o triângulo 
+<span class="ltx">&Delta;ABC</span> não estaria definido. Se as retas <span class="ltx">r</span> e <span class="ltx">s</span> fossem coincidentes, 
+por um mesmo ponto médio estariam duas mediatrizes, contrariando o princípio da unicidade das mediatrizes. Portanto elas concorrem em um ponto 
+<span class="ltx">O</span>. Escolhendo outras duas dessas retas, o resultado é análogo.</p>
+</div>
+<p>Pelo <a href="#teo210" target="_blank">Teorema 2.4</a>, como o ponto <span class="ltx">O</span> está na mediatriz 
+do segmento <span class="seg">AC</span>, tem-se <span class="ltx">OA = OC</span>, e como <span class="ltx">O</span> está na mediatriz 
+de <span class="seg">AB</span>, tem-se <span class="ltx">OB = OA</span>. Portanto, <span class="ltx">OA = OB = OC</span>. </p>
+
+<p>Assim, é possível traçar uma circunferência de centro em <span class="ltx">O</span>, de raio <span class="ltx">r = OA = OB = OC</span>, 
+que passa pelos vértices <span class="ltx">A</span>, <span class="ltx">B</span> e <span class="ltx">C</span>.</p>
+
+<div class="teorema" id="cor624">
+	<span class="negrito">Corolário 2.21</span></br>
+	<p>Existe uma única circunferência que passa por três pontos não colineares (a). Todo triângulo é inscritível (b).</p>
+</div>
+<div class="teorema" id="def:circuncentro">
+	<span class="negrito">Definição 2.18 </span></br>
+	<p>O ponto de encontro das mediatrizes, que é o centro da circunferência circunscrita a um triângulo, é chamado <span class="italico">circuncentro</span>
+	desse triângulo.
+	</p>
+</div>
+<h2>2.3.3 Ortocentro</h2>
+<p>Todo triângulo possui exatamente três alturas relativas. No contexto desta seção, a palavra <span class="italico">altura</span> 
+será definida com a seguinte denotação:</p>
+<div class="teorema" id="def:altura">
+	<span class="negrito">Definição 2.19 </span></br>
+	<p>Dado um triângulo <span class="ltx">&Delta;ABC</span> e seja <span class="ltx">H<sub>a</sub></span> o pé da perpendicular baixada a 
+	partir do vértice <span class="ltx">A</span> sobre o lado <span class="seg">BC</span>, oposto a ele, ou sobre a reta 
+	<img src="images/retaBC.png" style="widht: 25px; height: 18px; display: inline-block;">. O segmento <span class="seg">AH<sub>a</sub></span> é chamado de 
+	<span class="italico">altura</span> relativa ao lado <span class="seg">BC</span> ou ao vértice <span class="ltx">A</span>.</p>
+</div>
+<p>Por outro lado, a palavra <span class="italico">altura</span> pode indicar:</p>
+<ul>
+	<li class="itemnum">um número, que é o comprimento do segmento perpendicular;</li>
+	<li class="itemnum">a reta que contém o segmento perpendicular.</li>
+</ul>
+<p>No conceito (2), as alturas concorrem em um único ponto.</p>
+<figure>
+<img src="images/teo627a.png" style="widht: 453px; height: 152px;" id="fig:teo627a">
+<figcaption>Figura 2.26: As alturas concorrem em um ponto. À esquerda, em um ponto interior do triângulo, à direita, em um ponto exterior.</figcaption>
+</figure>
+<div class="teorema" id="teo624">
+	<span class="negrito">Teorema 2.22 </span></br>
+	<p>As três alturas de um triângulo são concorrentes.</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração </span></br>
+	<p>Seja um triângulo <span class="ltx">&Delta;ABC</span> e <span class="seg">AH<sub>a</sub></span> a altura relativa ao lado 
+	<span class="seg">BC</span>. Sejam os pontos <span class="ltx">D</span>, <span class="ltx">E</span> e <span class="ltx">F</span>, 
+	tais que <span class="seg">DE</span> e <span class="seg">BC</span>, <span class="seg">DF</span> e <span class="seg">AC</span>, 
+	e <span class="seg">EF</span> e <span class="seg">AB</span> são pares de segmentos paralelos, conforme ilustração:</p>
+<figure>
+<img src="images/teo627b.png" style="widht: 252px; height: 167px;" id="fig:teo627b">
+<figcaption>Figura 2.27: <span class="seg">DE</span> e <span class="seg">BC</span>, <span class="seg">DF</span> e <span class="seg">AC</span>, 
+	e <span class="seg">EF</span> e <span class="seg">AB</span> são pares de segmentos paralelos</figcaption>
+</figure>
+ 	
+<p>Note que ocorrem os paralelogramos <span class="ltx">ADBC</span>, <span class="ltx">ABCE</span> e <span class="ltx">ABFC</span>. 
+Logo podemos escrever as igualdades: <span class="ltx">AC = DB = BF</span>, <span class="ltx">DA = AE = BC</span> e <span class="ltx">AB = EC = CF</span>. 
+Neste sentido, <span class="ltx">A</span> é ponto médio de <span class="seg">DE</span>, assim como <span class="ltx">C</span> é de <span class="seg">EF</span> 
+e <span class="ltx">B</span> é de <span class="seg">DF</span>.</p>
+
+<p>Tomando a altura relativa ao vértice <span class="ltx">A</span>, uma vez que <span class="ltx">A</span> é ponto médio, tem-se que esta altura 
+é mediatriz do lado <span class="seg">DE</span>. Analogamente a altura relativa ao vértice <span class="ltx">B</span> e a altura relativa ao 
+vértice <span class="ltx">C</span> são, respectivamente, mediatrizes dos lados <span class="seg">DF</span> e <span class="seg">EF</span>. 
+Deste modo, as alturas do triângulo <span class="ltx">&Delta;ABC</span> correspondem respectivamente às mediatrizes do triângulo 
+<span class="ltx">&Delta;DEF</span>.  Pelo <a href="#teo623" target="_blank">Teorema 2.20</a>, elas concorrem em um único ponto.</p>
+</div>
+<div class="teorema" id="def:ortocentro">
+	<span class="negrito">Definição 2.20</span></br>
+	<p>O ponto de encontro das três <span class="italico">alturas</span> é chamado de <span class="italico">ortocentro</span> do triângulo.</p>
+	</div>
+<h2>2.3.4 Incentro</h2>
+<p>Nesta seção, o conceito de bissetriz fica restrito a um segmento associado a um vértice do triângulo. Na <a href="bissetriz.html#Def_biss" target="_blank">Seção 3.2, Definição 3.2</a> 
+apresentam-se outras propriedades sobre as bissetrizes, estendendo esses conceitos ao ângulo entre duas retas.</p>
+<div class="teorema">
+	<span class="negrito">Definição 2.21</span></br>
+	<p>Uma semirreta <img src="images/sretaOC.png" style="widht: 25px; height: 18px; display: inline-block;"> é uma bissetriz de um ângulo 
+	<img src="images/angAOB.png" style="widht: 25px; height: 15px; display: inline-block;"> se <span class="ltx">C</span> está no interior de <img src="images/angAOB.png" style="widht: 25px; height: 15px; display: inline-block;"> e 
+	<span class="ltx"><img src="images/angAOC.png" style="widht: 25px; height: 15px; display: inline-block;"> &equiv; <img src="images/angBOC.png" style="widht: 25px; height: 15px; display: inline-block;"></span>.</p>
+</div>
+<div class="teorema" id="lema629">
+	<span class="negrito">Lema 2.23</span></br>
+	<p>A bissetriz de um ângulo, exceto sua origem, é o conjunto dos pontos do interior do ângulo equidistantes dos lados do ângulo.</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Seja o ângulo <img src="images/angAOB.png" style="widht: 25px; height: 15px; display: inline-block;"> e <span class="ltx">P</span> um ponto em sua bissetriz. Temos que 
+	<span class="ltx">m(<img src="images/angAOP.png" style="widht: 25px; height: 15px; display: inline-block;">)</span> = <span class="ltx">m(<img src="images/angBOP.png" style="widht: 25px; height: 15px; display: inline-block;">)</span>. Sejam <span class="ltx">N</span> e <span class="ltx">M</span>, 
+	respectivamente, os pés das perpendiculares do ponto <span class="ltx">P</span> sobre as semirretas 
+	<img src="images/sretaOA.png" style="widht: 25px; height: 18px; display: inline-block;"> e
+	<img src="images/sretaOB.png" style="widht: 25px; height: 18px; display: inline-block;">. Temos que <span class="ltx">m(<img src="images/angOPN.png" style="widht: 25px; height: 15px; display: inline-block;">) = m(<img src="images/angOPM.png" style="widht: 25px; height: 15px; display: inline-block;">) = 90º</span>. 
+	Com isso, os triângulos <span class="ltx">&Delta;OPN</span> e <span class="ltx">&Delta;OPM</span> são congruentes, pelo caso lado, ângulo e 
+	ângulo oposto, pois <span class="seg">OP</span> é lado comum. Assim, temos que <span class="ltx">PN = PM</span>.</p>
+<figure>
+<img src="images/lema629.png" style="widht: 378px; height: 229px;" id="fig:lema629">
+<figcaption>Figura 2.29: O ponto <span class="ltx">P</span> está na bissetriz do ângulo <span class="ltx"><img src="images/angAOP.png" style="widht: 25px; height: 15px; display: inline-block;"></span>.</figcaption>
+</figure>
+<p>Por outro lado, seja <span class="ltx">P</span> um ponto no interior do ângulo <span class="ltx"><img src="images/angAOP.png" style="widht: 25px; height: 15px; display: inline-block;"></span>, e <span class="ltx">N</span> 
+e <span class="ltx">M</span>, respectivamente, os pés das perpendiculares do ponto <span class="ltx">P</span> nas semirretas 
+<img src="images/sretaOA.png" style="widht: 25px; height: 18px; display: inline-block;"> e
+	<img src="images/sretaOB.png" style="widht: 25px; height: 18px; display: inline-block;"> tais que <span class="ltx">PN = PM</span>. 
+	Temos que <span class="seg">OP</span> é hipotenusa comum nos triângulos <span class="ltx">&Delta;OPN</span> e <span class="ltx">&Delta;OPM</span>. 
+	Pelo caso CH (cateto, hipotenusa), esses triângulos são congruentes, logo 
+	<span class="ltx">m(<img src="images/angNOP.png" style="widht: 25px; height: 15px; display: inline-block;">)</span> = <span class="ltx">m(<img src="images/angMOP.png" style="widht: 25px; height: 15px; display: inline-block;">)</span>. Portanto, <span class="seg">OP</span> está na bissetriz 
+	do ângulo <img src="images/angAOB.png" style="widht: 25px; height: 15px; display: inline-block;">.</p>
+</div>
+<div class="teorema" id="def:biss_triangulo">
+	<span class="negrito">Definição 2.22</span></br>
+	<p>Uma bissetriz de um triângulo é um segmento da bissetriz de cada ângulo do triângulo, compreendido entre o vértice correspondente e 
+	o lado oposto.</p>
+</div>
+
+<p>Todo triângulo, no conceito que associa uma bissetriz a um vértice <a href="#def:biss_triangulo">(Definição 2.22)</a>, possui três bissetrizes.</p>
+<div class="teorema" id="teo630">
+	<span class="negrito">Teorema 2.24</span></br>
+	<p>As bissetrizes dos ângulos de um triângulo são concorrentes em um ponto equidistante dos três lados do triângulo.</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Considere um triângulo <span class="ltx">&Delta;ABC</span> e suas bissetrizes. Tomando-as duas a duas, não faz sentido ocorrer paralelismo 
+	ou coincidência, logo elas são concorrentes. Vamos considerar as bissetrizes do vértice <span class="ltx">A = <span class="seg">AD</span></span>, 
+	do vértice <span class="ltx">B = <span class="seg">BE</span></span> e do vértice <span class="ltx">C = <span class="seg">CF</span></span>,  
+	e seja <span class="ltx">I</span> o ponto onde as primeiras concorrem.</p>
+<figure>
+<img src="images/teo630.png" style="widht: 271px; height: 167px;" id="fig:teo630">
+<figcaption>Figura 2.29: As bissetrizes concorrem em um único ponto.</figcaption>
+</figure>
+<p>Como o ponto <span class="ltx">I</span> está na bissetriz <span class="seg">AD</span> (<a href="#fig:teo630" target="_blank">Figura 2.29</a>, 
+<span class="ltx">I</span> equidista de <span class="seg">AC</span> e de <span class="seg">AB</span>, mas <span class="ltx">I</span> também está 
+na bissetriz <span class="seg">BE</span>, logo também equidista de <span class="seg">AB</span> e <span class="seg">BC</span>. 
+Assim, as distâncias <span class="ltx">IE</span>, <span class="ltx">ID</span> e <span class="ltx">IF</span> do ponto <span class="ltx">I</span> 
+até os lados <span class="seg">AB</span>, <span class="seg">AC</span> e <span class="seg">BC</span>, são iguais; portanto 
+<span class="ltx">I</span> está na interseção das três bissetrizes e é equidistante dos três lados do triângulo.</p>
+</div>
+<p>Em consequência, vem o seguinte corolário:</p> 
+<div class="teorema" id="corolario631">
+	<span class="negrito">Corolário 2.25</span></br>
+	<ol>
+	<li  class="itemletra">Existe uma única circunferência que tangencia os três lados de um triângulo.</li>
+	<li  class="itemletra">Todo triângulo é circunscritível.</li>
+	</ol>
+</div>
+
+<figure>
+<img src="images/teo630b.png" style="widht: 253px; height: 145px;" id="fig:teo630b">
+<figcaption>Figura 2.30: Circunferência inscrita de centro <span class="ltx">I</span>.</figcaption>
+</figure>
+<div class="teorema" id="def:incentro">
+	<span class="negrito">Definição 2.23</span></br>
+	<p>O ponto de encontro das bissetrizes, que é também o centro da circunferência inscrita a um triângulo, é chamado <span class="italico">Incentro</span>
+	do triângulo.</p>
+</div>
+
+        </div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | &copy; Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>

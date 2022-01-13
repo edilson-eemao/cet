@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <title>Centros Tritangentes</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>CENTROS TRITANGENTES</h1></div>
+			</div>
+			
+			
+			<nav id="menu">
+					
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+					<!-- inicio esquerda  -->
+<h2 id="sec:centros_tritangentes">3.4 Centros Tritangentes</h2>
+<p>Vimos na <a href="pontos_notaveis.html#sec:pontos_notaveis_de_um_triangulo" target="_blank">Seção 2.3</a> que as três bissetrizes internas dos ângulos de um triângulo encontram-se em um ponto <span class="ltx">I</span>, o incentro do triângulo.
+</p>
+<figure>
+<img src="images/teorema116.png" style="widht: 197px; height: 138px;" id="teorema116">
+<figcaption>Figura 3.20: As bissetrizes internas de um triângulo encontram-se no incentro <span class="ltx">I</span>.</figcaption>
+</figure>
+<p>O <a href="#excentro">Teorema 3.18</a> a seguir enuncia outros pontos notáveis em um triângulo.
+</p> 
+<div class="teorema" id="excentro">
+	<span class="negrito">Teorema 3.18</span></br>
+	<p>As bissetrizes externas de dois ângulos de um triângulo se encontram na bissetriz interna do terceiro ângulo.
+	</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Consideremos no triângulo <span class="ltx">&Delta;ABC</span> o vértice <span class="ltx">A</span>. Seja <span class="ltx">P</span> o ponto de interseção entre as bissetrizes externas dos ângulos nos vértices<span class="ltx">B</span> e <span class="ltx">C</span>. É fato que elas se encontram, pois são perpendiculares às respectivas bissetrizes internas. Conforme a <a href="bissetriz.html#Def_biss" target="_blank">Definição 3.2</a> (sobre bissetrizes), <span class="ltx">P</span> é equidistante às retas suporte <img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;"> e <img src="images/retaBC.png" style="widht: 20px; height: 15px; display: inline-block;">, consequentemente, aos lados <span class="seg">AB</span> e <span class="seg">BC</span> pois está na bissetriz externa do ângulo <span class="ltx">B</span>. Do mesmo modo, <span class="ltx">P</span> é equidistante às retas suporte <img src="images/retaAC.png" style="widht: 20px; height: 15px; display: inline-block;"> e <img src="images/retaBC.png" style="widht: 20px; height: 15px; display: inline-block;">, consequentemente, aos lados <span class="seg">AC</span> e <span class="seg">BC</span> pois está na bissetriz externa do ângulo no vértice <span class="ltx">C</span>. Logo <span class="ltx">P</span> equidista das retas suporte <img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;"> e <img src="images/retaAC.png" style="widht: 20px; height: 15px; display: inline-block;">, consequentemente, dos lados <span class="seg">AB</span> e <span class="seg">AC</span>, portanto <span class="ltx">P</span> está na bissetriz interna do ângulo <span class="ltx">A</span>. 
+	</p>
+</div>
+<figure>
+<img src="images/teorema117.png" style="widht: 353px; height: 241px;" id="teorema117">
+<figcaption>Figura 3.21: As bissetrizes externas de dois ângulos encontram-se na bissetriz interna do terceiro ângulo.</figcaption>
+</figure>
+<p>Deste ponto em diante, o ponto de interseção referido no <a href="#excentro">Teorema 3.18</a> é identificado como <span class="ltx">I<sub>a</sub></span>, pois localiza-se na bissetriz interna relativa ao vértice <span class="ltx">A</span>, e é citado na definição a seguir:
+</p>
+<div class="teorema" id="exinscritos">
+	<span class="negrito">Definição 3.3 </span></br>
+	<p>(a) O ponto <span class="ltx">I<sub>a</sub></span> da bissetriz interna <span class="ltx">AII<sub>a</sub></span> do triângulo <span class="ltx">&Delta;ABC</span> é chamado de <span class="italico">ex-incentro</span> do triângulo em relação ao vértice <span class="ltx">A</span> ou o ex-incentro de <span class="ltx">A</span>.
+	</p>	
+	<p>(b) O ponto <span class="ltx">P</span> representado na <a href="#teorema117">Figura 3.21</a> é equidistante dos três lados do triângulo <span class="ltx">&Delta;ABC</span> e é, portanto, o centro de uma circunferência ex-inscrita (<span class="ltx">I<sub>a</sub></span>) tocando o lado <span class="seg">BC</span> do triângulo <span class="ltx">&Delta;ABC</span> nos ponto <span class="ltx">X<sub>a</sub></span> e o prolongamento dos lados <span class="seg">AC</span> e <span class="seg">AB</span>, respectivamente nos pontos <span class="ltx">Y<sub>a</sub></span> e <span class="ltx">Z<sub>a</sub></span>. A circunferência (<span class="ltx">I<sub>a</sub></span>) e seu centro <span class="ltx">I<sub>a</sub></span> podem ser mencionados como relativos ao lado <span class="seg">BC</span>, ou ao vértice <span class="ltx">A</span> ou ao ângulo <span class="ltx">&Acirc;</span>.
+	</p>
+</div>
+<p>Os dois pontos análogos <span class="ltx">I<sub>b</sub></span>, <span class="ltx">I<sub>c</sub></span> e as duas circunferências análogas (<span class="ltx">I<sub>b</sub></span>), (<span class="ltx">I<sub>c</sub></span>) são relativos aos outros dois vértices (respectivamente) <span class="ltx">B</span>, <span class="ltx">C</span> ou aos outros dois lados <span class="seg">CA</span>, <span class="seg">AB</span>.
+</p>
+<figure>
+<img src="images/circ_ttg.png" style="widht: 333px; height: 312px;" id="circ_ttga">
+<figcaption>Figura 3.22: Os centros tritangentes e as circunferências tritangentes.</figcaption>
+</figure>
+<p>A circunferência inscrita (I) e as três circunferências ex-inscritas (<span class="ltx">I<sub>a</sub></span>), (<span class="ltx">I<sub>b</sub></span>), (<span class="ltx">I<sub>c</sub></span>) são algumas vezes referidas como as quatro <span class="italico">circunferências tritangentes</span> do triângulo <span class="ltx">&Delta;ABC</span>, e seus centros, como os quatro <span class="italico">centros tritangentes</span> do triângulo.
+</p>
+<div class="teorema" id="">
+	<span class="negrito">Corolário 3.19</span></br>
+	<p>Os quatro centros tritangentes de um triângulo estão em seis retas: as bissetrizes (internas e externas) dos ângulos do triângulo. Cada centro tritangente fica em três retas (01 bissetriz interna de um vértice e duas externas dos outros dois vértices), e em cada reta há dois centros tritangentes.
+	</p>
+</div>
+<p>O tamanho da bissetriz de um triângulo deve ser entendido nos termos da <a href="pontos_notaveis.html#def:biss_triangulo" target="_blank">Definição 2.22</a>, e no caso da bissetriz externa, é medida entre o vértice e a interseção com o prolongamento do lado oposto a ele.
+</p>
+<p>O <a href="#div_harm1">Teorema 3.20</a> diz que os centros tritangentes, tomados dois a dois, definem um segmento harmônico relativo à bissetriz onde estão inseridos, isto é, são conjugados harmônicos desta bissetriz.
+</p>
+<div class="teorema" id="div_harm1">
+	<span class="negrito">Teorema 3.20</span></br>
+	<p>Dois centros tritangentes dividem, harmonicamente, a bissetriz na qual eles estão localizados.
+	</p>
+</div>
+<p>Na Figura <a href="#teorema120">Figura 3.23</a> é possível visualizar a bissetriz interna <span class="seg">AU</span> do vértice <span class="ltx">A</span> e a bissetriz externa do vértice <span class="ltx">B</span>, que passa por <span class="ltx">I<sub>c</sub></span> e termina em um ponto <span class="ltx">E</span>, definido na interseção com o lado <span class="seg">AC</span>.
+</p>
+<figure>
+<img src="images/teorema120.png" style="widht: 424px; height: 384px;" id="teorema120">
+<figcaption>Figura 3.23: Divisão harmônica do segmento <span class="seg">AU</span></figcaption>
+</figure>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Primeiramente verifiquemos a validade do teorema para as bissetrizes internas.
+	</p>
+	<p>	Na bissetriz interna do vértice <span class="ltx">A</span>, seja <span class="ltx">U</span> o ponto de interseção do segmento <span class="seg">AI<sub>a</sub></span> com o lado <span class="seg">BC</span>. Deseja-se mostrar que as interseções <span class="ltx">I</span>, <span class="ltx">I<sub>a</sub></span> dividem harmonicamente o segmento <span class="seg">AU</span> que é base no triângulo <span class="ltx">&Delta;BAU</span>, ou seja: $$\frac{IA}{IU} = \frac{I_{a}A}{I_{a}U}$$ (veja <a href="#teorema120">Figura 3.23</a>). 
+	</p>
+	<p>Aplicando o Teorema das Bissetrizes Internas <a href="bissetriz.html#teo_biss_int" target="_blank">Teorema 3.8</a> sobre o triângulo <span class="ltx">&Delta;BAU</span> tem-se:
+	$$\frac{IA}{IU}=\frac{AB}{BU}.$$
+	</p>
+<p>	Aplicando o Teorema das Bissetrizes Externas <a href="bissetriz.html#teo_biss_ext" target="_blank">Teorema 3.9</a> sobre o mesmo triângulo, tem-se:
+	$$\frac{AI_a}{UI_a}=\frac{AB}{BU}.$$
+</p>	
+	<p>Portanto, vale a relação: $$\frac{IA}{IU} = \frac{I_{a}A}{I_{a}U}.$$
+	Analogamente, vale para as outras bissetrizes internas.
+	</p>
+<p>Agora, verifiquemos para as bissetrizes externas.
+</p>
+	<p>Considere <span class="ltx">E</span> o ponto de interseção do lado <span class="seg">AC</span> com a bissetriz <span class="seg">I<sub>c</sub>I<sub>a</sub></span>. Deseja-se  mostrar que estes centros dividem a bissetriz <span class="seg">BE</span> harmonicamente, ou seja, $$\frac{BI_a}{BI_c} = \frac{EI_{a}}{EI_{c}}.$$
+	</p>
+	<p>No triângulo <span class="ltx">&Delta;BAE</span>, <span class="seg">AI<sub>c</sub></span> é bissetriz interna e <span class="seg">AI<sub>a</sub></span> é bissetriz externa.
+	</p>
+	<p>Pelo Teorema das Bissetrizes Internas, tem-se:
+	$$\frac{BI_c}{EI_c} = \frac{AB}{EA}.$$
+	</p>
+	<p>Pelo Teorema das Bissetrizes Externas, tem-se:
+	$$\frac{BI_a}{EI_a} = \frac{AB}{EA}.$$
+	</p>
+	<p>Logo,
+	$$\frac{BI_a}{EI_a} = \frac{BI_c}{EI_c} \Leftrightarrow \frac{BI_a}{BI_c} = \frac{EI_a}{EI_c},$$
+	o equivale a dizer que os pontos <span class="ltx">I<sub>a</sub></span> e <span class="ltx">I<sub>c</sub></span> são harmônicos em relação à bissetriz <span class="seg">BE</span>.
+</p>
+</div>
+<div class="teorema" id="div_harm2">
+	<span class="negrito">Teorema 3.21</span></br>
+	<p>Em um triângulo, um centro tritangente situado em uma bissetriz interna (externa) divide essa bissetriz na proporção da soma (diferença) dos lados que formam o ângulo considerado para o lado oposto a esse ângulo (veja <a href="#teorema120">Figura 3.23</a>).
+	</p>
+</div>
+
+<p>Em outras palavras, em um triângulo, fixado um vértice, o incentro divide a bissetriz interna na proporção da soma dos lados adjacentes para o lado oposto. Já na bissetriz externa, o centro tritangente a divide na proporção da diferença dos lados adjacentes para o lado oposto. 
+</p>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+<p>No triângulo <span class="ltx">&Delta;ABC</span> (<a href="#teorema120">Figura 3.23</a>) sejam seus lados <span class="ltx"><span class="seg">AB</span> = c</span>, <span class="ltx"><span class="seg">BC</span> = a</span> e <span class="ltx"><span class="seg">AC</span> = b</span>. Além disso, seja <span class="ltx">U'</span> o ponto de interseção entre <span class="seg">AI<sub>c</sub></span> e o lado <span class="seg">BC</span>. Deseja-se verificar a validade da relação $$\frac{AI}{IU} = \frac{(b + c)}{a}$$ para as bissetrizes internas e 
+$$\frac{AI_c}{U'I_c} = \frac{(b - c)}{a}$$ para as bissetrizes externas.
+</p>
+<p>No triângulo <span class="ltx">&Delta;ABC</span>, pelo Teorema da Bissetriz Interna, tem-se:
+$$\frac{BU}{UC} = \frac{AB}{AC} = \frac{c}{b}.$$ 
+</p>
+<p>Aplicando uma propriedade das proporções, tem-se $$\frac{BU}{BU + UC} = \frac{c}{b + c}$$ e substituindo <span class="ltx">BU + UC</span> por <span class="ltx">a</span>, tem-se:
+</p>
+<p id="eq1">
+	$$\frac{BU}{a} = \frac{c}{b + c} \Rightarrow BU = \frac{ac}{b + c}. \hspace{10 cm} (3.3)$$
+</p>
+<p>Pelo Teorema da Bissetriz Externa, tem-se:
+$$\frac{BU'}{CU'} = \frac{AB}{AC} = \frac{c}{b}.$$ 
+</p>
+<p>Aplicando uma propriedade das proporções $$\frac{BU'}{CU' - BU'} = \frac{c}{b - c}$$ e substituindo <span class="ltx">CU' - BU'</span> por <span class="ltx">a</span> tem-se: 
+</p>
+<p id="eq2">
+	$$\frac{BU'}{a} = \frac{c}{b - c} \Rightarrow BU' = \frac{ac}{b - c}. \hspace{10 cm} (3.4)$$
+</p> 
+<p>Já nos triângulos <span class="ltx">&Delta;BAU</span> e <span class="ltx">&Delta;BAU'</span>, pelo Teorema da Bissetriz Interna, tem-se:
+$$\frac{AI}{IU} = \frac{c}{BU} \quad \text{e} \quad \frac{AI_c}{U'I_c} = \frac{c}{BU'}.$$
+</p>
+<p>Pelas equações <a href="#eq1">3.3</a> e <a href="#eq2">3.4</a>, substituindo <span class="ltx">BU</span> e <span class="ltx">BU'</span>, respectivamente, tem-se:
+$$\frac{AI}{IU} = \frac{c}{\frac{ac}{b + c}} = \frac{(b + c)}{a}$$ 
+e
+$$\frac{AI_c}{U'I_c} = \frac{c}{\frac{ac}{b - c}} = \frac{(b - c)}{a}.$$ 
+</p>
+</div>
+
+<div class="teorema" id="t_diams"><span class="negrito">Teorema 3.22</span></br>
+	<p>Dois centros tritangentes de um triângulo são as extremidades de um diâmetro de uma circunferência que passa pelos dois vértices do triângulo que não são colineares com os centros considerados.
+</p>
+</div>
+<p>O <a href="#t_diams">Teorema 3.22</a> enunciado está ilustrado nas figuras <a href="#teorema122a">3.24</a> e <a href="#teorema122b">3.26</a>. Podemos observar a existência de seis circunferências nas quais os lados do triângulo são cordas e os centros tritangentes, tomados dois a dois, constituem diâmetro. Além disso, também será provado que o centro de tais circunferências está na circunferência circunscrita do triângulo <span class="ltx">&Delta;ABC</span>. 
+</p>
+<figure>
+<img src="images/teorema122a.png" style="widht: 304px; height: 224px;" id="teorema122a">
+<figcaption>Figura 3.24: O incentro <span class="ltx">I</span> é diâmetro com os centros ex-inscritos <span class="ltx">I<sub>a</sub></span>, <span class="ltx">I<sub>b</sub></span> e <span class="ltx">I<sub>c</sub></span>.</figcaption>
+</figure>
+
+<div class="teorema" id="t_center"><span class="negrito">Demonstração</span></br>
+	<p>Considere o incentro <span class="ltx">I</span> e o centro ex-inscrito <span class="ltx">I<sub>a</sub></span> (<a href="#teorema122a">Figura 3.25</a>). Precisamos mostrar que os vértices <span class="ltx">B</span> e <span class="ltx">C</span> são extremos de uma corda em uma circunferência cujo diâmetro é o segmento <span class="seg">II<sub>a</sub></span>. 
+	</p>
+	<p>As bissetrizes <span class="seg">BI</span> (interna de <span class="ltx">B</span>) e <span class="seg">BI<sub>a</sub></span> (externa de <span class="ltx">B</span>), <span class="seg">CI</span> (interna de <span class="ltx">C</span>) e <span class="seg">CI<sub>a</sub></span> (externa de <span class="ltx">C</span>) são perpendiculares entre si; consequentemente o triângulo <span class="ltx">&Delta;IBI<sub>a</sub></span> é retângulo em <span class="ltx">B</span>, logo está inscrito em uma circunferência de diâmetro <span class="seg">II<sub>a</sub></span>. O mesmo vale para o triângulo <span class="ltx">&Delta;ICI<sub>a</sub></span>, que é retângulo em <span class="ltx">C</span>, logo está inscrito na mesma circunferência. 
+	</p>
+<figure>
+<img src="images/teorema122a2.png" style="widht: 292px; height: 210px;" id="teorema122a2">
+<figcaption>Figura 3.25: Nos triângulos <span class="ltx">&Delta;IBI<sub>a</sub></span> e <span class="ltx">&Delta;ICI<sub>a</sub></span> o lado <span class="seg">II<sub>a</sub></span> é diâmetro.</figcaption>
+</figure>
+<p>Em relação aos diâmetros <span class="seg">II<sub>b</sub></span> e <span class="seg">II<sub>c</sub></span>, a demonstração é análoga.
+</p>
+<p>A seguir são considerados os segmentos <span class="seg">I<sub>a</sub>I<sub>b</sub></span>, <span class="seg">I<sub>a</sub>I<sub>c</sub></span> e <span class="seg">I<sub>b</sub>I<sub>c</sub></span> (<a href="#teorema122b">Figura 3.26</a>). Afirma-se que estes segmentos são diâmetros de circunferências que satisfazem ao <a href="#t_diams">Teorema 3.22</a>. 
+</p>
+<figure>
+<img src="images/teorema122b.png" style="widht: 249px; height: 254px;" id="teorema122b">
+<figcaption>Figura 3.26: Dois dos centros ex-inscritos <span class="ltx">I<sub>a</sub></span>, <span class="ltx">I<sub>b</sub></span> e <span class="ltx">I<sub>c</sub></span> são entre si, um diâmetro.</figcaption>
+</figure>
+<p>Verifiquemos que o segmento <span class="seg">I<sub>b</sub>I<sub>c</sub></span> é diâmetro de uma circunferência que contém os vértices <span class="ltx">B</span> e <span class="ltx">C</span>. 
+</p>
+	<p>Considere os dois centros ex-inscritos: <span class="ltx">I<sub>b</sub></span> e <span class="ltx">I<sub>c</sub></span>. As bissetrizes <span class="seg">BI<sub>b</sub></span> e <span class="seg">BI<sub>c</sub></span>, <span class="seg">CI<sub>b</sub></span> e <span class="seg">CI<sub>c</sub></span>, são perpendiculares entre si. Daí os triângulos <span class="ltx">&Delta;I<sub>c</sub>BI<sub>b</sub></span> e <span class="ltx">&Delta;I<sub>c</sub>CI<sub>b</sub></span> são retângulos, respectivamente, em <span class="ltx">B</span> e em <span class="ltx">C</span>. Portanto, <span class="seg">I<sub>b</sub>I<sub>c</sub></span> é diâmetro <a href="arcos_de_circ.html#coro614" target="_blank">Corolário 2.9</a> de uma circunferência que contém os vértices <span class="ltx">B</span> e <span class="ltx">C</span>.
+	</p>
+<figure>
+<img src="images/teorema122b2.png" style="widht: 280px; height: 184px;" id="teorema122b2">
+<figcaption>Figura 3.27: Os dois centros ex-inscritos <span class="ltx">I<sub>b</sub></span>, <span class="ltx">I<sub>c</sub></span> formam um diâmetro em uma circunferência que contém <span class="ltx">B</span> e <span class="ltx">C</span>.</figcaption>
+</figure>
+</div>
+<div class="teorema" id=""><span class="negrito">Corolário 3.23</span></br>
+	<p>O centro de tais circunferências está na circunferência circunscrita do triângulo.
+	</p>
+</div>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Para o caso da circunferência cujo diâmetro é definido por um centro de circunferência ex-inscrita e o incentro:
+	</p>
+	<p>Considere a circunferência circunscrita ao triângulo <span class="ltx">&Delta;ABC</span> (<a href="#teorema122a3">Figura 3.23</a>). A mediatriz do lado <span class="seg">BC</span> intersecta o segmento <span class="seg">II<sub>a</sub></span> em seu ponto médio, digamos: <span class="ltx">K</span>, que também é centro da circunferência <span class="ltx">(II<sub>a</sub>)</span>. Por consequencia do <a href="teo_int_reta_circ.html#teo65" target="_blank">Teorema 2.5</a>, a mesma mediatriz intersecta o arco 
+	<img src="images/arcoAB.png" style="widht: 25px; height: 15px; display: inline-block;">, oposto ao ângulo <span class="ltx">A</span>, em seu ponto médio, digamos <span class="ltx">Q</span>. O diâmetro <span class="seg">II<sub>a</sub></span>, por estar na bissetriz interna do vértice <span class="ltx">A</span>, também o intersecta no mesmo ponto. Sendo assim, <span class="ltx">QB = QC</span>, logo <span class="ltx">Q</span> também é centro da circunferência, portanto <span class="ltx">K = Q</span> que está no círculo circunscrito.
+	</p>
+<figure>
+<img src="images/teorema122a3.png" style="widht: 299px; height: 199px;" id="teorema122a3">
+<figcaption>Figura 3.28: <span class="ltx">K</span> é o centro do círculo <span class="seg">II<sub>a</sub></span>.</figcaption>
+</figure>
+<p>Para o caso da circunferência cujo diâmetro é definido por dois centros de circunferência ex-inscrita:
+</p>
+<p>Note que a mediatriz de qualquer corda passa pelo ponto médio de todos os diâmetros (<a href="teo_int_reta_circ.html#teo65" target="_blank">Teorema 2.5</a>), logo a mediatriz do lado <span class="seg">BC</span> passa pelo diâmetro <span class="seg">I<sub>b</sub>I<sub>c</sub></span> em seu ponto médio, digamos, <span class="ltx">K'</span>. A mesma mediatriz passa pelo ponto médio do arco 
+<img src="images/arcoBC.png" style="widht: 25px; height: 15px; display: inline-block;"> da circunferência circunscrita que contém o vértice <span class="ltx">A</span>, digamos: <span class="ltx">Q'</span>, que também está na bissetriz externa de <span class="ltx">A</span>. Por outro lado, temos <span class="ltx">BK' = CK'</span> e <span class="ltx">BQ' = CQ'</span>, com <span class="ltx">Q'</span> e <span class="ltx">K'</span> na mesma mediatriz. Assim, os pontos <span class="ltx">K'</span> e <span class="ltx">Q'</span> coincidem. Portanto o centro desta circunferência (<span class="seg">I<sub>b</sub>I<sub>c</sub></span>) é o ponto médio <span class="ltx">K'</span>, e <span class="ltx">K'</span> está na circunferência circunscrita do triângulo <span class="ltx">&Delta;ABC</span>.
+</p>
+<figure>
+<img src="images/teorema122b3.png" style="widht: 272px; height: 197px;" id="teorema122b3">
+<figcaption>Figura 3.29: <span class="ltx">K'</span> é o centro do diâmetro <span class="seg">I<sub>b</sub>I<sub>c</sub></span>.</figcaption>
+</figure>
+</div>
+
+<p>Os pontos <span class="ltx">K</span> e <span class="ltx">K'</span> são as extremidades do diâmetro da circunferência circunscrita do triângulo <span class="ltx">&Delta;ABC</span>, perpendicular ao lado <span class="seg">BC</span>. Note que <span class="ltx">K</span> é ponto médio do arco 
+<img src="images/arcoBC.png" style="widht: 25px; height: 15px; display: inline-block;"> que não contém o vértice <span class="ltx">A</span>, e <span class="ltx">K'</span> é ponto médio do arco 
+<img src="images/arcoBC.png" style="widht: 25px; height: 15px; display: inline-block;"> que contém <span class="ltx">A</span>, além disso, ambos estão na mediatriz do lado <span class="seg">BC</span>. 
+</p>
+<p>Se forem construídos os diâmetros <span class="seg">LL'</span>, <span class="seg">MM'</span> da circunferência circunscrita, analogamente ao segmento <span class="seg">KK'</span>, isto é, perpendiculares, respectivamente, aos lados <span class="seg">AC</span> e <span class="seg">AB</span>, podem desempenhar cada um o mesmo papel que <span class="seg">KK'</span> (<a href="#teorema122b4">Figura 3.30</a>).
+</p>
+<figure>
+<img src="images/teorema122b4.png" style="widht: 378px; height: 243px;" id="teorema122b4">
+<figcaption>Figura 3.30: <span class="seg">LL'</span> e <span class="seg">MM'</span>, assim como <span class="seg">KK'</span> são diâmetros da circunferência circunscrita.</figcaption>
+</figure>
+
+<div class="teorema" id=""><span class="negrito">Teorema 3.24</span></br>
+	<p>Os quatro centros tritangentes <span class="ltx">I</span>, <span class="ltx">I<sub>a</sub></span>, <span class="ltx">I<sub>b</sub></span> e <span class="ltx">I<sub>c</sub></span> de um triângulo <span class="ltx">&Delta;ABC</span> estão em seis circunferências que passam por um par de vértices do triângulo e têm como centro os pontos médios dos arcos definidos por estes vértices, em sua circunferência circunscrita.
+	</p>
+</div>
+
+<div class="teorema" id=""><span class="negrito">Teorema 3.25</span></br>
+	<p>Se um triângulo variável tem uma base fixa e uma circunferência circunscrita fixa, os centros tritangentes do triângulo descrevem duas circunferências passando pelos dois vértices fixos e tendo como centro as extremidades do diâmetro perpendicular ao lado fixo. 
+	</p>
+	</div>
+<figure>
+<img src="images/teorema122d.png" style="widht: 300px; height: 300px;" id="teorema122d">
+<figcaption>Figura 3.31: Os círculos de centro: <span class="ltx">K</span> e <span class="ltx">K'</span> existem, independentemente da posição do vértice <span class="ltx">A</span>, na circunferência circunscrita.</figcaption>
+</figure>
+<p>Se a circunferência circunscrita do triângulo <span class="ltx">&Delta;ABC</span> e o lado <span class="seg">BC</span> forem dados, as circunferências de diâmetros <span class="seg">II<sub>a</sub></span> (<a href="#teorema122a3">Figura 3.28</a>)  e <span class="seg">I<sub>b</sub>I<sub>c</sub></span> (<a href="#teorema122b3">Figura 3.29</a>) são determinadas, independentemente da posição do vértice <span class="ltx">A</span> na circunferência circunscrita.
+</p>
+<div class="teorema" id="t_diam"><span class="negrito">Corolário 3.26</span></br>
+<p>Os pontos médios <span class="ltx">K</span>, <span class="ltx">K'</span>, <span class="ltx">M</span>, <span class="ltx">M'</span>, <span class="ltx">L</span>, <span class="ltx">L'</span>, dos seis segmentos determinados pelos quatro centros tritangentes <span class="seg">II<sub>a</sub></span>, <span class="seg">I<sub>b</sub>I<sub>c</sub></span>, <span class="seg">II<sub>c</sub></span>, <span class="seg">I<sub>b</sub>I<sub>a</sub></span>, <span class="seg">II<sub>b</sub></span> e <span class="seg">I<sub>a</sub>I<sub>c</sub></span>  de um triângulo estão na circunferência circunscrita do triângulo.
+</p>
+</div>
+
+<figure>
+<img src="images/teorema126.png" style="widht: 253px; height: 266px;" id="teorema126">
+<figcaption>Figura 3.32: Os pontos médios <span class="ltx">K</span>, <span class="ltx">K'</span>, <span class="ltx">M</span>, <span class="ltx">M'</span>, <span class="ltx">L</span>, <span class="ltx">L'</span> pertencem à circunferência circunscrita.</figcaption>
+</figure>
+
+<div class="teorema" id="teo127"><span class="negrito">Teorema 3.27</span></br>
+	<p>O produto das distâncias de dois centros tritangentes de um triângulo, medidas a partir do vértice colinear com eles, é igual ao produto dos dois lados adjacentes ao vértice.
+	</p>
+</div>
+<figure>
+<img src="images/teorema127.png" style="widht: 325px; height: 215px;" id="teorema127">
+<figcaption>Figura 3.33: Vale a relação: <span class="ltx">I<sub>c</sub>A &sdot; AI<sub>b</sub> = AB &sdot; AC</span>.</figcaption>
+</figure>
+<p>O <a href="#teo127">Teorema 3.27</a> vale para os diâmetros formados por dois centros tritangentes, sejam eles dois centros ex-inscritos ou sejam um centro ex-inscrito e o incentro. 	
+</p>
+<div class="teorema"><span class="negrito">Demonstração</span></br>
+	<p>Inicialmente, considere a situação proposta na (<a href="#teorema127">Figura 3.33</a>) e os centros ex-inscritos <span class="ltx">I<sub>b</sub></span> e <span class="ltx">I<sub>c</sub></span> colineares ao vértice <span class="ltx">A</span>. Deseja-se mostrar que <span class="ltx">I<sub>c</sub>A &sdot; AI<sub>b</sub> = AB &sdot; AC</span>.
+	 </p>
+	<p>Seja <span class="ltx">B'</span> e <span class="ltx">C'</span> as interseções da circunferência <span class="ltx">I<sub>b</sub>I<sub>c</sub></span> com as retas, respectivamente, <img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;"> e <img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;">. Pelo Teorema das Cordas (<a href="arcos_de_circ.html#Teo_cordas" target="_blank">Teorema 2.12</a>), temos:
+	$$AC'.AC = AB.AB'.$$ e 
+	$$I_{c}A.AI_{b}=AB.AB'.$$
+	</p>
+	<p>O vértice <span class="ltx">A</span> está sobre um diâmetro e os ângulos 
+	<img src="images/angBAC.png" style="widht: 25px; height: 15px; display: inline-block;">  e 
+	<img src="images/angC'AB'.png" style="widht: 25px; height: 15px; display: inline-block;"> 
+	são opostos pelo vértice, assim os arcos 
+	<img src="images/arcoBC.png" style="widht: 25px; height: 15px; display: inline-block;"> e 
+	<img src="images/arcoB'C'.png" style="widht: 25px; height: 15px; display: inline-block;"> são congruentes (<a href="arcos_de_circ.html#teo_616" target="_blank">Teorema 2.11</a>), logo os ângulos 
+	<img src="images/angC'CB'.png" style="widht: 25px; height: 15px; display: inline-block;"> e 
+	<img src="images/angBB'C.png" style="widht: 25px; height: 15px; display: inline-block;">, inscritos na circunferência, são congruentes. Dessa forma, o triângulo <span class="ltx">&Delta;B'AC</span> é isósceles de base <span class="seg">B'C</span>, portanto, <span class="ltx">AB' = AC</span>. Substituindo na segunda igualdade, tem-se:
+	$$I_{c}A.AI_{b}=AB.AC.$$
+	</p>
+	<p>Agora considere o centro ex-inscrito <span class="ltx">I<sub>c</sub></span>, o incentro <span class="ltx">I</span> e o vértice <span class="ltx">C</span>, que são colineares (<a href="#teo127b">Figura 3.34</a>. Deseja-se mostrar a relação: $$CI.CI_{c} = AC . BC.$$
+	</p>
+<figure>
+<img src="images/teo127b.png" style="widht: 331px; height: 219px;" id="teo127b">
+<figcaption>Figura 3.34: Vale a relação: <span class="ltx">II<sub>c</sub> &sdot; I<sub>c</sub>C = AC &sdot; BC</span>.</figcaption>
+</figure>
+	<p>Seja a circunferência <span class="ltx">(M)</span> e seu diâmetro <span class="seg">II<sub>c</sub></span>, e <span class="ltx">S</span> a interseção desta circunferência com o lado <span class="seg">BC</span>.
+	</p>
+	<p>Temos que 
+	<img src="images/angIcAIequivIcSIreto.png" style="widht: 25px; height: 15px; display: inline-block;">
+	pois estão inscritos na circunferência, e 
+	<span class="ltx"><span class="seg">MA</span> &equiv; <span class="seg">MS</span></span>
+	pois são raios da circunferência, logo 
+	<span class="ltx"><span class="seg">I<sub>c</sub>A</span> &equiv; <span class="seg">I<sub>c</sub>S</span></span>
+	, e assim os triângulos <span class="ltx">&Delta;I<sub>c</sub>AI</span> e <span class="ltx">&Delta;I<sub>c</sub>IS</span> são congruentes. Desta forma <span class="ltx">AI = IS</span> e <span class="seg">I<sub>c</sub>C</span> é mediatriz da corda <span class="seg">AS</span>, portanto <span class="ltx">AC = SC</span>.
+	</p>
+	<p>Aplicando o <a href="arcos_de_circ.html#teo620" target="_blank">Teorema 2.15</a> (Potência do ponto) nos segmentos <span class="seg">I<sub>c</sub>C</span> e <span class="seg">BC</span>, temos <span class="ltx">CI &sdot; CI<sub>c</sub> = CS &sdot; BC</span>. Como <span class="ltx">AC = SC</span> temos a relação esperada.
+	</p>
+	<p>Da mesma forma vale para os outros pares de centros tritangentes.
+	</p>
+</div>	
+
+        </div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>

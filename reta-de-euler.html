@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <title>Reta de Euler</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>RETA DE EULER</h1></div>
+			</div>
+			
+			
+			<nav id="menu">
+					
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+					<!-- inicio esquerda  -->
+				<h2>2.4 Reta de Euler</h2>
+<p>Nesta seção estudaremos a Reta de Euler que, apesar de não estabelecer uma relação direta com circunferências associadas a um triângulo, precede o estudo da <a href="circ_nove_pontos.html"  target="_blank">Circunferência de 9 pontos</a>. 
+</p>
+<div class="teorema" id="def:triangulo_medial">
+	<span class="negrito">Definição 2.24</span></br>
+	<p>Em um triângulo <span class="ltx"><span class="ltx">&Delta;ABC</span></span>, chama-se <span class="italico">triângulo medial</span> o triângulo formado pelos pontos médios dos lados.
+</p>
+	</div>
+<div class="teorema" id="teo635">
+	<span class="negrito">Teorema 2.26</span></br>
+	<p>O ortocentro <span class="ltx">H</span>, o baricentro <span class="ltx">G</span> e o circuncentro <span class="ltx">O</span> de um triângulo 
+	são colineares (a). Além disso, o baricentro divide o segmento cujas extremidades são o circuncentro e o ortocentro (b), 
+	na razão 2:1 (c).</p>
+</div>
+
+<p>O <span class="italico">Teorema 2.26</span> traz três afirmações: a colinearidade, a posição de <span class="ltx">G</span> entre os pontos <span class="ltx">O</span> e <span class="ltx">H</span>, não necessariamente nesta ordem; e a razão entre as distâncias entre eles. A Reta de Euler é justamente a reta que contém estes pontos.
+</p>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+
+<p>Considere um triângulo <span class="ltx">&Delta;ABC</span>, a altura relativa ao vértice <span class="ltx">A</span>, o ortocentro <span class="ltx">H</span> e o circuncentro <span class="ltx">O</span>. Considere também <span class="ltx">M<sub>a</sub></span>, <span class="ltx">M<sub>b</sub></span> e <span class="ltx">M<sub>c</sub></span> os pontos médios, respectivamente, dos lados <span class="seg">BC</span>, <span class="seg">AC</span> e <span class="seg">AB</span> e o triângulo definido por eles (triângulo medial).
+</p>
+
+<figure>
+<img src="images/teo635a.png" style="widht: 378px; height: 229px;" id="fig:teo635a">
+<figcaption>Figura 2.31: O ortocentro do triângulo medial coincide com o circuncentro do triângulo <span class="ltx">&Delta;ABC</span>.</figcaption>
+</figure>
+
+<p>Observemos que as alturas do triângulo medial coincidem com as mediatrizes do triângulo <span class="ltx">&Delta;ABC</span>, logo o ortocentro do triângulo medial coincide com o circuncentro do triângulo <span class="ltx">&Delta;ABC</span>. Além disso, como os lados do triângulo medial são base média do triângulo <span class="ltx">&Delta;ABC</span>, tais triângulos são semelhantes pelo caso lado-lado-lado e a razão entre eles é de <span class="italico">2:1</span>. Logo a razão entre <span class="ltx">AH</span> e <span class="ltx">OM<sub>a</sub></span> é também <span class="italico">2:1</span>, e ainda, tais segmentos são paralelos, pois <span class="seg">AH</span> está na altura relativa ao vértice <span class="ltx">A</span> e <span class="seg">OM<sub>a</sub></span> está na mediatriz relativa ao lado <span class="seg">BC</span>.
+</p>
+<p>Agora, acrescentemos a mediana <span class="seg">AM<sub>a</sub></span> e um segmento <span class="seg">HO</span> e seja <span class="ltx">K</span> o ponto onde eles concorrem, e tem-se dois triângulos semelhantes: <span class="ltx">&Delta;AHK</span> e <span class="ltx">&Delta;M<sub>a</sub>OK</span>, pelo caso ângulo-ângulo, cuja razão de semelhança é <span class="italico">2:1</span>, como mostrado na figura abaixo:
+</p>
+
+<figure>
+<img src="images/teo635b.png" style="widht: 378px; height: 229px;" id="fig:teo635b">
+<figcaption>Figura 2.32: Os triângulos  &Delta;AHK e &Delta;M<sub>a</sub>OK são semelhantes.</figcaption>
+</figure>
+
+<p>Sendo assim, o ponto <span class="ltx">K</span> está entre os ponto <span class="ltx">H</span> e <span class="ltx">O</span>; a razão entre os segmentos <span class="seg">HK</span> e <span class="seg">KO</span> é de <span class="italico">2:1</span>, ou seja, <span class="seg">AK</span> corresponde a <img src="images/fração23.png" style="widht: 40px; height: 27px; display: inline-block;"> da mediana <span class="seg">AM<sub>a</sub></span>. 
+Nestes termos, pelo <span class="italico">Teorema 2.18</span>, o ponto <span class="ltx">K</span> representa o baricentro do triângulo <span class="ltx"><span class="ltx">&Delta;ABC</span></span>.
+</p>
+</div>	
+        </div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>

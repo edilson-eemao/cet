@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <title>Bissetriz</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>BISSETRIZ</h1></div>
+			</div>
+			
+			
+			<nav id="menu">
+					
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+					<!-- inicio esquerda  -->
+				<h2>3.2 Bissetriz</h2>
+
+<p>Nesta seção, o conceito de bissetriz estende-se à bisseção de um ângulo formado entre duas retas, sejam elas as que contém os lados de um triângulo.
+</p>
+<div class="teorema" id="Def_biss">
+	<span class="negrito">Definição 3.2</span></br>
+	<p>Dados os segmentos <span class="seg">AB</span> e <span class="seg">AC</span>, são bissetrizes dos ângulos entre as retas <img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;"> e <img src="images/retaAC.png" style="widht: 20px; height: 15px; display: inline-block;"> os conjuntos de todos os pontos <span class="ltx">R</span> equidistantes destas retas. Esses conjuntos de pontos constituem duas retas que passam pelo ponto <span class="ltx">A</span> e divide o ângulo entre as retas <img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;"> e <img src="images/retaAC.png" style="widht: 20px; height: 15px; display: inline-block;"> em dois setores de mesma abertura.
+	</p>
+</div>
+<figure>
+<img src="images/biss1.png" style="widht: 246px; height: 124px;" id="biss1">
+<figcaption>Figura 3.3: As bissetrizes na intersecção de duas retas.</figcaption>
+</figure>
+<div class="teorema" id="lema_biss_perpendiculares">
+	<span class="negrito">Lema 3.7 </span></br>
+	<p>Dado um triângulo <span class="ltx">&Delta;ABC</span>, cada um dos vértices possui exatamente duas bissetrizes, perpendiculares entre si. 
+</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Seja &alpha; o ângulo interno de um vértice do triângulo e seja &beta; o ângulo externo do mesmo vértice. Sabe-se que $$\alpha + \beta = 180^\circ.$$
+	</p>	
+	<p>Traçando as bissetrizes deste ângulo tem-se:
+	$$2 \times \frac{\alpha}{2} + 2 \times \frac{\beta}{2} = 180^\circ.$$
+	Daí,
+	$$\frac{\alpha}{2} + \frac{\beta}{2} = 90^\circ.$$ 
+</p>
+</div>
+
+<p>Considere o vértice <span class="ltx">A</span> e as retas <img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;"> e <img src="images/retaAC.png" style="widht: 20px; height: 15px; display: inline-block;"> que contém os lados <span class="seg">AB</span> e <span class="seg">AC</span>, respectivamente. A bissetriz localizada entre estes lados é chamada de <span class="italico">Bissetriz Interna</span>, enquanto a outra é chamada de <span class="italico">Bissetriz Externa</span>. 
+</p>
+<figure>
+<img src="images/biss2.png" style="widht: 281px; height: 160px;" id="biss2">
+<figcaption>As bissetrizes em um vértice do triângulo.</figcaption>
+</figure>
+<div class="teorema" id="teo_biss_int">
+	<span class="negrito">Teorema 3.8 (Teorema das Bissetrizes Internas)</span></br>
+	<p>Em um triângulo, a bissetriz de um ângulo interno divide o lado oposto em partes proporcionais aos lados adjacentes.
+	</p>
+</div> 
+
+<p>Dado o triângulo abaixo, considerando o vértice <span class="ltx">A</span> e sua bissetriz interna <span class="seg">AD</span>, o teorema diz que: 
+$$\frac{BD}{DC} = \frac{AB}{AC}.$$
+</p>
+<figure>
+<img src="images/teo_bis_in1.png" style="widht: 164px; height: 119px;" id="teo_bis_in1">
+<figcaption>Figura 3.5: <span class="seg">AD</span> é bissetriz interna do vértice <span class="ltx">A</span></figcaption>
+</figure>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Para demonstrar este teorema, tomemos um prolongamento do lado <span class="seg">AC</span>, neste sentido, até o ponto <span class="ltx">P</span>, tal que <span class="seg">PB</span> seja paralelo à bissetriz <span class="seg">AD</span>:
+	</p>
+	<figure>
+	<img src="images/teo_bis_in2.png" style="widht: 192px; height: 105px;" id="teo_bis_in2">
+	<figcaption>Figura 3.6: <span class="seg">PB</span> é paralelo a <span class="seg">AD</span>.</figcaption>
+	</figure>
+	<p>Observe que 
+	<img src="images/BADequivCAD.png" style="widht: 50px; height: 15px; display: inline-block;">
+	 pois <span class="seg">AD</span> é bissetriz. Além disso, 
+	 <img src="images/PBAequivBAD.png" style="widht: 50px; height: 15px; display: inline-block;"> 
+	 pois são ângulos alternos internos e 
+	 <img src="images/BPAequivCAD.png" style="widht: 50px; height: 15px; display: inline-block;"> 
+	 pois são ângulos correspondentes entre duas retas paralelas e uma transversal. Logo 
+	 <img src="images/PBAequivBPA.png" style="widht: 50px; height: 15px; display: inline-block;"> 
+	 e conclui-se que <span class="ltx">PA = AB</span>. Aplicando o Teorema Fundamental de Proporcionalidade (2.17), tem-se: $$\frac{BD}{DC} = \frac{PA}{AC},$$ mas <span class="ltx">PA = AB</span>, portanto $$\frac{BD}{DC} = \frac{AB}{AC}.$$
+	</p>
+</div>
+<div class="teorema" id="teo_biss_ext">
+	<span class="negrito">Teorema 3.9 (Teorema das Bissetrizes Externas)</span></br>
+	<p>Em um triângulo, a bissetriz de um ângulo externo divide o lado oposto em partes proporcionais aos lados adjacentes.
+</p>
+</div>
+<p>Seja o triângulo <span class="ltx">&Delta;ABC</span> e <span class="seg">AD</span> é bissetriz externa do vértice <span class="ltx">A</span>, sendo que o ponto <span class="ltx">D</span> está no prolongamento do lado <span class="seg">BC</span> que é oposto ao vértice <span class="ltx">A</span>, como mostrado abaixo. O teorema diz que $$\frac{DC}{DB} = \frac{AC}{AB}.$$
+</p>
+<figure>
+<img src="images/teo_bis_ex1.png" style="widht: 177px; height: 103px;" id="teo_bis_ex1">
+<figcaption>Figura 3.7: <span class="seg">AD</span> é bissetriz externa do vértice <span class="ltx">A</span>.</figcaption>
+</figure>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+<p>Seja <span class="ltx">Q</span> um ponto no segmento <span class="seg">AC</span> tal que <span class="seg">BQ</span> é paralelo à bissetriz <span class="seg">AD</span> (veja figura 3.8). Os ângulos 
+<img src="images/angDAB.png" style="widht: 25px; height: 15px; display: inline-block;"> e
+<img src="images/angABQ.png" style="widht: 25px; height: 15px; display: inline-block;">
+são congruentes pois são ângulos alternos internos. O ângulo formado pelo prolongamento do lado <span class="seg">CA</span>, neste sentido, com a bissetriz <span class="seg">AD</span> é congruente ao ângulo 
+<img src="images/angAQB.png" style="widht: 25px; height: 15px; display: inline-block;"> 
+pois são ângulos correspondentes nas paralelas <span class="seg">AD</span> e <span class="seg">BQ</span>. Porém, o mesmo ângulo formado pelo prolongamento do lado <span class="seg">CA</span> com a bissetriz <span class="seg">AD</span> é também congruente ao ângulo 
+<img src="images/angDAB.png" style="widht: 25px; height: 15px; display: inline-block;"> 
+pois <span class="seg">AD</span> é bissetriz externa. Logo 
+<img src="images/ABQequivAQB.png" style="widht: 50px; height: 15px; display: inline-block;"> e <span class="ltx">AQ = AB</span>. 
+</p>
+<figure>
+<img src="images/teo_bis_ex2.png" style="widht: 175px; height: 96px;" id="teo_bis_ex2">
+<figcaption>Figura 3.8: <span class="seg">QB</span> é paralelo a <span class="seg">AD</span>.</figcaption>
+</figure>
+<p>Pelo Teorema Fundamental de Proporcionalidade (2.17), $$\frac{DC}{DB} = \frac{AC}{AQ},$$ portanto $$\frac{DC}{DB} = \frac{AC}{AB}.$$
+</p>
+</div>
+<div class="teorema" id="">
+	<span class="negrito">Teorema 3.10</span></br>
+	<p>Dado um triângulo, o ângulo formado por duas bissetrizes internas (externas) é igual ao ângulo reto somado à metade (menos a metade) do terceiro ângulo no triângulo.
+	</p>
+</div>
+
+<figure>
+<img src="images/teorema111ab.png" style="widht: 432px; height: 150px;" id="teorema111ab">
+<figcaption>Figura 3.9: Ângulo formado por duas bissetrizes internas: <img src="images/fig39a.png" style="widht: 25px; height: 18px; display: inline-block;">
+ e externas: <img src="images/fig39b.png" style="widht: 25px; height: 18px; display: inline-block;"></figcaption>
+</figure>
+
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br> 
+<p>Em um triângulo <span class="ltx">&Delta;ABC</span> seja &alpha; o ângulo formado por duas bissetrizes internas e seja &beta; o terceiro ângulo, conforme a figura 3.9 (esquerda). 
+</p>
+<p>Basta tomar $$\alpha = 180^\circ - \frac{1}{2}med(B) - \frac{1}{2}med(C) \text{ e usar } med(B) + med(C) = 180^\circ - \beta.$$
+</p>
+<p>Em um triângulo <span class="ltx">&Delta;ABC</span> seja &alpha; o ângulo formado por duas bissetrizes externas e seja &beta; o terceiro ângulo, conforme a figura 3.9 (direita). 
+</p>
+<p>Basta observar que $$\alpha = 180^\circ - \Big(90^\circ - \frac{med(B)}{2}\Big) - \Big(90^\circ - \frac{med(C)}{2}\Big).$$
+</p>
+</div> 
+<div class="teorema" id="teorema_112">
+	<span class="negrito">Teorema 3.11</span></br>
+	<p>O pé da perpendicular de um vértice de um triângulo sobre a bissetriz interna de um segundo vértice localiza-se no lado do triângulo medial, oposto ao primeiro vértice considerado.
+	</p>
+</div>
+<figure>
+<img src="images/teorema112.png" style="widht: 199px; height: 134px;" id="teorema112">
+<figcaption>Figura 3.10: Localização do pé da perpendicular de um dos vértices sobre uma das bissetrizes internas.</figcaption>
+</figure>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Se <span class="ltx">P</span> é o pé da perpendicular do vértice <span class="ltx">A</span> sobre a bissetriz <span class="seg">CP</span> (Figura \ref{teorema112b}) emitida a partir do vértice <span class="ltx">C</span>, e <span class="ltx">Q</span> é a interseção de <span class="seg">AP</span> com o lado <span class="seg">BC</span>, os dois triângulos retângulos $\triangle APC$, $\triangle QPC$ são congruentes (caso ALA) e o ponto <span class="ltx">P</span> é ponto médio de <span class="seg">AQ</span>. Uma vez que $\overline{M_cP}$ é base média do triângulo $\triangle ABQ$ e é, portanto, paralelo à <span class="seg">BQ</span>, temos que <span class="ltx">P</span> está na base média $\overline{M_{c}M_{b}}$ do triângulo <span class="ltx">&Delta;ABC</span>.
+	</p>
+	<figure>
+	<img src="images/teorema112b.png" style="widht: 199px; height: 134px;" id="teorema112b">
+	<figcaption>Figura 3.11: O ponto <span class="ltx">P</span> está na base média <span class="seg">M<sub>c</sub>M<sub>b</sub></span></figcaption>
+	</figure>
+</div> 
+<div class="teorema" id="corolario_3.12">
+	<span class="negrito">Corolário 3.12</span></br>
+<p>Tomando um dos vértices do triângulo, e tomando as bissetrizes internas e as bissetrizes externas dos outros dois ângulos, os pés das quatro perpendiculares do primeiro vértice sobre as quatro bissetrizes dos outros dois ângulos são colineares.
+</p>
+</div>
+<figure>
+<img src="images/teorema113a.png" style="widht: 199px; height: 134px;" id="teorema113a">
+<figcaption>Figura 3.12: <span class="ltx">D</span> e <span class="ltx">F</span> são, respectivamente, pé das perpendiculares do vértice <span class="ltx">A</span> sobre as bissetrizes externa e interna do vértice <span class="ltx">B</span>.</figcaption>
+</figure>
+<figure>
+<img src="images/teorema113b.png" style="widht: 199px; height: 134px;" id="teorema113b">
+<figcaption>Figura 3.13: <span class="ltx">G</span> e <span class="ltx">E</span> são, respectivamente, pé das perpendiculares do vértice <span class="ltx">A</span> sobre as bissetrizes externa e interna do vértice <span class="ltx">C</span>.</figcaption>
+</figure>
+<figure>
+<img src="images/teorema113c.png" style="widht: 199px; height: 134px;" id="teorema113c">
+<figcaption>Figura 3.14: Os quatro pés de perpendiculares <span class="ltx">D</span>, <span class="ltx">E</span>, <span class="ltx">F</span> e <span class="ltx">G</span> são colineares.</figcaption>
+</figure>
+
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br> 
+<p>Pelo Teorema 3.11 os pontos <span class="ltx">E</span> e <span class="ltx">F</span> estão na base média paralela ao lado <span class="seg">BC</span>. Note que o segmento <span class="seg">BF</span> é bissetriz interna do vértice <span class="ltx">B</span> e o segmento <span class="seg">BD</span> é bissetriz externa. Logo, pelo Lema 3.7, são perpendiculares. Temos que <span class="seg">DA</span> é perpendicular a <span class="seg">BD</span>  e <span class="seg">AF</span> é perpendicular a <span class="seg">BF</span>, logo <span class="seg">AF</span> é paralelo a <span class="seg">BD</span> e <span class="seg">BF</span> é paralelo a <span class="seg">DA</span>. O quadrilátero <span class="ltx">AFBD</span> é um retângulo de diagonais <span class="seg">AB</span> e <span class="seg">DF</span>. Como <span class="seg">DF</span> divide <span class="seg">AB</span> em seu ponto médio e <span class="ltx">F</span> está na base média referente ao lado <span class="seg">BC</span>, então <span class="ltx">D</span> também está na base média. Analogamente <span class="seg">EG</span> está na mesma base média, portanto, <span class="ltx">D</span>, <span class="ltx">E</span>, <span class="ltx">F</span> e <span class="ltx">G</span> são colineares.  
+</p>
+</div>
+
+<div class="teorema">
+	<span class="negrito">Teorema 3.13</span></br>
+	<p>Em um triângulo, o maior  entre dois ângulos tem a  bissetriz interna de menor medida.
+	</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+<p>Em um triângulo <span class="ltx">&Delta;ABC</span>, seja o ângulo 
+<img src="images/angB.png" style="widht: 15px; height: 15px; display: inline-block;"> maior que o ângulo 
+<img src="images/angC.png" style="widht: 15px; height: 15px; display: inline-block;"> 
+e seja <span class="seg">BD</span> e <span class="seg">CE</span> as bissetrizes internas destes ângulos.
+</p>
+<figure>
+<img src="images/teorema114.png" style="widht: 195px; height: 134px;" id="teorema114">
+<figcaption>Figura 3.15: Em dois ângulos internos de um triângulo, o maior deles tem a bissetriz mais curta.</figcaption>
+</figure>
+ <p>No segmento <span class="seg">AD</span> tomemos o ponto <span class="ltx">F</span> tal que 
+ <img src="images/FBDequivACEequivECB.png" style="widht: 75px; height: 15px; display: inline-block;">, isto é possível pois 
+ <img src="images/angBmaiorqueangC.png" style="widht: 40px; height: 15px; display: inline-block;">. 
+ Sejam <span class="ltx">H</span> e <span class="ltx">G</span> as interseções dos segmentos <span class="seg">BD</span> e <span class="seg">BF</span> com a bissetriz <span class="seg">CE</span>. Os dois triângulos <span class="ltx">&Delta;FBD</span> e <span class="ltx">&Delta;FGC</span> são semelhantes, pois eles são equiangulares, note que eles compartilham o ângulo 
+ <img src="images/angBFC.png" style="widht: 25px; height: 15px; display: inline-block;">. Assim, 
+</p>
+<p>$$
+\begin{equation}
+\frac{BF}{CF} = \frac{BD}{CG} \hspace{10 cm} (3.1)
+\end{equation} 
+$$</p>
+<p>Agora, o triângulo <span class="ltx">&Delta;BFC</span> ainda tem um ângulo menor no vértice <span class="ltx">C</span> do que tem em <span class="ltx">B</span>; assim <span class="ltx">BF &lt; CF</span>, e entretanto, pela equação (3.1), temos <span class="ltx">BD &lt; CG &lt; CE</span> e, portanto, <span class="seg">BD</span> é a bissetriz de medida menor.
+</p>
+</div>
+<div class="teorema" id="">
+	<span class="negrito">Corolário 3.14 </span></br>
+	<p>Se duas bissetrizes internas de um triângulo são de mesma medida, o triângulo é isósceles.
+	</p>
+</div>
+
+<p>De fato, pelo Teorema 3.15, se entre dois ângulos internos de um triângulo não há o maior, então não pode haver a bissetriz de medida mais curta.
+</p>
+        </div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>

@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <title>Arcos de Circunferências</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>ARCOS DE CIRCUNFERÊNCIAS</h1></div>
+			</div>
+			
+			
+			<nav id="menu">
+					
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+					<!-- inicio esquerda  -->
+				<h2>2.2 Arcos de Circunferência</h2>
+<div class="teorema" id="def:ang_central">
+	<span class="negrito">Definição 2.7</span></br>
+	<p>Dados uma circunferência <span class="ltx">&Gamma;</span> de centro <span class="ltx">O</span>, e os pontos <span class="ltx">A</span> e <span class="ltx">B</span>, 
+	distintos, da circunferência, chama-se  <span class="italico">ângulo central</span> o ângulo 
+	<img src="images/angAOB.png" style="widht: 25px; height: 15px; display: inline-block;">.
+	</p>
+</div>
+<figure>
+	<img src="images/teo68.png" style="widht: 221px; height: 217px;" id="teo68">
+	<figcaption>Figura 2.7: Ângulo central <img src="images/angAOB.png" style="widht: 25px; height: 15px; display: inline-block;">.
+</figure>
+<p>Um ângulo central define dois arcos, tais que o conjunto dos pontos da circunferência situados interidnte ao ângulo central, 
+é o <span class="italico">arco menor</span>; e o conjunto dos pontos situados exteriormente ao ângulo central, 
+é o <span class="italico">arco maior</span>.
+</p>
+<p>Se o ângulo central medir <span class="ltx">180</span> graus, dizemos que o arco <img src="images/arcoAB.png" width="30" height="15" style="display: inline-block;">
+em qualquer hemisfério é <span class="italico">semicircunferência</span> e o segmento <span class="seg">AB</span> é diâmetro. 
+</p>
+<p>De todo modo, uma semicircunferência, um arco menor ou um arco maior determinam simplesmente um <span class="italico">arco da circunferência</span>
+e os pontos <span class="ltx">A</span> e <span class="ltx">B</span> são <span class="italico">extremidades</span> do arco. 
+Sendo <span class="ltx">X</span> um ponto interior a um arco de circunferência, denotamos por 
+<img src="images/arcoAXB.png" width="30" height="18" style="display: inline-block;"> tal arco. 
+</p>
+<div class="teorema" id="def:ang_inscrito">
+	<span class="negrito">Definição 2.8</span></br>
+	<p>Um ângulo cujo vértice é a extremidade comum de duas cordas distintas é um <span class="italico">ângulo inscrito na circunferência</span>. 
+	Se em um destes ângulos os extremos não comuns são diâmetro, então este ângulo é <span class="italico">ângulo inscrito na semicircunferência</span>.
+	</p>
+</div>
+
+<p>Seja <img src="images/angBAC.png" style="widht: 25px; height: 15px; display: inline-block;"> um ângulo inscrito em uma circunferência que contém os pontos <span class="ltx">B</span> e 
+<span class="ltx">C</span>. Esses pontos definem dois arcos. O arco que não contém o ponto <span class="ltx">A</span> é chamado de 
+<span class="italico">arco correspondente</span> ao ângulo inscrito dado. O ângulo correspondente está 
+<span class="italico">inscrito</span> nesse arco.
+</p>
+<figure id="fig:def612">
+	<img src="images/def612.png" style="widht: 221px; height: 217px;" id="teo68">
+	<figcaption>Figura 2.8: O arco <img src="images/arcoBC.png" width="30" height="15" style="display: inline-block;">
+	que não contém <span class="ltx">A</span>, é correspondente do ângulo <img src="images/angBAC.png" style="widht: 25px; height: 15px; display: inline-block;">
+	 e este ângulo está inscrito no arco <img src="images/arcoBC.png" width="30" height="15" style="display: inline-block;">.
+</figure>
+<div class="teorema">
+	<span class="negrito">Definição 2.9</span></br>
+	<p>A medida de um arco, denotado por <span class="ltx">m(<img src="images/arcoAXB.png" width="30" height="15" style="display: inline-block;">)</span>,
+	é a medida do ângulo central correspondente <span class="ltx">m(<img src="images/angAXB.png" width="30" height="15" style="display: inline-block;">)</span> se for arco menor;  <span class="ltx">180º</span>, 
+	se o arco <img src="images/arcoAXB.png" width="30" height="15" style="display: inline-block;">
+	for semicircunferência; ou $$m(\overparen{AXB}) = 360^{\circ} - m(A\widehat{X}B)$$ se for arco maior.
+	</p>
+</div>
+<div class="teorema" id="teo613">
+	<span class="negrito">Teorema 2.8</span></br>
+	<p>A medida do ângulo inscrito na circunferência é a metade da medida do seu arco correspondente.
+	</p>
+</div>
+
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Considere um ângulo <img src="images/angBAC.png" style="widht: 25px; height: 15px; display: inline-block;">, inscrito em uma circunferência <span class="ltx">&Gamma;</span>, em que <span class="ltx">B</span> 
+	e <span class="ltx">C</span> são extremidades de um arco <img src="images/arcoBC.png" width="30" height="18" style="display: inline-block;">
+	e <span class="ltx">O</span> é centro da circunferência. Deseja-se mostrar que $$m(B\widehat{A}C) = \frac{1}{2} m(B\widehat{O}C).$$
+</p>
+<p>Suponha, primeiramente, que <span class="ltx">C = D</span> e que <span class="seg">AC</span> é diâmetro.</p>
+
+<figure>
+<img src="images/teo613a.png" style="widht: 201px; height: 166px;"  id="fig:teo613a">
+<figcaption>Caso 1: uma das cordas é diâmetro.
+</figure>
+
+<p>Note que <img src="images/angBOC.png" style="widht: 25px; height: 15px; display: inline-block;"> é ângulo externo do triângulo <span class="ltx">&Delta;BAO</span>, logo,</p> 
+$$m(B\widehat{O}C) = m(B\widehat AO) + m(A\widehat BO).$$ 
+<p>Note também que este triângulo é isósceles, pois <span class="seg">AO</span> &equiv; <span class="seg">OB</span>. 
+Assim,</p> 
+$$m(B\widehat AO) = m(A\widehat BO) ~\text{e}~ m(B\widehat{O}C) = 2\cdot m(B\widehat AO).$$
+<p>Suponha agora que nem <span class="seg">AB</span> nem <span class="seg">AC</span> são diâmetro, além disso, estão em hemisférios opostos.</p>
+
+<figure>
+<img src="images/teo613b.png" style="widht: 201px; height: 166px;"  id="fig:teo613b">
+<figcaption>Caso 2: as cordas <span class="seg">AB</span> e <span class="seg">AC</span> não passam pelo centro e estão em lados 
+opostos em relação ao diâmetro <span class="seg">AD</span>.
+</figure>
+
+<p>Olhando para o diâmetro <span class="seg">AD</span>, pelo caso anterior,</p> 
+$$m(B\widehat{A}O) = \frac{1}{2}m(B\widehat{O}D).$$
+<p>Do mesmo modo,</p>
+$$m(C\widehat{A}O) = \frac{1}{2}m(C\widehat{O}D).$$
+<p>Somando estas duas igualdades, tem-se o resultado esperado.</p>
+
+<p>Finalmente, suponha que nem <span class="seg">AB</span> nem <span class="seg">AC</span> são diâmetro, além disso, estão em um mesmo hemisfério.</p>
+
+<figure>
+<img src="images/teo613c.png" style="widht: 201px; height: 166px;"  id="fig:teo613c">
+<figcaption>Caso 3: as cordas <span class="seg">AB</span> e <span class="seg">AC</span> não passam pelo centro e estão em mesmo lado em relação 
+	ao diâmetro <span class="seg">AD</span>.
+</figure>
+
+<p>Na representação acima, os pontos aparecem na ordem: <span class="ltx">A</span>, <span class="ltx">B</span>, <span class="ltx">C</span> 
+e <span class="ltx">D</span>. No entanto, poderiam aparecer <span class="ltx">A</span>, <span class="ltx">C</span>, <span class="ltx">B</span> 
+e <span class="ltx">D</span>, mas a demonstração seria análoga.
+</p>
+<p>Olhando para o diâmetro <span class="seg">AD</span>, pelo caso anterior,</p> 
+$$m(B\widehat{A}O) = \frac{1}{2}m(B\widehat{O}D).$$
+<p>Do mesmo modo,</p>
+$$m(C\widehat{A}O) = \frac{1}{2}m(C\widehat{O}D).$$
+
+<p>Porém,</p> 
+$$m(B\widehat{A}C) = m(B\widehat{A}O) - m(C\widehat{A}O)$$
+<p>e</p>
+$$m(B\widehat{O}C) = m(B\widehat{O}D) - m(C\widehat{O}D).$$
+
+<p>Fazendo as substituições adequadamente,</p> 
+$$m(B\widehat{A}C) = \frac{1}{2}m(B\widehat{O}D) - \frac{1}{2}m(C\widehat{O}D).$$
+<p>Daí,</p>
+$$m(B\widehat{A}C) = \frac{1}{2}\Big [m(B\widehat{O}D) - m(C\widehat{O}D)\Big].$$
+<p>Portanto</p>
+$$m(B\widehat{A}C) = \frac{1}{2}\Big[ m(B\widehat{O}C) \Big].$$
+
+	
+</div>
+
+
+<div class="teorema" id="coro614">
+	<span class="negrito">Corolário 2.9</span></br>
+	<p>Ângulos inscritos em uma semicircunferência são retos.
+	</p>
+</div>
+
+<p>De fato, o arco correspondente, neste caso, é o da semicircunferência, que mede <span class="ltx">180º</span> e pelo 
+<a href="#teo613" target="_blank">Teorema 2.8</a>, o ângulo inscrito mede <span class="ltx">90º</span>.
+</p>
+
+<div class="teorema">
+	<span class="negrito">Corolário 2.10</span></br>
+	<p>Ângulos inscritos em um mesmo arco são congruentes.
+	</p>
+</div>
+<p>A validade deste Corolário é facilmente percebida ao tomarmos um arco <img src="images/arcoAB.png" width="30" height="15" style="display: inline-block;">
+e dois pontos <span class="ltx">C</span> e <span class="ltx">C'</span> tais que os ângulos <img src="images/angACB.png" style="widht: 25px; height: 15px; display: inline-block;"> e <img src="images/angAC'B.png" style="widht: 25px; height: 15px; display: inline-block;"> 
+estejam inscritos nele. Pelo <a href="#teo613" target="_blank">Teorema 2.8</a> temos que:</p> 
+$$m(A \widehat{C} B) = m(A \widehat{C'} B) = \frac{1}{2}m(\overparen{AB}).$$
+
+<div class="teorema">
+	<span class="negrito">Definição 2.10</span></br>
+	<p>Em uma mesma circunferência ou em circunferências congruentes, dois arcos são congruentes se tem a mesma medida.
+	</p>
+</div>
+
+<div class="teorema" id="teo_616">
+	<span class="negrito">Teorema 2.11</span></br>
+	<p>Em uma mesma circunferência ou em circunferências congruentes, duas cordas são congruentes se, e somente se, são congruentes os 
+	arcos menores correspondentes.
+	</p>
+</div>
+
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Considere em uma circunferência <span class="ltx">&Gamma;</span>, centro em <span class="ltx">O</span> e os menores arcos <img src="images/arcoAB.png" width="35" height="15" style="display: inline-block;"> 
+	e <img src="images/arcoCD.png" width="25" height="15" style="display: inline-block;">
+	definidos, respectivamente, pelas cordas <span class="seg">AB</span>  e <span class="seg">CD</span>.
+	</p>
+	<p>Suponha inicialmente que as cordas <span class="seg">AB</span>  e <span class="seg">CD</span> sejam congruentes. Temos que 
+	<span class="seg">AB</span>  e <span class="seg">CD</span> são as bases dos triângulos <span class="ltx">&Delta;AOB</span> e 
+	<span class="ltx">&Delta;COD</span>, ambos congruentes pelo caso Lado-Lado-Lado. (se achar necessário, reveja o 
+	<a href="teo_int_reta_circ.html#cordascongruentes" target="_blank">Teorema 2.7</a>.
+	Assim temos que os ângulos centrais destes arcos são congruentes, consequentemente, os arcos <img src="images/arcoAB.png" width="35" height="15" style="display: inline-block;">
+	e <img src="images/arcoCD.png" width="25" height="15" style="display: inline-block;"> possuem mesma medida.
+	</p>
+	<p>Por outro lado, se os arcos <img src="images/arcoAB.png" width="35" height="15" style="display: inline-block;">
+	e <img src="images/arcoCD.png" width="25" height="15" style="display: inline-block;"> são congruentes, possuem ângulos centrais congruentes, 
+	tais que os raios <span class="seg">AO</span>, <span class="seg">BO</span>, <span class="seg">CO</span> e <span class="seg">DO</span> 
+	definem os triângulos isósceles cujas bases são as cordas <span class="seg">AB</span>  e <span class="seg">CD</span>, de sorte que tais 
+	triângulos são congruentes. Portanto, <span class="seg">AB</span>  e <span class="seg">CD</span> possuem a mesma medida.  
+	</p>	
+</div>
+
+<div class="teorema" id="Teo_cordas">
+	<span class="negrito">Teorema 2.12 (Teorema das Cordas)</span></br>
+	<p>Se, em uma circunferência <span class="ltx">&Gamma;</span>, duas cordas <span class="seg">AB</span>  e <span class="seg">CD</span> se encontram no ponto 
+	<span class="ltx">P</span>, tem-se:</p> 
+	$$PA\cdot PB = PC\cdot PD.$$
+</div>
+<figure>
+<img src="images/teo_cordas.png" style="widht: 166px; height: 154px;"  id="fig:teo_cordas">
+<figcaption>Figura 2.12: O teorema das cordas.
+</figure>
+	
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Sejam as cordas <span class="seg">AB</span>  e <span class="seg">CD</span> que se intersectam no ponto <span class="ltx">P</span>, 
+	conforme <a href="#fig:teo_cordas" target="_blank">Figura 2.12</a>. Traçando os segmentos <span class="seg">BC</span> e 
+	<span class="seg">AD</span> tem-se que os ângulos <img src="images/angCPB.png" style="widht: 25px; height: 15px; display: inline-block;"> e <img src="images/angAPD.png" style="widht: 25px; height: 15px; display: inline-block;"> são congruentes, 
+	pois são opostos pelo vértice. Além disso os ângulos <img src="images/angBAD.png" style="widht: 25px; height: 15px; display: inline-block;"> e <img src="images/angBCD.png" style="widht: 25px; height: 15px; display: inline-block;"> estão 
+	inscritos em um mesmo arco, logo, são congruentes. Do mesmo modo, <img src="images/angCBA.png" style="widht: 25px; height: 15px; display: inline-block;"> e <img src="images/angCDA.png" style="widht: 25px; height: 15px; display: inline-block;"> 
+	são congruentes, caso Ângulo-Ângulo-Ângulo. Portanto <span class="ltx">&Delta;CPB &cong; &Delta;APD</span> e por esta semelhança temos:
+	$$PA\cdot PB = PC\cdot PD.$$
+	</p>
+</div>
+<div class="teorema" id="def:segm_tangente">
+	<span class="negrito">Definição 2.11</span></br>
+	<p>Dada uma reta <img src="images/retaPR.png" style="display: inline-block; widht: 25px; height: 15px;">, tangente a uma circunferência <span class="ltx">C</span> 
+	no ponto <span class="ltx">R</span>, o segmento <span class="seg">PR</span> é chamado <span class="italico">segmento tangente</span>
+	desde <span class="ltx">P</span> até a circunferência, e a semirreta <img src="images/sretaRP.png" style=" display: inline-block; widht: 25px; height: 15px;">
+	é chamada <span class="italico">semirreta tangente</span> à circunferência no ponto <span class="ltx">R</span>.
+	</p>
+</div>
+
+	
+<div class="teorema" id="2tan">
+	<span class="negrito">Teorema 2.13</span></br>
+	<p>Em uma circunferência <span class="ltx">&Gamma;</span> de centro <span class="ltx">O</span>, se dado um ponto <span class="ltx">P</span> exterior a <span class="ltx">&Gamma;</span>, 
+	temos duas, e somente duas, retas contendo <span class="ltx">P</span> e tangentes à circunferência <span class="ltx">&Gamma;</span>. 
+	</p>
+</div>
+
+
+
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Seja <span class="ltx">&Gamma;</span> uma circunferência de centro <span class="ltx">O</span> e <span class="ltx">P</span> um ponto exterior de <span class="ltx">&Gamma;</span>. 
+	A reta <img src="images/sretaOP.png" style=" display: inline-block; widht: 25px; height: 15px;"> divide <span class="ltx">&Gamma;</span> em duas semicircunferências. 
+	Tomemos o ponto <span class="ltx">R</span> em uma das semicircunferências tal que o ângulo <img src="images/angORP.png" style="widht: 25px; height: 15px; display: inline-block;"> seja reto. 
+	Isto é possível pela definição de circunferência, logo tal ponto existe. Deste modo a reta <img src="images/retaRP.png" style=" display: inline-block; widht: 28px; height: 18px;"> 
+	é tangente à circunferência em <span class="ltx">R</span>.
+    </p>
+    <p>Tomando um ponto <span class="ltx">S</span> na outra semicircunferência, de modo análogo, temos que a reta <img src="images/retaSP.png" style=" display: inline-block; widht: 25px; height: 15px;"> 
+	é tangente à circunferência em <span class="ltx">S</span>.
+    </p>
+    <p>Deste modo, todos os pontos da circunferência, exceto os pontos <span class="ltx">R</span> e <span class="ltx">S</span> estão no interior 
+	de um setor angular entre as retas <img src="images/retaRP.png" style=" display: inline-block; widht: 28px; height: 18px;">
+	e <img src="images/retaSP.png" style=" display: inline-block; widht: 25px; height: 15px;">. Isto descarta a possibilidade de coexistir 
+	outra reta tangente, pois quaisquer outras retas em <span class="ltx">P</span> definirão uma corda na circunferência <span class="ltx">&Gamma;</span> ou não 
+	possuirão ponto em comum com ela. Portanto, existem dois, e apenas dois, segmentos tangentes desde <span class="ltx">P</span> 
+	até a circunferência.
+	</p>
+</div>
+<figure>
+	<img src="images/def618.png" style="widht: 349px; height: 192px;" id="fig:def618">
+	<figcaption>Figura 2.13: <span class="seg">RP</span> e <span class="seg">SP</span> são segmentos tangentes à circunferência.
+</figure>
+<div class="teorema" id="teo_619">
+	<span class="negrito">Teorema 2.14</span></br>
+	<p>Os dois segmentos tangentes à uma circunferência desde um mesmo ponto exterior dado são congruentes e formam ângulos congruentes com a 
+	reta que une o ponto exterior e o centro da circunferência.
+	</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Considere a <a href="#fig:def618" target="_blank">Figura 2.13</a>. Pelo <a href="#tan" Target="_blank">Corolário 2.3</a>, 
+	os triângulos <span class="ltx">&Delta;ORP</span> e <span class="ltx">&Delta;OSP</span> são retângulos em <span class="ltx">R</span> e 
+	em <span class="ltx">S</span>, além disso, <span class="ltx">OR = OS</span> e a hipotenusa <span class="seg">OP</span> é lado comum, 
+	logo eles são congruentes pelo caso Lado-Lado-Ângulo. Portanto, <span class="ltx"><img src="images/angOPS.png" style="widht: 25px; height: 15px; display: inline-block;"> &equiv; <img src="images/angOPR.png" style="widht: 25px; height: 15px; display: inline-block;"></span> e 
+	<span class="seg">RP</span> &equiv; <span class="seg">SP</span>.
+	</p>
+</div>
+<div class="teorema" id="teo620">
+	<span class="negrito">Teorema 2.15</span></br>
+	<p>Dadas uma circunferência <span class="ltx">&Gamma;</span> e um ponto exterior <span class="ltx">P</span>. Sejam <span class="ltx">r</span> e 
+	<span class="ltx">l</span> retas secantes passando por <span class="ltx">P</span> e que interseccionam <span class="ltx">&Gamma;</span> nos pontos 
+	<span class="ltx">R</span> e <span class="ltx">S</span> e nos pontos <span class="ltx">U</span> e <span class="ltx">L</span> 
+	respectivamente. Seja <span class="ltx">t</span> uma reta que passa por <span class="ltx">P</span> e é tangente a <span class="ltx">&Gamma;</span> 
+	no ponto <span class="ltx">T</span>. Então valem as igualdades $$PR \cdot PS = PU \cdot PL = (PT)^2.$$
+	</p>
+</div>
+<figure>
+	<img src="images/teo620.png" id="fig:teo620" style="widht: 295px; height: 154px;" id="teo620">
+	<figcaption>As retas <span class="ltx">r</span> e <span class="ltx">l</span> são secantes à circunferência, passando respectivamente 
+	nos pontos <span class="ltx">S</span> e <span class="ltx">R</span>, e nos pontos <span class="ltx">L</span> e <span class="ltx">U</span>.
+</figure>
+<p>Olhando para os triângulos <span class="ltx">&Delta;SPU</span> e <span class="ltx">&Delta;LPR</span>, <img src="images/angRPU.png" style="widht: 25px; height: 15px; display: inline-block;"> 
+(<a href="#fig:teo620" target="_blank">Figura 2.14</a>) é ângulo comum. Como <img src="images/angRSU.png" style="widht: 25px; height: 15px; display: inline-block;"> e 
+<img src="images/angRLU.png" style="widht: 25px; height: 15px; display: inline-block;"> estão inscritos no arco <img src="images/arcoRU.png" style="widht 28px; height: 18px; display: inline-block;">, 
+tem-se que <span class="ltx"><img src="images/angRSU.png" style="widht: 25px; height: 15px; display: inline-block;"> &equiv; <img src="images/angRLU.png" style="widht: 25px; height: 15px; display: inline-block;"></span>, logo esses triângulos são semelhantes (caso Ângulo-Ângulo-Ângulo). 
+Daí, temos a primeira igualdade: 
+</p>
+<p>
+<div>
+<div style="float: left;" id="eq:ppt0">
+$$SP \cdot RP = LP \cdot UP.$$
+</div>
+<div style="float: right;">
+$$(2.1)$$
+</div>
+</div>
+</p>
+</br></br></br>
+<figure style="clear:both;">
+	<img src="images/teo620b.png" style="widht: 295px; height: 154px;" id="teo620b">
+	<figcaption>Figura 2.15: Potência do ponto.
+</figure>
+<p>Vamos verificar a validade da igualdade:</p> 
+$$PR \cdot PS = PU \cdot PL = (PT)^2$$
+ <p>(Veja <a href="#fig:teo620b" target="_blank">Figura 2.15</a>)</p>
+	<p>Dados os pontos <span class="ltx">A</span> e <span class="ltx">B</span> na circunferência e o ponto <span class="ltx">P</span>, 
+	colineares, e <span class="ltx">P</span> é exterior à circunferência. Seja <span class="ltx">O</span> o centro da circunferência e 
+	<span class="seg">AB</span> o diâmetro cujo prolongamento contém <span class="ltx">P</span>. Seja <span class="seg">TP</span> 
+	o segmento tangente à circunferência em <span class="ltx">T</span>.
+	</p>
+	<p>Pela <a href="#prop_tan" target="_blank">Proposição 2.1</a>, o triângulo <span class="ltx">&Delta;OTP</span> é retângulo 
+	em <span class="ltx">T</span>, daí, aplicando o Teorema de Pitágoras, tem-se que 
+	$$TP^2 = OP^2 - OT^2.$$ 
+	Note que <span class="ltx">OB = OT</span>
+	, logo, 
+	$$TP^2 = OP^2 - OB^2,$$ além disso, <span class="ltx">OP = OB + BP</span>, daí, 
+	</p>
+<p> \begin{align*}
+ TP^2 &= (OB + BP)^2 - OB^2\\
+ &= OB^2 + 2\cdot OB\cdot BP + BP^2 - OB^2,
+ \end{align*}
+ obtendo-se a relação:
+ </p>
+<p>
+<div>
+	<div style="float: left;">
+	\begin{equation}
+	\label{eq:ppt1}
+	TP^2= 2\cdot OB\cdot BP + BP^2.
+	\end{equation}
+	</div>
+	<div style="float: right;">
+	$$(2.2)$$
+	</div>
+</div>
+</p>
+<p style="clear: both;"></p>
+<p>Mas <span class="ltx">AP = AO + OB + BP</span> e <span class="ltx">AO = OB</span>. Logo, <span class="ltx">AP = 2&sdot; OB + BP</span>, 
+e aplicando a equação (2.1), temos: $$AP \cdot BP = SP \cdot RP.$$ 
+Substituindo <span class="ltx">AP</span>, vem:
+$$(2\cdot OB + BP) \cdot BP = SP \cdot RP,$$ e, aplicando a relação (2.2) tem-se:
+$$2\cdot OB\cdot BP + BP^2 = TP^2 = SP \cdot RP.$$
+</p>
+<p>O <a href="#teo620" target="_blank">Teorema 2.15</a> é um caso degenerado do Teorema das Cordas (<a href="#teo_cordas" target="_blank">Teorema 2.12</a>), e nos garante que as igualdades acima existem desde que sejam dados a 
+circunferência e o ponto exterior <span class="ltx">P</span>. O produto <span class="ltx">PR &sdot; PS = PT&sup2;</span> é 
+constante e é chamado potência do ponto <span class="ltx">P</span> em relação à circunferência. Considerando o Teorema de Pitágoras 
+é possível escrever essa potência em função do raio da circunferência e da distância entre o ponto exterior e o seu centro.
+</p>
+<div class="teorema" id="def:polig_inscritivel">
+	<span class="negrito">Definição 2.12</span></br>
+	<p>	Um polígono é <span class="italico">inscritível</span> se tem os seus vértices pertencentes a uma circunferência. 
+	Neste caso, dizemos que o polígono está inscrito nessa circunferência, ou que tal circunferência é a circunferência circunscrita ao polígono.
+	</p>
+</div>
+<div class="teorema" id="def:polig_circunscritivel">
+	<span class="negrito">Definição 2.13</span></br>
+	<p>	Um polígono é <span class="italico">circunscritível</span> se seus lados são tangentes a uma mesma circunferência. 
+	Neste caso dizemos que o polígono está circunscrito à circunferência e tal circunferência é a circunferência inscrita no polígono.
+	</p>
+</div>
+
+        </div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | &copy;  Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>

@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<!--CABEÇALHO DA PÁGINA-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Página de conteúdo matemático de nível fundamental, contendo informações gerais."/>
+    <meta name="keywords" content="professor edilson, pitangui"/>
+    <meta name="author" content="Professor Edilson"/>
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/CSS" media="screen" href="CSS/est.css"/>
+    <script type="text/javascritp" src="js/comportamento.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <title>Divisão de Segmento</title>
+        
+  </head>
+
+<!--CORPO DA PÁGINA-->
+
+  <body class="comum">
+    <noscript  name="advertencia">
+        <h1><b>Atenção:</b></h1>
+           <p>Seu navegador não está aceitando scripts. Configure-o para aceitar scripts ou utilize outro navegador.</p>
+    </noscript>
+
+    <div id="geral">
+    
+        <header id="cab">
+			
+			<div id="logotipo">
+					<a href="apresentacao.html">
+					<img src="images/logotipo.gif" title="Logotipo" alt="logotipo" border="0"/>
+					</a>
+			</div>
+			<div class="banner">
+				<div><h1>DIVISÃO DE SEGMENTO</h1></div>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a class="linkmenu" href="apresentacao.html">APRESENTAÇÃO</a></li>
+					<li><a class="linkmenu" href="resumo_e_introducao.html">RESUMO E INTRODUÇÃO</a></li>
+					<li>CONTEÚDO ESPECÍFICO
+						<ul>
+							<li>Circunferências
+								<ul>
+									<li><a class="linkmenu" href="teo_int_reta_circ.html">Teo. da Interseção Reta-circunferência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="arcos_de_circ.html">Arcos de Circunferências</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_notaveis.html">Pontos Notáveis de um Triângulo</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="reta-de-euler.html">Reta de Euler</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_nove_pontos.html">Circunferência de 9 Pontos</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="teo_duas_circ.html">Teorema das Duas Circunferências</a></li>
+								</ul>
+							</li>
+							<li>Circunferências em Triângulos
+								<ul>
+									<li><a class="linkmenu" href="divisao_de_segmento.html">Divisão de Segmento</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="bissetriz.html">Bissetriz</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="apolonio.html">A Circunferência de Apolônio</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="centros-tritangentes.html">Centros Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="raios_tritangentes.html">Raios Tritangentes</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="pontos_de_tangencia.html">Pontos de Tangência</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="circ_associadas.html">Circunferências Associadas a um Triângulo</a></li>
+								</ul>
+							</li>
+							<li>Proposta de Atividade
+								<ul>
+									<li><a class="linkmenu" href="aprendendo_na_pratica.html">Aprendendo na Prática</a></li>
+								</ul>
+								<ul>
+									<li><a class="linkmenu" href="utilizando_geogebra.html">Utilizando o Geogebra</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="linkmenu" href="videos_e_demonstracoes.html">VÍDEOS e DEMONSTRAÇÕES</a></li>
+					<li><a class="linkmenu" href="conclusao_e_referencias.html">CONCLUSÃO E REFERÊNCIAS</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+ <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
+
+        <div class="padrao">
+					<!-- inicio esquerda  -->
+<h2>3 CIRCUNFERÊNCIAS EM TRIÂNGULOS</h2>
+<p>Até o momento foram apresentadas e associadas a um triângulo, a circunferência inscrita (Corolário 2.25), a circunferência circunscrita (Corolário 2.21) e a circunferência de nove pontos (Teorema 2.27). Neste capítulo serão apresentadas outras circunferências associadas ao triângulo, isto é, a <strong>Circunferência de Apolônio</strong>, as <strong>circunferências tritangentes</strong> (além da circunferência inscrita) e outras seis determinadas pelos lados do triângulo.
+</p>
+<p>A fim de compreender profundamente as relações existentes entre os elementos de circunferências associadas a um dado triângulo, uma coleção de teoremas, corolários e propriedades são citados neste capítulo. Alguns tem sua validade demonstrada e outros não, por serem de verificação imediata, sem, no entanto, diminuir sua importância ou apreço.
+</p>
+<p>Inicialmente é abordado o conceito de divisão de segmentos, onde é esclarecida a ideia de divisão proporcional de segmentos, tanto interna quanto exteriormente, e de divisão harmônica. Em seguida, é abordada a definição de bissetriz a partir de duas retas e são enunciados teoremas fundamentais para as seções que seguem. A partir daí, são apresentadas interessantes relações métricas que envolvem os principais elementos das circunferências tritangentes: os centros, os raios e os pontos de tangência.
+</p>
+
+<h2 id="divisao_de_segmento">3.1 Divisão de Segmento</h2>
+<p>Nesta seção é abordado o conceito de divisão de segmentos, tanto interna quanto externa; a divisão harmônica de um segmento e a razão de proporcionalidade, a fim de facilitar o entendimento de certos teoremas enunciados na próxima seção. Além disso, são tratadas algumas relações entre as medidas dos segmentos envolvidos e a razão de proporcionalidade resultante desta divisão.
+</p>
+<h2>3.1.1 Divisão Proporcional de um Segmento</h2>
+
+<p>Considere dois pontos <span class="ltx">A</span> e <span class="ltx">B</span> e o segmento <span class="seg">AB</span> formado por eles. Seja <span class="ltx">P</span> um ponto no interior deste segmento. O ponto <span class="ltx">P</span> divide interidnte o segmento <span class="seg">AB</span> em duas partes: <span class="seg">AP</span> e <span class="seg">PB</span>. A razão 
+<img src="images/fracaoAPPB.png" style="widht: 39px; height: 27px; display: inline-block;"> 
+é chamada de <span class="italico">razão de proporcionalidade</span> na divisão interna do segmento <span class="seg">AB</span>.
+</p>
+<p>No caso de <span class="ltx">K &gt; 1</span> o ponto <span class="ltx">P</span> encontra-se mais próximo do extremo <span class="ltx">B</span>. No caso de <span class="ltx">K &lt; 1</span> o ponto <span class="ltx">P</span> encontra-se mais próximo do extremo <span class="ltx">A</span>. No caso de <span class="ltx">K = 1</span>, <span class="ltx">P</span> é o ponto médio do segmento <span class="seg">AB</span>.
+</p>
+<p>Agora considere novamente dois pontos <span class="ltx">A</span> e <span class="ltx">B</span> e o segmento formado por eles. Seja <span class="ltx">Q</span> um ponto externo a este segmento, porém na mesma reta 
+<img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;">. 
+O ponto <span class="ltx">Q</span> divide exteriormente o segmento <span class="seg">AB</span> em duas partes, compondo novos segmentos a considerar: <span class="seg">AQ</span> e <span class="seg">QB</span>. A razão 
+<img src="images/fracaoAQQB.png" style="widht: 39px; height: 27px; display: inline-block;"> 
+é chamada de <span class="italico">razão de proporcionalidade na divisão externa do segmento <span class="seg">AB</span> pelo ponto <span class="ltx">Q</span></span>.
+</p>
+<p>No caso de <span class="ltx">K' &gt; 1</span> o ponto <span class="ltx">Q</span> encontra-se mais próximo do extremo <span class="ltx">B</span>. Além disso, se <span class="ltx">K' = 2</span>, <span class="ltx">QB = AB</span>. No caso de <span class="ltx">K' &lt; 1</span> o ponto <span class="ltx">Q</span> encontra-se mais próximo do extremo <span class="ltx">A</span>. Além disso, se 
+<img src="images/klinhaigualmeio.png" style="widht: 30px; height: 22px; display: inline-block;">, <span class="ltx">AQ = AB</span>. 
+Note que <span class="ltx">K' = 1</span> não ocorre pois o ponto <span class="ltx">Q</span> é externo ao segmento <span class="seg">AB</span>.
+</p>
+<h2 id="divisao_harmonica">3.1.2 Divisão Harmônica</h2>
+<div class="teorema" id="def:conj_harm">
+	<span class="negrito">Definição 3.1</span></br>
+	<p>Seja <span class="seg">AB</span> um segmento e <span class="ltx">P</span> e <span class="ltx">Q</span> pontos da reta <img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;"> tal que <span class="ltx">P</span> divide interidnte o segmento <span class="seg">AB</span> e <span class="ltx">Q</span> divide exteriormente o mesmo segmento. Dizemos que <span class="ltx">P</span> e <span class="ltx">Q</span> dividem \textit{harmonicamente} o segmento <span class="seg">AB</span> se ambas divisões ocorrem na mesma razão de proporcionalidade. Neste caso os pontos <span class="ltx">P</span> e <span class="ltx">Q</span> são <span class="italico">conjugados harmônicos</span> com relação aos pontos <span class="ltx">A</span> e <span class="ltx">B</span>.
+</p>
+</div>
+<p>Dados três pontos colineares <span class="ltx">A</span>, <span class="ltx">B</span> e <span class="ltx">C</span>, deseja-se obter o <span class="italico">conjugado harmônico</span> <span class="ltx">D</span> do ponto <span class="ltx">C</span> com relação aos pontos <span class="ltx">A</span> e <span class="ltx">B</span>, ou equivalentemente, os pontos <span class="ltx">C</span> e <span class="ltx">D</span> tais que dividem o segmento <span class="seg">AB</span> interna e exteriormente na mesma proporção, ou ainda, os pontos <span class="ltx">C</span> e <span class="ltx">D</span> tais que dividem harmonicamente o segmento <span class="seg">AB</span>, e que valha a relação: $$\frac{AC}{BC} = \frac{AD}{BD}.$$
+</p>
+<p>Em tais condições, os segmentos <span class="seg">AB</span> e <span class="seg">CD</span> são ditos <span class="italico">segmentos harmônicos</span>.
+</p>
+<p>Considere um segmento <span class="seg">AB</span> que contém um ponto <span class="ltx">C</span> em seu interior, tal que <span class="ltx">C</span> não é ponto médio de <span class="seg">AB</span>. É possível encontrar um ponto <span class="ltx">D</span> exterior de <span class="seg">AB</span> que é o conjugado harmônico de <span class="ltx">C</span> com relação aos pontos <span class="ltx">A</span> e <span class="ltx">B</span>. 
+</p>
+<figure>
+<img src="images/div_harmonica.png" style="widht: 360px; height: 185px;" id="divharm3">
+<figcaption>Figura 3.1: Os pontos <span class="ltx">C</span> e <span class="ltx">D</span> dividem harmonicamente o segmento <span class="seg">AB</span></figcaption>
+</figure>
+<p>Seja <span class="ltx">E</span> um ponto arbitrário, mas não colinear com <span class="seg">AB</span>, e seja <span class="ltx">p = AE</span>. Tomemos <span class="seg">GF</span> um segmento de uma reta 
+<img src="images/retaGF.png" style="widht: 20px; height: 15px; display: inline-block;">, 
+paralela a <span class="seg">AE</span>, que contém <span class="ltx">B</span>. O ponto <span class="ltx">G</span> é definido pela interseção da reta 
+<img src="images/retaEC.png" style="widht: 20px; height: 15px; display: inline-block;"> 
+com a reta 
+<img src="images/retaBF.png" style="widht: 20px; height: 15px; display: inline-block;">. 
+Além disso, o ponto <span class="ltx">F</span> é definido de modo que <span class="ltx">BG = BF = q</span>. Seja <span class="ltx">D</span> o ponto de interseção entre as retas <img src="images/retaEF.png" style="widht: 20px; height: 15px; display: inline-block;"> e <img src="images/retaAB.png" style="widht: 20px; height: 15px; display: inline-block;">. Nestas condições, tem-se dois pares de triângulos semelhantes: <span class="ltx">&Delta;AEC &TildeEqual; &Delta;BGC</span> e <span class="ltx">&Delta;AED &TildeEqual; &Delta;BFD</span>, ambas semelhanças pelo caso ângulo-ângulo.
+</p>
+<p>Devido a estas semelhanças, temos 
+<img src="images/ACBCigualAEBG.png" style="widht: 30px; height: 28px; display: inline-block;"> 
+e <img src="images/AEBFigualADBD.png" style="widht: 30px; height: 28px; display: inline-block;">. Mas <span class="ltx">BG = BF</span>. 
+</p>
+<p>Portanto, $$\frac{AC}{BC}=\frac{AD}{BD} \quad \Leftrightarrow \quad \frac{BC}{AC}=\frac{BD}{AD}.$$
+</p>
+<p>Observação: Seja <span class="ltx">p &div; q</span> a razão de proporcionalidade. Se <span class="ltx">p &gt; q</span>, temos <span class="ltx">AC &gt; CB</span> e <span class="ltx">AD &gt; BD</span>, de modo que o ponto médio <span class="ltx">M</span> de <span class="seg">AB</span> fica fora do segmento <span class="seg">CD</span>. A mesma posição relativa dos pontos <span class="ltx">M</span>, <span class="ltx">C</span>, <span class="ltx">D</span> prevalece, se <span class="ltx">p &lt; q</span>, isto é, o ponto médio <span class="ltx">M</span> de <span class="seg">AB</span> continua fora do segmento <span class="seg">CD</span>.
+</p>
+<p>Se <span class="ltx">p = q</span>, o ponto <span class="ltx">C</span> coincide com <span class="ltx">M</span>, e não há ponto de divisão externo, pois <span class="seg">EF</span> é paralelo a <span class="seg">AB</span>.
+</p>
+
+<div class="teorema" id="57">
+	<span class="negrito">Teorema 3.1</span></br>
+	<p>Se os pontos <span class="ltx">C</span> e <span class="ltx">D</span> dividem o segmento <span class="seg">AB</span> interna e exteriormente na razão <span class="ltx">p &div; q</span>, os pontos <span class="ltx">B</span> e <span class="ltx">A</span> dividem o segmento <span class="seg">DC</span> interna e exteriormente na razão $$(p + q): (p - q).$$
+	</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+<p>Pela divisão harmônica, ilustrada na figura 3.1 tem-se 
+$$\frac{AC}{BC}=\frac{AD}{BD}=\frac{p}{q}.$$ 
+</p>
+<p>Dessa forma, $$\frac{AC}{BC}= \frac{p}{q} \quad \text{e} \quad \frac{AD}{BD} = \frac{p}{q}.$$
+</p>
+<p>Assim, $$\frac{(AC + BC)}{BC}= \frac{(p + q)}{q} \quad \text{e} \quad \frac{(AD - BD)}{BD} = \frac{(p - q)}{q}.$$
+</p>
+<p>Substituindo <span class="ltx">AC + BC</span> e <span class="ltx">AD - BD</span> por <span class="ltx">AB</span>, tem-se:
+$$\frac{AB}{BC}= \frac{(p + q)}{q} \quad \text{e} \quad \frac{AB}{BD} = \frac{(p - q)}{q}.$$
+</p>
+<p>Logo, $$AB= \frac{(p + q)}{q} \times BC \quad \text{e} \quad AB = \frac{(p - q)}{q} \times BD.$$
+</p>
+<p>Portanto $$\frac{BD}{BC} = \frac{(p + q)}{(p - q)}.$$
+</p>
+<p>Por outro lado, tem-se $$\frac{AC}{BC}=\frac{AD}{BD} = \frac{p}{q}$$
+</p>
+<p>Dessa forma $$\frac{AC}{BC}= \frac{p}{q} \quad \text{e} \quad \frac{AD}{BD} = \frac{p}{q}.$$
+</p>
+<p>Assim $$\frac{AC}{(AC + BC)}= \frac{p}{(p + q)} \quad \text{e} \quad \frac{AD}{(AD - BD)} = \frac{p}{(p - q)}.$$
+</p>
+<p>Substituindo <span class="ltx">AC + BC</span> e <span class="ltx">AD - BD</span> por <span class="ltx">AB</span>, tem-se:
+$$\frac{AC}{AB}= \frac{p}{(p + q)} \quad \text{e} \quad \frac{AD}{AB} = \frac{p}{(p - q)}.$$
+</p>
+<p>Dessa forma $$AB = \frac{(p + q)}{p} \times AC \quad \text{e} \quad AB = \frac{(p - q)}{p} \times AD.$$
+</p>
+<p>Logo $$\frac{AD}{AC} = \frac{(p + q)}{(p - q)}.$$
+</p>
+</div> 
+<div class="teorema" id="58">
+	<span class="negrito">Corolário 3.2</span></br>
+	<p>Se <span class="ltx">AB = a</span> e <span class="ltx">CD = b</span>, temos $$b = \frac{2 apq}{(p^2 - q^2)}.$$
+</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+		<p>De fato, tem-se:
+$$\frac{AD}{AB} = \frac {p}{(p - q)}, \quad \frac{AC}{AB} = \frac{p}{(p + q)} , \quad CD = AD-AC;$$
+daí, fazendo as substituições devidamente,
+ </p>
+<p>\begin{align*}
+	CD = b 
+	&= AD - AC\\
+	&= \dfrac{p}{(p - q)}\cdot a - \dfrac{p}{(p + q)}\cdot a\\
+	&= \dfrac{pa(p + q) - pa(p - q)}{(p^2 - q^2)}\\
+	&= \dfrac{pa[p + q - (p - q)]}{(p^2 - q^2)}\\
+	&= \dfrac{pa[p + q - p + q]}{(p^2 - q^2)}\\
+	&= \dfrac{pa[2q]}{(p^2 - q^2)}\\
+	&= \dfrac{2apq}{(p^2 - q^2)}.
+\end{align*}
+</p>
+</div>
+
+<div class="teorema" id="61">
+	<span class="negrito">Teorema 3.3</span></br>
+	<p>Sejam os pontos <span class="ltx">A</span>, <span class="ltx">B</span>, <span class="ltx">C</span> e <span class="ltx">D</span> colineares e harmônicos. O pé das perpendiculares baixadas sobre uma reta qualquer, a partir destes pontos, também são pontos harmônicos.
+</p>
+</div>
+<p>De fato, as perpendiculares são quatro retas paralelas; logo pelo Teorema Fundamental de Proporcionalidade (2.17), os segmentos determinados por seus pés são proporcionais aos segmentos correspondentes, portanto são pontos harmônicos.
+</p>
+<div class="teorema" id="62">
+	<span class="negrito">Teorema 3.4</span></br>
+<p>Se os pontos <span class="ltx">C</span>, <span class="ltx">D</span> dividem o segmento <span class="seg">AB</span> harmonicamente na razão <span class="ltx">p &div; q</span>, o ponto médio <span class="ltx">O</span> do segmento <span class="seg">CD</span> divide o segmento <span class="seg">AB</span> exteriormente na razão <span class="ltx">p&sup2; &div; q&sup2;</span>.		
+</p>
+</div>
+<figure>
+<img src="images/teorema62.png" style="widht: 304px; height: 224px;" id="teorema62">
+<figcaption>Figura 3.2: O ponto <span class="ltx">O</span> é externo e divide <span class="ltx">AB</span> na razão $$\frac{AO}{BO} = \frac{p^2}{q^2}.$$</figcaption>
+</figure>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+	<p>Deseja-se mostrar que o ponto <span class="ltx">O</span> divide <span class="ltx">AB</span> na razão $$\frac{AO}{BO} = \frac{p^2}{q^2}.$$
+	</p>	
+<p>	Temos:
+$$AO = \frac{1}{2}CD + AC, \quad BO = \frac{1}{2}CD - BC.$$
+</p>
+<p>Substituindo $$CD = \frac{2apq}{(p^2 - q^2)} \text{, } AC = \frac{pa}{(p + q)} \text{, } BC = a - AC \text{,}$$ conforme o Teorema 3.1 e Corolário 3.2, obtem-se:
+$$AO = \frac{ap^2}{(p^2 - q^2)}, \quad BO = \frac{aq^2}{(p^2 - q^2)};$$
+daí a relação: 
+$$\frac{AO}{BO} = \frac{p^2}{q^2}.$$
+</p>
+</div> 
+<div class="teorema">
+	<span class="negrito">Corolário 3.5</span></br>
+	<p>Seguindo as notações do Corolário 3.2, temos: $$OA.OB = OC^2.$$
+	</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+<p>Note que <span class="ltx">CD = 2&CenterDot;OC</span>. Dai,
+\begin{align*}
+	OA.OB 
+	&= \dfrac{ap^2}{(p^2 - q^2)}.\dfrac{aq^2}{(p^2 - q^2)}
+	= \dfrac{a^2.p^2.q^2}{(p^2 - q^2)^2}\\
+	&= \left[ \dfrac{a.p.q}{(p^2 - q^2)} \right]^2 
+	= \left[ \dfrac{2}{2} . \dfrac{a.p.q}{(p^2 - q^2)} \right]^2 \\
+	&= \left[ \dfrac{1}{2} . \dfrac{2.a.p.q}{(p^2 - q^2)} \right]^2
+	= \left[ \dfrac{1}{2} . CD \right]^2 \\
+	&= \left[ OC \right]^2. \\
+\end{align*}
+</p>
+</div> 
+<p>Antes de irmos ao próximo teorema, observemos que <span class="ltx">M</span> e <span class="ltx">O</span> são, respectivamente, os pontos médios dos segmentos <span class="seg">AB</span> e <span class="seg">CD</span>. Logo:
+</p>
+<p>\begin{align*}
+MO = AO - AM 
+&= AO - \dfrac{1}{2}AB\\
+&= \dfrac{ap^2}{(p^2 - q^2)} - \dfrac{1}{2}\cdot a\\ 
+&= \dfrac{2ap^2 - a(p^2 - q^2)}{2(p^2 - q^2)}\\
+&= \dfrac{a(p^2 + q^2)}{2(p^2 - q^2)}.
+\end{align*}
+</p>
+<div class="teorema">
+	<span class="negrito">Teorema 3.6</span></br>
+	<p>A soma dos quadrados de dois segmentos harmônicos é igual a quatro vezes o quadrado da distância entre os pontos médios desses segmentos, ou seja: 
+	$$AB^2 + CD^2 = 4 MO^2.$$</p>
+</div>
+<div class="teorema">
+	<span class="negrito">Demonstração</span></br>
+<p>Temos:
+</p>
+<p>$$\begin{align*}
+		AB^2 + CD^2 
+		&= a^2 + \left[ \dfrac{2apq}{(p^2 - q^2)} \right]^2\\
+		&= a^2 + \dfrac{4a^2p^2q^2}{(p^2 - q^2)^2}\\
+		&= \dfrac{a^2(p^2 - q^2)^2 + 4a^2p^2q^2}{(p^2 - q^2)^2}\\
+		&= \dfrac{a^2 \Big((p^2)^2 - 2.p^2.q^2 + (q^2)^2 \Big) + 4a^2p^2q^2}{(p^2 - q^2)^2}\\
+		&= \dfrac{a^2 (p^2)^2 - a^2 2.p^2.q^2 + a^2 (q^2)^2 + 4a^2p^2q^2}{(p^2 - q^2)^2}\\
+		&= \dfrac{a^2 (p^2)^2 + 2a^2.p^2.q^2 + a^2 (q^2)^2}{(p^2 - q^2)^2}\\
+		&= \dfrac{a^2 \Big[(p^2)^2 + 2.p^2.q^2 + (q^2)^2\Big]}{(p^2 - q^2)^2}\\
+		&= \dfrac{a^2 (p^2 + q^2)^2}{(p^2 - q^2)^2}\\ 
+		&= \left[\dfrac{a(p^2 + q^2)}{(p^2 - q^2)} \right]^2 \\
+		&= \left[2 MO \right]^2 = 4 MO^2.
+	\end{align*}
+	$$
+</p>
+	
+</div>
+
+        </div>
+<!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
+ 
+ <footer>
+           
+            <div id="direitos_reservados">
+				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | Todos os direitos reservados!
+			</div>
+ </footer>
+    
+    </div>
+        
+  </body>
+</html>
