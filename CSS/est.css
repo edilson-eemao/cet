@@ -114,7 +114,10 @@ li.espac{margin-bottom: 12pt; list-style-image: url("images/star.png");}
 
 ul#formacao{text-align: left;}
 
-.lista{text-align: left;}
+.lista{text-align: left;
+		margin: 10px;
+		background-color: white;
+		padding: 10px;}
 
 div.padrao{
 	line-height: 20pt;
