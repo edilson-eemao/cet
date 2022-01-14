@@ -90,8 +90,16 @@ span.italico{
 	color: #08899e;
 }
 
+p.negrito{
+	font-size: 14pt;
+	font: bold;
+	text-height: 1.5pt;
+	text-align: center;
+	font-family: times;
+}
 
 p.italico{
+	font-size: 14pt;
 	font-style: italic;
 	margin-right: 30px;
 	margin-left: 60px;
@@ -99,7 +107,7 @@ p.italico{
 	margin-top: 10px;
 	text-align: justify;
 	text-indent: 20px;
-	text-height: 1.15pt;
+	text-height: 1.5pt;
 	font-family: times;
 }
 
@@ -172,6 +180,15 @@ img{
 	margin-right: auto;
 	}
 
+div.destaque{
+	clear: both;
+	background-color: white;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
 #destaque_top_esquerda .legenda{
 	clear: both;
 	font-style:italic; 
@@ -198,8 +215,6 @@ img{
 	margin-left: 10px;
 	margin-bottom: 20px;
 }
-
-
 
 #eezb .centro{
 	display: block;
