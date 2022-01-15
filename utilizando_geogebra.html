@@ -109,117 +109,94 @@
 
         <div class="padrao">
 					<!-- inicio esquerda  -->
-				<h2 id="sec:construcoes">4.2 Circunferências em Triângulos utilizando o Geogebra</h2>
-<p>
-\section{Circunferências em Triângulos utilizando o Geogebra}
-\label{sec:construcoes}
-
-Nesta seção é pressuposto que o leitor conheça os conceitos básicos de geometria plana, além da utilização das ferramentas básicas disponíveis no software Geogebra. 
-
-Ao longo deste trabalho, foi mostrada a existência de certamente 12 e possivelmente 15 circunferências associadas a um triângulo. Possivelmente porque o Círculo de Apolônio (Seção \ref{sec:circunferencia_de_apolonio}) não existe se o pé da bissetriz interna coincidir com o ponto médio de um lado do triângulo, o que ocorre em um lado do triângulo isósceles e nos três lados do triângulo equilátero.
-
-De acordo com a Definição \ref{def_circunf}, é suficiente e necessário verificar a existência de um ponto central e uma distância determinada para que exista uma circunferência bem definida. Este é o principal argumento utilizado nesta seção, ocorrendo também a referência aos respectivos teoremas e corolários que fundamentam as afirmativas.
-
- Nas ilustrações que seguem, o triângulo utilizado foi o escaleno e ele é citado como sendo um triângulo qualquer ou simplesmente um triângulo $\triangle ABC$, mas o princípio se estende aos triângulos isósceles e aos equiláteros.
-
-A primeira circunferência ilustrada é a \textit{circunferência circunscrita}, veja subseção \ref{circuncentro}. 
-
-Tome um triângulo qualquer e trace as mediatrizes em pelo menos dois lados do triângulo. Sabemos que a interseção destas mediatrizes é um ponto chamado de \textit{Cinrcuncentro}, denotado por $O$. Com centro neste ponto, tracemos a circunferência circunscrita ao triângulo.
-
-Pela ferramenta de medir\footnote{Ferramenta de medição de distância, comprimento ou perímetro.} do Geogebra podemos comprovar que as distâncias entre o circuncentro e cada um dos vértices é a mesma.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{figs/Geogebra_01}
-	\caption{Circunferência circunscrita ao triângulo $\triangle ABC$: $QA = QB = QC$. \label{Geogebra_01}}
-\end{figure}
-
-
-A segunda circunferência ilustrada é a \textit{circunferência inscrita}, conforme apresentada na subseção \ref{incentro}.
-
-Tome um triângulo qualquer e trace as bissetrizes internas em pelo menos dois vértices do triângulo. Sabemos que a interseção destas bissetrizes é um ponto chamado de \textit{Incentro}, denotado por $I$. A partir deste ponto definimos os pés de perpendiculares $T_a$, $T_b$ e $T_c$, respectivamente, sobre os lados $\overline{BC}$, $\overline{AC}$ e $\overline{AB}$. Por fim, tracemos a circunferência inscrita, com centro em $I$ e que tangencia os três lados do triângulo nos pontos $T_a$, $T_b$ e $T_c$.
-
-Usando também a ferramenta de medir do Geogebra podemos comprovar que as distâncias entre o incentro e cada um dos pontos de tangência é a mesma. Por possuir esta característica, a circunferência inscrita é uma circunferência tritangente. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{figs/Geogebra_02}
-	\caption{Circunferência inscrita no triângulo $\triangle ABC$: $IT_a = IT_b = IT_c$. \label{Geogebra_02}}
-\end{figure}
-
-A seguir, vamos verificar em um triângulo a associação com outras três circunferências tritangentes, porém, localizadas no exterior do triângulo e, por este motivo, chamadas de circunferências ex-inscritas (consulte a Definição \ref{exinscritos} (b), na Seção \ref{sec:centros_tritangentes}).
-
-Tomemos um triângulo $\triangle ABC$ qualquer e dois de seus vértices, digamos $B$ e $C$. Tracemos a partir deles as bissetrizes externas. É notável que as bissetrizes externas encontram-se em um ponto, denotado por $I_a$. Agora tracemos o prolongamento dos lados $\overline{AB}$ e $\overline{AC}$. Determinemos o pé da perpendicular do ponto $I_a$ sobre estes prolongamentos e também sobre o lado $\overline{BC}$, denotados, respectivamente, por $E$, $F$ e $G$. Finalmente, tracemos a circunferência de centro $I_a$ e raio definido pela distância entre $I_a$ e  qualquer um dos pés de perpendicular determinados.
-
-Usando a ferramenta de medição do software, é possível comprovar que as distâncias do ponto $I_a$ até os pés de perpendicular $E$, $F$ e $G$ são iguais. Portanto, esta circunferência é tritangente, pois tangencia o lado $\overline{BC}$ e os prolongamentos dos demais lados do triângulo. Analogamente é possível traçar as circunferências exinscritas relativas aos lados $\overline{AC}$ e $\overline{AB}$.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{figs/Geogebra_03}
-	\caption{Circunferência ex-inscrita no triângulo $\triangle ABC$: $I_aE = I_aF = I_aG$. \label{Geogebra_03}}
-\end{figure}
-
-Um triângulo qualquer $\triangle ABC$ possui, associado a ele, outras três circunferências tais que contêm o incentro $I$ e dois dos vértices. O centro destas circunferências é o ponto médio entre o incentro e um centro de uma circunferência ex-inscrita. Além disso, esse centro é ponto da circunferência circunscrita (veja Teorema \ref{t_diam}).
-
-Tomemos o incentro $I$ de um triângulo $\triangle ABC$ e o centro $I_a$ da circunferência ex-inscrita relativa ao lado $\overline{BC}$. Tracemos o ponto médio entre eles e chamemos de ponto $K$.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{figs/Geogebra_04a}
-	\caption{Circunferência ex-inscrita no triângulo $\triangle ABC$: $KI_a = KB = KC = KI$. \label{Geogebra_04a}}
-\end{figure}
-
-Utilizando a ferramenta de medição do Geogebra podemos confirmar que as distâncias $KI$, $KB$, $KC$ e $KI_a$ são iguais, portanto $K$ é centro de uma circunferência que contém os pontos $I$, $B$, $C$ e $I_a$.
-
-No mesmo triângulo, determinemos o centro $O$ da circunferência circunscrita. Com a mesma ferramenta de medição, podemos verificar que as distâncias $OA$, $OB$, $OC$ e $OK$ são iguais, portanto $K$ pertence à circunferência circunscrita.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{figs/Geogebra_04b}
-	\caption{O centro $K$ é ponto da circunferência circunscrita. \label{Geogebra_04b}}
-\end{figure}
-
-Analogamente podemos obter outras duas circunferências se tomarmos  o incentro $I$ juntamente com o centro $I_b$ (ou o centro $I_c$) da circunferência ex-inscrita relativa ao lado $\overline{AC}$ (ou ao lado $\overline{AB}$), determinando o ponto $L$ (ou $M$). 
-
-
-A partir dos pontos $K$, $L$ e $M$, podemos verificar a existência de outras três circunferências associadas ao mesmo triângulo $\triangle ABC$, tais que contenham dois do vértices do triângulo e seus respectivos centros da circunferência ex-inscrita. Os centros destas circunferências são os pontos $K'$, $L'$ ou $M'$  obtidos pela interseção da retas $\overleftrightarrow{KO}$, $\overleftrightarrow{LO}$ ou $\overleftrightarrow{MO}$  com a circunferência circunscrita ao triângulo $\triangle ABC$, respectivamente. 
-Além disso, $K'$, $L'$ e $M'$ são pontos médios do segmento $\overline{I_{b}I_{c}}$, $\overline{I_{a}I_{c}}$ e $\overline{I_{a}I_{b}}$, respectivamente.
-
-Tomemos o ponto $K'$. Utilizando a ferramenta de medição do Geogebra podemos verificar que as distâncias $K'I_c$, $K'I_b$, $K'B$ e $K'C$ são iguais, portanto $K'$ é centro da circunferência que contém os pontos $I_c$, $I_b$, $B$ e $C$. Também podemos perceber que o segmento $\overline{I_{c}I_{b}}$ é um diâmetro, pois $I_c$, $K'$ e $I_b$ são colineares - uma vez que estão na bissetriz externa do vértice $A$. Portanto, $K'$ é ponto médio do segmento $\overline{I_{c}I_{b}}$. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{figs/Geogebra_05}
-	\caption{O ponto $K'$ é centro da circunferência que contém os vértices $B$ e $C$, além dos centros tritangentes $I_b$ e $I_c$. \label{Geogebra_05}}
-\end{figure}
-
-Analogamente as demais circunferências podem ser obtidas se tomarmos os pontos $L'$ e $M'$.
-\vspace{0.5cm}
-
-Até o momento, contamos onze circunferências associadas ao triângulo $\triangle ABC$. A décima segunda circunferência, não que esta ordenação seja importante, é a Circunferência de Nove Pontos (Veja detalhes na Seção \ref{sec:circunferencia_de_nove_pontos}).  
-
-Tomemos um triângulo $\triangle ABC$ qualquer, seu circuncentro $O$ e seu ortocentro $Q$. Vamos determinar os pontos médios $M_a$, $M_b$ e $M_c$, respectivamente, dos lados $\overline{BC}$, $\overline{AC}$ e $\overline{AB}$. Determinemos também os pés das alturas $H$, $R$ e $J$, relativos aos vértices, respectivamente, $A$, $B$ e $C$. Os pontos médios entre o ortocentro e os vértices são chamados de pontos de Euler. Sejam $E_a$, $E_b$ e $E_c$ tais pontos, relativos, respectivamente aos vértices $A$, $B$ e $C$. Por fim, vamos tomar $S$ ponto médio entre $Q$ e $O$. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.35]{figs/Geogebra_06}
-	\caption{A circunferência de 9 pontos tem centro no ponto médio entre o Ortocentro e o Circuncentro. \label{Geogebra_06}}
-\end{figure}
-
-
-Pelo Geogebra podemos verificar que as distâncias $SE_a$, $SE_b$, $SE_c$, $SM_a$, $SM_b$, $SM_c$, $SH$, $SR$ e $SJ$ são iguais, portanto $S$ é centro de uma circunferência que contém os nove pontos: $E_a$, $E_b$, $E_c$, $M_a$, $M_b$, $M_c$, $H$, $R$ e $J$.   
-
-As próximas circunferências associadas ao triângulo têm sua existência dependente do seu tipo, ou melhor, se o triângulo é equilátero, isósceles ou escaleno. Tais circunferências são de Apolônio, conforme foram apresentadas na Seção \ref{sec:circunferencia_de_apolonio} e esta observação é devida ao fato de que tal circunferência não existe se a razão de proporcionalidade for igual a 1 (Corolário \ref{Cor_apol}), portanto consideremos o caso em que o triângulo $\triangle ABC$ é escaleno. 
-
-Dessa forma, pelo vértice $B$ determinemos $M$, o pé da bissetriz interna. Utilizando o Teorema \ref{Teo_apol} sobre o lado $\overline{AC}$, temos $N$ o conjugado harmônico de $M$. Uma vez que $\overline{MN}$ é diâmetro da circunferência de Apolônio, podemos verificar que o triângulo $\triangle MBN$ é retângulo em $B$, portanto, $B$ pertence à esta circunferência.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.35]{figs/Geogebra_07}
-	\caption{A circunferência de Apolônio, relativa ao lado $\overline{AC}$. \label{Geogebra_07}}
-\end{figure}
-
-Analogamente podemos obter outras duas circunferências relativas aos demais vértices.
+<h2 id="sec:construcoes">4.2 Circunferências em Triângulos utilizando o Geogebra</h2>
+<p>Nesta seção é pressuposto que o leitor conheça os conceitos básicos de geometria plana, além da utilização das ferramentas básicas disponíveis no software Geogebra. 
+</p>
+<p>Ao longo deste trabalho, foi mostrada a existência de certamente 12 e possivelmente 15 circunferências associadas a um triângulo. Possivelmente porque o Círculo de Apolônio (<a href="apolonio.html#sec:circunferencia_de_apolonio" target="_blank">Seção 3.3</a>) não existe se o pé da bissetriz interna coincidir com o ponto médio de um lado do triângulo, o que ocorre em um lado do triângulo isósceles e nos três lados do triângulo equilátero.
+</p>
+<p>De acordo com a <a href="teo_int_reta_circ.html#def_circunf" target="_blank">Definição 2.1</a>, é suficiente e necessário verificar a existência de um ponto central e uma distância determinada para que exista uma circunferência bem definida. Este é o principal argumento utilizado nesta seção, ocorrendo também a referência aos respectivos teoremas e corolários que fundamentam as afirmativas.
+</p>
+<p> Nas ilustrações que seguem, o triângulo utilizado foi o escaleno e ele é citado como sendo um triângulo qualquer ou simplesmente um triângulo <span class="ltx">&Delta;ABC</span>, mas o princípio se estende aos triângulos isósceles e aos equiláteros.
+</p>
+<p>A primeira circunferência ilustrada é a <span class="italico">circunferência circunscrita</span>, veja <a href="pontos_notaveis.html#circuncentro" target="_blank">Subseção 2.3.2</a>. 
+</p>
+<p>Tome um triângulo qualquer e trace as mediatrizes em pelo menos dois lados do triângulo. Sabemos que a interseção destas mediatrizes é um ponto chamado de <span class="italico">Circuncentro</span>, denotado por <span class="ltx">O</span>. Com centro neste ponto, tracemos a circunferência circunscrita ao triângulo.
+</p>
+<p>Pela ferramenta de <abbr title="Ferramenta de medição de distância, comprimento ou perímetro." style="font-weight: bold;">MEDIR <img src="images/medirGGB.png" style="widht: 30px; height: 30px; display: inline-block;"></abbr> do Geogebra podemos comprovar que as distâncias entre o circuncentro e cada um dos vértices é a mesma.
+</p>
+<figure>
+	<img src="images/Geogebra_01.png" style="widht: 480px; height: 234px;" id="Geogebra_01">
+	<figcaption>Figura 4.2: Circunferência circunscrita ao triângulo <span class="ltx">&Delta;ABC</span>: <span class="ltx">QA = QB = QC</span>.</figcaption>
+</figure>
+<p>A segunda circunferência ilustrada é a <span class="italico">circunferência inscrita</span>, conforme apresentada na <a href="pontos_notaveis.html#incentro" target="_blank">Subseção 2.3.4</a>.
+</p>
+<p>Tome um triângulo qualquer e trace as bissetrizes internas em pelo menos dois vértices do triângulo. Sabemos que a interseção destas bissetrizes é um ponto chamado de <span class="italico">Incentro</span>, denotado por <span class="ltx">I</span>. A partir deste ponto definimos os pés de perpendiculares <span class="ltx">T<sub>a</sub></span>, <span class="ltx">T<sub>b</sub></span> e <span class="ltx">T<sub>c</sub></span>, respectivamente, sobre os lados <span class="seg">BC</span>, <span class="seg">AC</span> e <span class="seg">AB</span>. Por fim, tracemos a circunferência inscrita, com centro em <span class="ltx">I</span> e que tangencia os três lados do triângulo nos pontos <span class="ltx">T<sub>a</sub></span>, <span class="ltx">T<sub>b</sub></span> e <span class="ltx">T<sub>c</sub></span>.
+</p>
+<p>Usando também a ferramenta de medir do Geogebra podemos comprovar que as distâncias entre o incentro e cada um dos pontos de tangência é a mesma. Por possuir esta característica, a circunferência inscrita é uma circunferência tritangente. 
+</p>
+<figure>
+	<img src="images/Geogebra_02.png" style="widht: 480px; height: 234px;" id="Geogebra_02">
+	<figcaption>Figura 4.3: Circunferência inscrita no triângulo <span class="ltx">&Delta;ABC</span>: <span class="ltx">IT<sub>a</sub> = IT<sub>b</sub> = IT<sub>c</sub></span>.</figcaption>
+</figure>
+<p>A seguir, vamos verificar em um triângulo a associação com outras três circunferências tritangentes, porém, localizadas no exterior do triângulo e, por este motivo, chamadas de circunferências ex-inscritas (consulte a <a href="centros-tritangentes.html#exinscritos" target="_blank">Definição 3.3 (b)</a>.
+</p>
+<p>Tomemos um triângulo <span class="ltx">&Delta;ABC</span> qualquer e dois de seus vértices, digamos <span class="ltx">B</span> e <span class="ltx">C</span>. Tracemos a partir deles as bissetrizes externas. É notável que as bissetrizes externas encontram-se em um ponto, denotado por <span class="ltx">I<sub>a</sub></span>. Agora tracemos o prolongamento dos lados <span class="seg">AB</span> e <span class="seg">AC</span>. Determinemos o pé da perpendicular do ponto <span class="ltx">I<sub>a</sub></span> sobre estes prolongamentos e também sobre o lado <span class="seg">BC</span>, denotados, respectivamente, por <span class="ltx">E</span>, <span class="ltx">F</span> e <span class="ltx">G</span>. Finalmente, tracemos a circunferência de centro <span class="ltx">I<sub>a</sub></span> e raio definido pela distância entre <span class="ltx">I<sub>a</sub></span> e  qualquer um dos pés de perpendicular determinados.
+</p>
+<p>Usando a ferramenta de medição do software, é possível comprovar que as distâncias do ponto <span class="ltx">I<sub>a</sub></span> até os pés de perpendicular <span class="ltx">E</span>, <span class="ltx">F</span> e <span class="ltx">G</span> são iguais. Portanto, esta circunferência é tritangente, pois tangencia o lado <span class="seg">BC</span> e os prolongamentos dos demais lados do triângulo. Analogamente é possível traçar as circunferências exinscritas relativas aos lados <span class="seg">AC</span> e <span class="seg">AB</span>.
+</p>
+<figure>
+	<img src="images/Geogebra_03.png" style="widht: 480px; height: 234px;" id="Geogebra_03">
+	<figcaption>Figura 4.4: Circunferência ex-inscrita no triângulo <span class="ltx">&Delta;ABC</span>: <span class="ltx">I<sub>a</sub>E = I<sub>a</sub>F = I<sub>a</sub>G</span>.</figcaption>
+</figure>
+<p>Um triângulo qualquer <span class="ltx">&Delta;ABC</span> possui, associado a ele, outras três circunferências tais que contêm o incentro <span class="ltx">I</span> e dois dos vértices. O centro destas circunferências é o ponto médio entre o incentro e um centro de uma circunferência ex-inscrita. Além disso, esse centro é ponto da circunferência circunscrita (veja <a href="centros-tritangentes.html#t_diam" target="_blank">Corolário 3.26</a>).
+</p>
+<p>Tomemos o incentro <span class="ltx">I</span> de um triângulo <span class="ltx">&Delta;ABC</span> e o centro <span class="ltx">I<sub>a</sub></span> da circunferência ex-inscrita relativa ao lado <span class="seg">BC</span>. Tracemos o ponto médio entre eles e chamemos de ponto <span class="ltx">K</span>.
+</p>
+<figure>
+	<img src="images/Geogebra_04a.png" style="widht: 480px; height: 234px;" id="Geogebra_04a">
+	<figcaption>Figura 4.5: Circunferência ex-inscrita no triângulo <span class="ltx">&Delta;ABC</span>: <span class="ltx">KI<sub>a</sub> = KB = KC = KI</span>.</figcaption>
+</figure>
+<p>Utilizando a ferramenta de medição do Geogebra podemos confirmar que as distâncias <span class="ltx">KI</span>, <span class="ltx">KB</span>, <span class="ltx">KC</span> e <span class="ltx">KI<sub>a</sub></span> são iguais, portanto <span class="ltx">K</span> é centro de uma circunferência que contém os pontos <span class="ltx">I</span>, <span class="ltx">B</span>, <span class="ltx">C</span> e <span class="ltx">I<sub>a</sub></span>.
+</p>
+<p>No mesmo triângulo, determinemos o centro <span class="ltx">O</span> da circunferência circunscrita. Com a mesma ferramenta de medição, podemos verificar que as distâncias <span class="ltx">OA</span>, <span class="ltx">OB</span>, <span class="ltx">OC</span> e <span class="ltx">OK</span> são iguais, portanto <span class="ltx">K</span> pertence à circunferência circunscrita.
+</p>
+<figure>
+	<img src="images/Geogebra_04b.png" style="widht: 480px; height: 234px;" id="Geogebra_04b">
+	<figcaption>Figura 4.6: O centro <span class="ltx">K</span> é ponto da circunferência circunscrita.</figcaption>
+</figure>
+<p>Analogamente podemos obter outras duas circunferências se tomarmos  o incentro <span class="ltx">I</span> juntamente com o centro <span class="ltx">I<sub>b</sub></span> (ou o centro <span class="ltx">I<sub>c</sub></span>) da circunferência ex-inscrita relativa ao lado <span class="seg">AC</span> (ou ao lado <span class="seg">AB</span>), determinando o ponto <span class="ltx">L</span> (ou <span class="ltx">M</span>). 
+</p>
+<p>A partir dos pontos <span class="ltx">K</span>, <span class="ltx">L</span> e <span class="ltx">M</span>, podemos verificar a existência de outras três circunferências associadas ao mesmo triângulo <span class="ltx">&Delta;ABC</span>, tais que contenham dois do vértices do triângulo e seus respectivos centros da circunferência ex-inscrita. Os centros destas circunferências são os pontos <span class="ltx">K'</span>, <span class="ltx">L'</span> ou <span class="ltx">M'</span>  obtidos pela interseção da retas 
+<img src="images/retaKO.png" style="widht: 25px; height: 15px; display: inline-block;">, <img src="images/retaLO.png" style="widht: 25px; height: 15px; display: inline-block;"> ou <img src="images/retaMO.png" style="widht: 25px; height: 15px; display: inline-block;">  com a circunferência circunscrita ao triângulo <span class="ltx">&Delta;ABC</span>, respectivamente. 
+Além disso, <span class="ltx">K'</span>, <span class="ltx">L'</span> e <span class="ltx">M'</span> são pontos médios do segmento <span class="seg">I<sub>b</sub>I<sub>c</sub></span>, <span class="seg">I<sub>a</sub>I<sub>c</sub></span> e <span class="seg">I<sub>a</sub>I<sub>b</sub></span>, respectivamente.
+</p>
+<p>Tomemos o ponto <span class="ltx">K'</span>. Utilizando a ferramenta de medição do Geogebra podemos verificar que as distâncias <span class="ltx">K'I<sub>c</sub></span>, <span class="ltx">K'I<sub>b</sub></span>, <span class="ltx">K'B</span> e <span class="ltx">K'C</span> são iguais, portanto <span class="ltx">K'</span> é centro da circunferência que contém os pontos <span class="ltx">I<sub>c</sub></span>, <span class="ltx">I<sub>b</sub></span>, <span class="ltx">B</span> e <span class="ltx">C</span>. Também podemos perceber que o segmento <span class="seg">I<sub>c</sub>I<sub>b</sub></span> é um diâmetro, pois <span class="ltx">I<sub>c</sub></span>, <span class="ltx">K'</span> e <span class="ltx">I<sub>b</sub></span> são colineares - uma vez que estão na bissetriz externa do vértice <span class="ltx">A</span>. Portanto, <span class="ltx">K'</span> é ponto médio do segmento <span class="seg">I<sub>c</sub>I<sub>b</sub></span>. 
+</p>
+<figure>
+	<img src="images/Geogebra_05.png" style="widht: 480px; height: 234px;" id="Geogebra_05">
+	<figcaption>Figura 4.7: O ponto <span class="ltx">K'</span> é centro da circunferência que contém os vértices <span class="ltx">B</span> e <span class="ltx">C</span>, além dos centros tritangentes <span class="ltx">I<sub>b</sub></span> e <span class="ltx">I<sub>c</sub></span>.</figcaption>
+</figure>
+<p>Analogamente as demais circunferências podem ser obtidas se tomarmos os pontos <span class="ltx">L'</span> e <span class="ltx">M'</span>.
+</p>
+<p>Até o momento, contamos onze circunferências associadas ao triângulo <span class="ltx">&Delta;ABC</span>. A décima segunda circunferência, não que esta ordenação seja importante, é a Circunferência de Nove Pontos (Veja detalhes na <a href="circ_nove_pontos.html#sec:circunferencia_de_nove_pontos" target="_blank">Seção 2.5</a>).  
+</p>
+<p>Tomemos um triângulo <span class="ltx">&Delta;ABC</span> qualquer, seu circuncentro <span class="ltx">O</span> e seu ortocentro <span class="ltx">Q</span>. Vamos determinar os pontos médios <span class="ltx">M<sub>a</sub></span>, <span class="ltx">M<sub>b</sub></span> e <span class="ltx">M<sub>c</sub></span>, respectivamente, dos lados <span class="seg">BC</span>, <span class="seg">AC</span> e <span class="seg">AB</span>. Determinemos também os pés das alturas <span class="ltx">H</span>, <span class="ltx">R</span> e <span class="ltx">S</span>, relativos aos vértices, respectivamente, <span class="ltx">A</span>, <span class="ltx">B</span> e <span class="ltx">C</span>. Os pontos médios entre o ortocentro e os vértices são chamados de pontos de Euler. Sejam <span class="ltx">E<sub>a</sub></span>, <span class="ltx">E<sub>b</sub></span> e <span class="ltx">E<sub>c</sub></span> tais pontos, relativos, respectivamente aos vértices <span class="ltx">A</span>, <span class="ltx">B</span> e <span class="ltx">C</span>. Por fim, vamos tomar <span class="ltx">S</span> ponto médio entre <span class="ltx">Q</span> e <span class="ltx">O</span>. 
+</p>
+<figure>
+	<img src="images/Geogebra_06.png" style="widht: 576px; height: 280px;" id="Geogebra_06">
+	<figcaption>Figura 4.8: A circunferência de 9 pontos tem centro no ponto médio entre o Ortocentro e o Circuncentro.</figcaption>
+</figure>
+<p>Pelo Geogebra podemos verificar que as distâncias <span class="ltx">SE<sub>a</sub></span>, <span class="ltx">SE<sub>b</sub></span>, <span class="ltx">SE<sub>c</sub></span>, <span class="ltx">SM<sub>a</sub></span>, <span class="ltx">SM<sub>b</sub></span>, <span class="ltx">SM<sub>c</sub></span>, <span class="ltx">SH</span>, <span class="ltx">SR</span> e <span class="ltx">SJ</span> são iguais, portanto <span class="ltx">S</span> é centro de uma circunferência que contém os nove pontos: <span class="ltx">E<sub>a</sub></span>, <span class="ltx">E<sub>b</sub></span>, <span class="ltx">E<sub>c</sub></span>, <span class="ltx">M<sub>a</sub></span>, <span class="ltx">M<sub>b</sub></span>, <span class="ltx">M<sub>c</sub></span>, <span class="ltx">H</span>, <span class="ltx">R</span> e <span class="ltx">J</span>.   
+</p>
+<p>As próximas circunferências associadas ao triângulo têm sua existência dependente do seu tipo, ou melhor, se o triângulo é equilátero, isósceles ou escaleno. Tais circunferências são de Apolônio, conforme foram apresentadas na <a href="apolonio.html#sec:circunferencia_de_apolonio" target="_blank">Seção 3.3</a> e esta observação é devida ao fato de que tal circunferência não existe se a razão de proporcionalidade for igual a 1 (<a href="apolonio.html#Cor_apol" target="_blank">Corolário 3.17</a>), portanto consideremos o caso em que o triângulo <span class="ltx">&Delta;ABC</span> é escaleno. 
+</p>
+<p>Dessa forma, pelo vértice <span class="ltx">B</span> determinemos <span class="ltx">M</span>, o pé da bissetriz interna. Utilizando o <a href="apolonio.html#Teo_apol">Teorema 3.16</a> sobre o lado <span class="seg">AC</span>, temos <span class="ltx">N</span> o conjugado harmônico de <span class="ltx">M</span>. Uma vez que <span class="seg">MN</span> é diâmetro da circunferência de Apolônio, podemos verificar que o triângulo <span class="ltx">&Delta;MBN</span> é retângulo em <span class="ltx">B</span>, portanto, <span class="ltx">B</span> pertence à esta circunferência.
+</p>
+<figure>
+	<img src="images/Geogebra_07.png" style="widht: 576px; height: 280px;" id="Geogebra_07">
+	<figcaption>Figura 4.9: A circunferência de Apolônio, relativa ao lado <span class="seg">AC</span>.</figcaption>
+</figure>
+<p>Analogamente podemos obter outras duas circunferências relativas aos demais vértices.
 </p>
 	<a href="aprendendo_na_pratica.html" class="btn btn-primary">Tópico Anterior</a>
 	&nbsp &nbsp
