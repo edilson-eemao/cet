@@ -14,6 +14,40 @@ body.comum{
 	  background-attachment: fixed;
 	  
 }
+p.comentario {
+	font-style: italic;
+	font-family: times;
+	font-size: 13pt;
+}
+
+p.item {
+	margin-left: 10px;
+}
+
+p.subitem {
+	margin-left: 20px;
+}
+
+table.plano_aula thead{
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+	font-weight: Bold;
+	}
+
+table.plano_aula{
+	margin: 10px 10px 10px 10px;
+	float: center;
+	width: 90%;
+	}
+
+td.esq {
+	width: 25%;
+	font-weight: Bold;
+}
+td.dir {
+	width: 65%;
+} 
+ 
 
 li.itemnum{
 	list-style-type: decimal;
