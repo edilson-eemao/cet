@@ -37,8 +37,6 @@
 			<div class="banner">
 				<div><h1>VÍDEOS E DEMONSTRAÇÕES</h1></div>
 			</div>
-			
-			
 			<nav id="menu">
 					
 				<ul>
@@ -107,31 +105,76 @@
 		</header>
  <!-- CONTEÚDO DA PÁGINA - INÍCIO ------------------------------------------------ -->      
 
-        <div class="padrao">
-					<!-- inicio esquerda  -->
+	<div class="corpo">
 				<h2>PÁGINA EM CONSTRUÇÃO</h2>
 					<p>
 					</p>
-                    
-                <h2>PÁGINA EM CONSTRUÇÃO</h2>
-					<p>
-					</p>
+			<div id="videos">
+				<div class="tab">
+					<button id="defaultOpen" class="tablinks" onclick="openCity(event, 'apresentacao')">Sobre o Mestrado</button>
+					<button class="tablinks" onclick="openCity(event, 'teorema2_8')">Teorema 2.8 </br>(Ângulos Inscritos)</button>
+					<button class="tablinks" onclick="openCity(event, 'teorema2_12')">Teorema 2.12 </br>(Teorema das Cordas)</button>
+					<button class="tablinks" onclick="openCity(event, 'teorema2_15')">Teorema 2.15 </br>(Potência do Ponto)</button>
+					<button class="tablinks" onclick="openCity(event, 'teorema2_17')">Teorema 2.17 </br>(Teorema Fundamental da Proporcionalidade)</button>
+				</div>
+				
+				<div id="apresentacao" class="tabcontent">
+				  <h3>Apresentação</h3>
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/gfQ6KqclmAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				
+				<div id="teorema2_8" class="tabcontent">
+				  <h3>Teorema 2.8 (Ângulos Inscritos)</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/4vl8gH9UU08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 
-				<h2>PÁGINA EM CONSTRUÇÃO</h2>
-					<p>
-					</p>
+				<div id="teorema2_12" class="tabcontent">
+				  <h3>Teorema 2.12 (Teorema das Cordas)</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/DwtNwVLmHes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div id="teorema2_15" class="tabcontent">
+				  <h3>Teorema 2.15 (Potência do Ponto)</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/2Df8O9LKDNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div id="teorema2_17" class="tabcontent">
+				  <h3>Teorema 2.17 (Teorema Fundamental da Proporcionalidade)</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/3XBkcK7Zb2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 
-        </div>
+			</div>
+		</div>
 <!-- CONTEÚDO DA PÁGINA - FIM ------------------------------------------------ --> 
  
  <footer>
-           
             <div id="direitos_reservados">
 				Professor Edilson | Matematicando | 2020 - <script type="text/javascript">document.write(new Date().getFullYear());</script> | Todos os direitos reservados!
 			</div>
  </footer>
-    
-    </div>
-        
+ </div>
+	<script type="text/javascript">
+	function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+		
+	</script>     
   </body>
 </html>
